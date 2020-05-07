@@ -43,6 +43,11 @@ body{
 /*navbar*/
 nav.navbar {
   height: 73px;
+  background-color: #ba2831;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
 }
 
 /* cambiar tipo de letra */
@@ -71,3 +76,4 @@ nav.navbar ul li a {
         }
       }
     
+      
