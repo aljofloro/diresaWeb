@@ -55,10 +55,6 @@ nav.navbar {
   background-color: #ba2831;
 }
 
-.navbar-toggler {
-  border-color: transparent !important;
-}
-
 /* cambiar tipo de letra */
 nav.navbar ul li {
   font-family: "Nexa Bold",serif;
