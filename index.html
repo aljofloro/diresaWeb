@@ -1,216 +1,447 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Blog de Pieri</title>
 	<link rel="stylesheet" type="text/css" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/brands.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/regular.min.css">
 	<link rel="stylesheet" type="text/css" href="css/diresa_principal.css">
-
 </head>
+
 <body>
 	<!--Navbar-->
 	<header>
 		<div class="container-fluid">
-			<div class="row tiraFecha">
-				<div class="col-lg-7">
-					
+			<div class="row tiraFecha d-none d-md-flex align-items-center">
+				<div class="col-md-7">
 				</div>
-				<div class="col-lg-5">
-					<span>Lunes a viernes de 7:50 am a 3:30 pm</span>
-					<i class="fa fa-facebook-f"></i>
+				<div class="col-md-5">
+					<span><i class="far fa-clock"></i> Lunes a viernes de 7:30 am a 3:30 pm | <i
+							class="fab fa-facebook-f"></i> | <i class="fab fa-twitter"></i></span>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row logo">
-				<div class="col-lg-4">
+			<div class="row logo d-none d-md-flex">
+				<div class="col-md-4">
 					<div class="row">
-						<div class="col-lg-6">
-							<img src="img/logo/logo.png">
-						</div>
-						<div class="col-lg-6">
-							<span>DIRECCIÓN REGIONAL DE SALUD</span>
+						<div class="d-flex align-items-stretch">
+							<div class="align-self-start">
+								<img class="l" src="img/logo/logo.png">
+							</div>
+							<div class="align-self-end">
+								<span>DIRECCIÓN REGIONAL DE SALUD</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8">
-					<img src="img/logo/transparencia.png">
+				<div class="col-md-8">
+					<div class=" transparencia align-items-stretch">
+						<img src="img/logo/transparencia.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="row menu bg-dark">
+				<div class="col-md-12 d-inline-block">
+					<nav class="navbar navbar-expand-md">
+						<button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+							data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<a class="navbar-brand" href="#"> Hola</a>
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link font-weight-bold" href="#">INICIO <span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">INSTITUCIÓN</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONVOCATORIAS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">NOTICIAS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">NORMATIVIDAD</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">AGENDA</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">ENCUÉNTRANOS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONTACTO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">DOCUMENTOS DE GESTIÓN</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		    
-		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="#"></a>
-		    <div class="collapse navbar-collapse" id="navbarCollapse">
-		      <ul class="navbar-nav mr-auto">
-		        <li class="nav-item active">
-		          <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">INSTITUCIÓN</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">CONVOCATORIAS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">NOTICIAS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">NORMATIVIDAD</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">AGENDA</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">ENCUÉNTRANOS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">CONTACTO</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">DOCUMENTOS DE GESTIÓN</a>
-		        </li>
-		      </ul>
-		    </div>
-		  </nav>
 	</header><!-- Navbar-->
 
 	<main role="main">
 
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-	      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-	    </ol>
-	    <div class="carousel-inner">
-	      <div class="carousel-item carousel-item-next carousel-item-left">
-	        <img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">
-	        <div class="container">
-	          <div class="carousel-caption text-left">
-	            <h1>Example headline.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="carousel-item">
-	         <img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">
-	        <div class="container">
-	          <div class="carousel-caption">
-	            <h1>Another example headline.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="carousel-item active carousel-item-left">
-	       <img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">x
-	        <div class="container">
-	          <div class="carousel-caption text-right">
-	            <h1>One more for good measure.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	  </div>
+		<div id="myCarousel" class="carousel slide " data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item carousel-item-next carousel-item-left">
+					<img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">
+				</div>
+				<div class="carousel-item active carousel-item-left">
+					<img class="bd-placeholder-img" width="100%" height="100%" src="img/fondo.png" alt="First slide">x
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
 
-	  <!-- Marketing messaging and featurettes
+		<div class="site-section noticias">
+			<div class="container">
+				<div class="row">
+					<div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+						<h2 class="mb-5">NOTICIAS</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row">
+						<div class="col-lg-4">
+							<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue.png" width="327"
+								height="253">
+							<h4>HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
+							<h6>Regional // Lun. 10 / Feb / 2020</h6>
+							<p class="informacionnoticias">El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
+								Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
+							<p><a class="btn btn-secondary" href="#" role="button">LEER MAS</a></p>
+						</div><!-- /.col-lg-4 -->
+						<div class="col-lg-4">
+							<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue2.png"
+								width="327" height="253">
+							<h4>HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
+							<h6>Regional // Lun. 10 / Feb / 2020</h6>
+							<p class="informacionnoticias">El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
+								Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
+							<p><a class="btn btn-secondary" href="#" role="button">LEER MAS</a></p>
+						</div><!-- /.col-lg-4 -->
+						<div class="col-lg-4">
+							<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue3.png"
+								width="327" height="253">
+							<h4>HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
+							<h6>Regional // Lun. 10 / Feb / 2020</h6>
+							<p class="informacionnoticias">El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
+								Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
+							<p><a class="btn btn-secondary" href="#" role="button">LEER MAS</a></p>
+						</div><!-- /.col-lg-4 -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Accesos
 	  ================================================== -->
-	  <!-- Wrap the rest of the page in another container to center all the content. -->
+		<div class="site-section">
+			<div class="container">
+				<div class="row">
+					<div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+						<h2 class="mb-5">ACCESOS</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row ">
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#" class="unit-9"><img src="img/accesos/nombramiento.png" /></a>
+								</div>
 
-	  <div class="container marketing">
+								<div class="desc text-center">
+									<a>Nombramiento DL 1153 Año 2019</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/sistemacontrol.png" /></a>
+								</div>
 
-	    <!-- Three columns of text below the carousel -->
-	    <div class="row">
-	      <div class="col-lg-4">
-	      	<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue.png" width="327" height="253">
-	        <h4>HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-	        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-	      </div><!-- /.col-lg-4 -->
-	      <div class="col-lg-4">
-	      	<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue2.png" width="327" height="253">
-	        <h2>Heading</h2>
-	        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-	      </div><!-- /.col-lg-4 -->
-	      <div class="col-lg-4">
-	      	<img class="bd-placeholder-img rounded-0" src="img/noticias/hostpitalUnanue3.png" width="327" height="253">
-	        <h2>Heading</h2>
-	        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-	      </div><!-- /.col-lg-4 -->
-	    </div><!-- /.row -->
+								<div class="desc text-center">
+									<h6>Administración</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/estadistica.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Administración</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/establecimiento.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Administración</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/SERUMS.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Administración</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/materiales.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Materiales Comunicacionales</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/sis.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>SIS</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/requisitos.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Requisitos para la apertura de Establecimientos de Salud</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-accesos">
+								<div class="image">
+									<a href="#"><img src="img/accesos/playas.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Playas</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-section sponsor">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<img src="img/sponsor/essalud.png" alt="Essalud" />
+					<img src="img/sponsor/redsalud.png" alt="Essalud" />
+					<img src="img/sponsor/regiontacna.png" alt="Essalud" />
+					<img src="img/sponsor/senamhi.png" alt="Essalud" />
+					<img src="img/sponsor/coer.png" alt="Essalud" />
+					<img src="img/sponsor/ministerio.png" alt="Essalud" />
+					<img src="img/sponsor/hospitalunanue.png" alt="Essalud" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Documentos
+	  ================================================== -->
+
+		<div class="site-section documentos">
+			<div class="container">
+				<div class="row">
+					<div class="site-section-headingdocumentos text-center mb-5 w-border col-md-6 mx-auto">
+						<h2 class="mb-5">DOCUMENTOS DE LAS DIRECCIONES EJECUTIVAS</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row ">
+						<div class="col-md-2">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/epidemiologia.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Epidemiología</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/administracion.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Administración</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/gestion.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Gestión y Desarrollo de Recursos Humanos</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/planeamiento.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Planeamiento Estratégico</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/promocionsalud.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Promoción de la Salud</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/salud.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Salud de las Personas</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/saludambiental.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Salud Ambiental</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-document">
+								<div class="image">
+									<a href=""><img src="img/documentos/medicamentos.png" /></a>
+								</div>
+
+								<div class="desc text-center">
+									<h6>Medicamentos, Insumos y Drogas</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site-section sponsor">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 d-flex justify-content-center">
+						<img src="img/sponsor/indecopi.png" alt="Essalud" />
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<img src="img/sponsor/osiptel.png" alt="Essalud" />
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<img src="img/sponsor/sce.png" alt="Essalud" />
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<img src="img/sponsor/contraloria.png" alt="Essalud" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
 
 
-	    <!-- START THE FEATURETTES -->
+				</div>
+				<div class="row pt-5 mt-5 text-center">
+					<div class="col-md-6">
+						<p>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script data-cfasync="false"
+								src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+							template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
 
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7">
-	        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7 order-md-2">
-	        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5 order-md-1">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7">
-	        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <!-- /END THE FEATURETTES -->
-
-	  </div><!-- /.container -->
-
-
-	  <!-- FOOTER -->
-	  <footer class="container">
-	    <p class="float-right"><a href="#">Back to top</a></p>
-	    <p>© 2017-2019 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-	  </footer>
+				</div>
+			</div>
+		</footer>
 	</main>
-	
+	</main>
+
 </body>
+
 </html>
