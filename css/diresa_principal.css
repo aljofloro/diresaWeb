@@ -210,11 +210,15 @@ nav.navbar ul li a {
   background-color: #f2f2f2;
 }
 .site-footer {
-  padding: 4em 0; 
   background-color: #22252b;
 }
 @media (min-width: 768px) {
     .site-footer {
-      padding: 7em 0; 
+      padding: 3em 0; 
       } 
     }
+.site-footer a{
+  font-family: "Nexa Bold";
+  font-size: 0.70rem;
+  color:#ffffff;
+}
