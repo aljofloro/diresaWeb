@@ -54,6 +54,18 @@ body{
 nav.navbar {
   background-color: #ba2831;
 }
+.navbar-toggler-icon{
+  background-image: url('../img/navbar/toggler.png');
+  font-size: x-small;
+}
+.navbar-brand img{
+  float: right;
+}
+.spanDiresa{
+  font-family: "Calibri Bold", serif;
+  font-size: 0.7rem;
+  color:#fff;
+}
 
 /* cambiar tipo de letra */
 nav.navbar ul li {
