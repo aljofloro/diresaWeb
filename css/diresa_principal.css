@@ -78,7 +78,23 @@ nav.navbar ul li a {
 .noticias .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: justify;
+  padding: 25px;
 }
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
 .noticias h4 {
   margin-top: 28px;
   margin-bottom: 21px;
@@ -95,22 +111,22 @@ nav.navbar ul li a {
   font-size: 1.1667rem;
   margin-bottom: 29px;
 }
+.noticias .btn{
+  padding: 10px 23px 30px; 
+  border-radius: 30px;
+  height: 35px; 
+  width: 130px;
+  font-size: 1rem;
+  text-align: center; 
+  color:#ff1d25;
+  border-color: #ff1d25;
+}
+.noticias .btn:hover{
+  background-color:#ff1d25;
+  color: #ffffff;
+}
 
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-@media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    
 /* ACCESOS CONTENT
 -------------------------------------------------- */
 .site-section {
@@ -252,6 +268,7 @@ nav.navbar ul li a {
 .go-top img{
   width: 15px;
   height: 14px;
+  margin-top:-2px;
 }
 .go-top a, .go-top a:visited {
   font-family: "NimbusSanTBla";
