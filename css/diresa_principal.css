@@ -129,6 +129,11 @@ nav.navbar ul li {
 .top_middle_logo{
   display: inline-flex;
 }
+.top_middle_logo span{
+  font-family: "Calibri Bold", serif;
+  font-size: 1.1rem;
+  color:#555557;
+}
 /*********************************
 3.3 Header Content
 *********************************/
@@ -136,12 +141,16 @@ nav.navbar ul li {
 .header_bar
 {
 	width: 100%;
-	background: #ba2831;
+  background: #ba2831;
 }
 .header_container
 {
 	width: 100%;
   height: 100%;
+}
+.header_bar_content{
+  width: 100%;
+  height: 68px;
 }
 
 /*********************************
@@ -192,6 +201,40 @@ nav.navbar ul li {
 /*********************************
 5.NOTICIAS
 *********************************/
+.site-section {
+  padding: 3em 0; }
+  @media (min-width: 768px) {
+    .site-section {
+      padding: 6em 0; } }
+  .site-section.site-section-sm {
+    padding: 4em 0; }
+
+.site-section-heading h2 {
+  font-size: 2.17rem;
+  font-family: "Nexa Bold";
+  text-transform: uppercase;
+  color: #4d4d4d; 
+}
+.site-section-heading.w-border h2 {
+  position: relative;
+  padding-bottom: 13px;
+  display: inline-block; 
+}
+.site-section-heading.w-border h2:after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #4d4d4d; 
+}
+.site-section-heading.w-border.text-center h2:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); 
+}
 .noticias{
   background-color: #f4fbff;
 }
@@ -248,60 +291,59 @@ nav.navbar ul li {
   color: #ffffff;
 }
 
-
-/* ACCESOS CONTENT
--------------------------------------------------- */
-.site-section {
-  padding: 3em 0; }
-  @media (min-width: 768px) {
-    .site-section {
-      padding: 6em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
-
-.site-section-heading h2 {
-  font-size: 2.17rem;
-  font-family: "Nexa Bold";
-  text-transform: uppercase;
-  color: #4d4d4d; 
+/*********************************
+6.ACCESOS
+*********************************/
+.accesos
+{
+	width: 100%;
 }
-.site-section-heading.w-border h2 {
-  position: relative;
-  padding-bottom: 13px;
-  display: inline-block; 
+.acceso{
+  width: 100%;
 }
-.site-section-heading.w-border h2:after {
-    position: absolute;
-    content: "";
-    width: 21px;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    background: #4d4d4d; 
-}
-.site-section-heading.w-border.text-center h2:after {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); 
-}
-.single-accesos {
-  margin-top: 10px;
+.accesos_image
+{
+	width: 100%;
+  overflow: hidden;
   text-align: center;
 }
-.single-accesos .image{
+.accesos_image img
+{
+  max-width: 100%;
   height: 108px;
   width: 105px;
   display: inline-block;
   position: relative;
 }
-.single-accesos .desc h6 {
-  margin: 20px 0;
+.accesos_body
+{
+	padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 19px;
+}
+.accesos_body p
+{
   letter-spacing: 1px;
   color:#2b2b2b;
   font-family: "Nexa Light";
   font-style: 1.17rem;
+  text-align: center;
 }
+
+.accesos_body p:hover
+{
+	color:red;
+}
+svg {
+  width: 100px;
+  height: 100px;
+}
+svg:hover,
+svg:focus{
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+  
+}
+
 .documentos{
   background-color: #ba2831;
 }
