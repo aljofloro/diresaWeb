@@ -15,7 +15,7 @@
 <body id="top">
 	<!--Navbar-->
 	<header class="header">
-		<div class="top_bar">
+		<div class="top_bar d-none d-md-block">
 			<div class="top_bar_container">
 				<div class="container">
 					<div class="row">
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="middle_bar">
+		<div class="middle_bar d-none d-md-block">
 			<div class="middle_bar_container">
 				<div class="container">
 					<div class="row">
@@ -69,13 +69,28 @@
 					<div class="row">
 						<div class="col">
 							<div class="header_bar_content d-flex flex-row align-items-center">
-								<nav class="navbar navbar-expand-md">
-									<button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
-										data-target="#navbarCollapse" aria-controls="navbarCollapse"
+								<nav class="navbar navbar-expand-sm">
+									<div class="align-items-stretch my-auto d-flex d-md-none">
+										<button class="navbar-toggler" type="button" data-toggle="collapse" 
+										data-target="#navbarCollapse" aria-controls="navbarCollapse" 
 										aria-expanded="false" aria-label="Toggle navigation">
-										<span class="navbar-toggler-icon"></span>
-									</button>
-									<a class="navbar-brand" href="#"> </a>
+											<span class="navbar-toggler-icon"></span>
+										</button>
+					
+										<div class="align-items-stretch d-flex">
+											<div class="align-self-center">
+												<span class="float-md-right">
+												<a class="navbar-brand" href="#">
+													<img width="40%" src="img/logo/isologo.png" alt="RegionTacna">
+											</a></span>
+											</div>
+											<div class="align-self-center" >
+												<img width="50%" src="img/navbar/DIRESA.png" alt="DIRESA">
+											</div>
+										</div>
+										
+					
+									</div>
 									<div class="collapse navbar-collapse " id="navbarCollapse">
 										<ul class="nav navbar-nav mr-auto">
 											<li class="nav-item active">
