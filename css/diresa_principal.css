@@ -79,6 +79,25 @@ ul
 	font-size: 1.0833rem;
 	color: #92b8dd;
 }
+.navbar-toggler-icon{
+  background-image: url('../img/navbar/toggler.png');
+  font-size: x-small;
+}
+.navbar-brand img{
+  float: right;
+}
+.spanDiresa{
+  font-family: "Calibri Bold", serif;
+  font-size: 0.7rem;
+  color:#fff;
+}
+
+/* cambiar tipo de letra */
+nav.navbar ul li {
+  font-family: "Nexa Bold",serif;
+  font-size: 0.9583rem;
+  margin: 10px;}
+  
 .top_bar_horario li > div
 {
 	margin-left: 1px;

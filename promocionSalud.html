@@ -9,77 +9,130 @@
     <link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/brands.min.css">
 		<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/regular.min.css">
 		<link rel="stylesheet" type="text/css" href="css/diresa_principal.css">
-  </head>
-  <body>
+	</head>
+	
+  <body id="top">
     <header>
-      <div class="row d-none d-md-block">
-        <div class="col-md-7"></div>
-        <div class="col-md-5">
-          <span><i class="far fa-clock"></i> Lunes a viernes de 7:30 am a 3:30 pm | <i class="fab fa-facebook-f"></i> | <i class="fab fa-twitter"></i></span>
-        </div>
-      </div>
-      <div class="row d-none d-md-block">
-        <div class="col-md-4"><img src="img/logo/logo.png"></div>
-        <div class="col-md-2 ml-auto"><img src="img/logo/transparencia.png"></div>
-      </div>
-
-      <nav class="navbar navbar-expand-sm navbar-light">
-				<div class="align-items-stretch my-auto d-flex">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" 
-					data-target="#navbarCollapse" aria-controls="navbarCollapse" 
-					aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="align-items-stretch mx-auto d-flex">
-						<div class="align-self-center">
-							<span class="float-md-right">
-							<a class="navbar-brand" href="#">
-								<img width="40%" src="img/logo/isologo.png" alt="RegionTacna">
-						</a></span>
-						</div>
-						<div class="align-self-center">
-							<span>DIRECCIÓN REGIONAL DE SALUD</span>
+			<div class="top_bar d-none d-md-block">
+				<div class="top_bar_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div
+									class="top_bar_content d-flex flex-row-reverse align-items-center justify-content-start ">
+									<ul class="top_bar_horario">
+										<li>
+											<i class="far fa-clock" aria-hidden="true"></i>
+											<div class="horario"> Lunes a viernes de 7:30 am a 3:30 pm</div>
+											<div class="horario ml-2"> | </div>
+											<i class="fab fa-facebook-f ml-2" aria-hidden="true"></i>
+											<div class="horario ml-2"> | </div>
+											<i class="fab fa-twitter ml-2"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-					
+				</div>
+			</div>
+			<div class="middle_bar d-none d-md-block">
+				<div class="middle_bar_container">
+					<div class="container">
+						<div class="row">
+							<div class="col-4">
+								<div class="middle_bar_content d-flex flex-row align-items-center">
+									<div class="top_middle_logo">
+										<div class="p-2 w-100  bg-light ">
+											<img src="img/logo/logo.png">
+										</div>
+										<div class="bg-light">
+											<span>DIRECCIÓN REGIONAL DE SALUD</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-8">
+								<div class="middle_bar_content d-flex align-items-center justify-content-end">
+									<img src="img/logo/transparencia.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      <div class="header_bar">
+				<div class="header_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="d-flex flex-row align-items-center">
+									<nav class="navbar navbar-expand-sm">
 
-				</div>					
-				
+										<div class="align-items-stretch my-auto d-flex d-md-none">
+											<button class="navbar-toggler" type="button" data-toggle="collapse" 
+											data-target="#navbarCollapse" aria-controls="navbarCollapse" 
+											aria-expanded="false" aria-label="Toggle navigation">
+												<span class="navbar-toggler-icon"></span>
+											</button>
+						
+											<div class="align-items-stretch mx-auto d-flex">
+												<div class="align-self-center">
+													<span class="float-md-right">
+													<a class="navbar-brand" href="#">
+														<img width="40%" src="img/logo/isologo.png" alt="RegionTacna">
+												</a></span>
+												</div>
+												<div class="align-self-center" >
+													<span class="spanDiresa">DIRECCIÓN REGIONAL DE SALUD</span>
+												</div>
+											</div>
+											
+						
+										</div>	
 
-		    <div class="collapse navbar-collapse" id="navbarCollapse">
-		      <ul class="navbar-nav mr-auto">
-		        <li class="nav-item active">
-		          <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">INSTITUCIÓN</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">CONVOCATORIAS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">NOTICIAS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">NORMATIVIDAD</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">AGENDA</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">ENCUÉNTRANOS</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">CONTACTO</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">DOCUMENTOS DE GESTIÓN</a>
-		        </li>
-		      </ul>
-		    </div>
-		  </nav>
+
+										<div class="collapse navbar-collapse " id="navbarCollapse">
+											<ul class="nav navbar-nav mr-auto">
+												<li class="nav-item active">
+													<a class="nav-link font-weight-bold" href="#">INICIO <span
+															class="sr-only">(current)</span></a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">INSTITUCIÓN</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">CONVOCATORIAS</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">NOTICIAS</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">NORMATIVIDAD</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">AGENDA</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">ENCUÉNTRANOS</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">CONTACTO</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">DOCUMENTOS DE GESTIÓN</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
+		
 		<main role="main">
 			<!-- Inicio de Carrousel-->
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
