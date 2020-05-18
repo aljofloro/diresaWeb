@@ -1,0 +1,41 @@
+@media (min-width: 1200px) {
+  html {
+    font-size: 125%;
+  }
+}
+@media only screen and (max-width: 1199px)
+{
+    .partner2_item
+    {
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 991px)
+{
+  html {
+    font-size: 70%;
+  }
+  .noticias .btn{
+    height: 25px; 
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 575px)
+{
+    html {
+      font-size: 60%;
+    }
+    .site-section {
+        padding: 3em 2em 0 2em; 
+    } 
+    .partner2_item
+    {
+        margin: 10%;
+    }
+    .noticias .btn{
+      height: 25px; 
+      width: 70px;
+    }
+	
+}
+

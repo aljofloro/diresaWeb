@@ -17,7 +17,9 @@ body{
   font-family: "NimbusSanTBla";
   src: url("../fonts/NimbusSanTBla/NimbusSanTBla.woff2");
 }
-
+html {
+  font-size: 100%; /* 100% = 16px */
+}
 ul
 {
 	list-style: none;
@@ -33,11 +35,6 @@ ul
 	width: 100%;
 	z-index: 100;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
 }
 
 
@@ -68,7 +65,7 @@ ul
 {
   color: #92b8dd;
   text-align:left;
-  font-size: 1.0833rem;
+  font-size: 0.9rem;
   font-family: "Calibri",serif;
 	margin-left: 0px;
 }
@@ -76,7 +73,7 @@ ul
 .top_bar_horario li > div
 {
 	display: inline-block;
-	font-size: 1.0833rem;
+	font-size: 0.9rem;
 	color: #92b8dd;
 }
 .navbar-toggler-icon{
@@ -148,10 +145,7 @@ nav.navbar ul li {
 	width: 100%;
   height: 100%;
 }
-.header_bar_content{
-  width: 100%;
-  height: 68px;
-}
+
 
 /*********************************
 3.4 Main Nav
@@ -168,13 +162,8 @@ nav.navbar ul li {
 .nav li a
 {
   font-family: "Nexa Bold",serif;
-  font-size: 0.8rem;
+  font-size: 0.62rem;
   color:#3c495b;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
 }
 .nav li a:hover,
 .nav li.active a
@@ -202,12 +191,7 @@ nav.navbar ul li {
 5.NOTICIAS
 *********************************/
 .site-section {
-  padding: 3em 0; }
-  @media (min-width: 768px) {
-    .site-section {
-      padding: 6em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
+  padding: 6em 0; }
 
 .site-section-heading h2 {
   font-size: 2.17rem;
@@ -217,7 +201,7 @@ nav.navbar ul li {
 }
 .site-section-heading.w-border h2 {
   position: relative;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
   display: inline-block; 
 }
 .site-section-heading.w-border h2:after {
@@ -310,8 +294,6 @@ nav.navbar ul li {
 .accesos_image img
 {
   max-width: 100%;
-  height: 108px;
-  width: 105px;
   display: inline-block;
   position: relative;
 }
@@ -326,7 +308,7 @@ nav.navbar ul li {
   letter-spacing: 1px;
   color:#2b2b2b;
   font-family: "Nexa Light";
-  font-style: 1.17rem;
+  font-size: 1.17rem;
   text-align: center;
 }
 
@@ -334,18 +316,21 @@ nav.navbar ul li {
 {
 	color:red;
 }
-svg {
+.accesos_image svg {
   width: 100px;
   height: 100px;
 }
-svg:hover,
+.accesos_image svg:hover,
 svg:focus{
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
   
 }
-
+/*********************************
+7.Documentos
+*********************************/
 .documentos{
   background-color: #ba2831;
+  width: 100%;
 }
 .site-section-headingdocumentos h2 {
   font-size: 2.17rem;
@@ -355,7 +340,7 @@ svg:focus{
 }
 .site-section-headingdocumentos.w-border h2 {
   position: relative;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
   display: inline-block; 
 }
 .site-section-headingdocumentos.w-border h2:after {
@@ -373,32 +358,57 @@ svg:focus{
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); 
 }
-.single-document {
-  margin-top: 10px;
+.documento{
+  width: 100%;
+}
+.documento_image
+{
+  padding-top: 40px;
+	width: 100%;
+  overflow: hidden;
   text-align: center;
 }
-.single-document .image{
+.documento_image img
+{
+  max-width: 100%;
   height: 108px;
   width: 105px;
   display: inline-block;
   position: relative;
 }
-.single-document .desc h6 {
-  margin: 20px 0;
+.documento_body
+{
+	padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+.documento_body p
+{
   letter-spacing: 1px;
   color:#ffffff;
   font-family: "Nexa Light";
-  font-style: 1.17rem;
+  font-size: 1.17rem;
+  text-align: center;
 }
+.documento:hover
+{
+  border: 3px white solid;
+  border-radius: 0.7rem;
 
+}
 /*********************************
-7. partners
+8. partners
 *********************************/
 .partners
 {
 	width: 100%;
 	background: #f2f2f2;
 }
+.partners_slider_container
+	{
+		width: calc(100% + 160px);
+		left: -80px;
+	}
 .partner_item
 {
   height: 100%;
@@ -409,7 +419,9 @@ svg:focus{
 	width: 150px !important;
   top: 50%;
   height: 80px;
+
 }
+
 /*********************************
 7. partners2
 *********************************/
@@ -417,18 +429,7 @@ svg:focus{
 {
 	width: 100%;
   background: #f2f2f2;
-}
-.partner2_item
-{
-  height: 100%;
-}
-.partner2_item img
-{
-	position: relative;
-	width: 150px !important;
-  top: 50%;
-  
-  height: 56px;
+  text-align: center;
 }
 
 .footer {
