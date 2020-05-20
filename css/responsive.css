@@ -1,41 +1,101 @@
-@media (min-width: 1200px) {
-  html {
-    font-size: 125%;
-  }
-}
 @media only screen and (max-width: 1199px)
 {
-    .partner2_item
+  .partner_item 
     {
         margin: 5%;
     }
+  .partner2_item
+    {
+        margin: 10%;
+    }
+  .col-lg-9ths {
+      width: 11.2%;
+      float: left;
+      text-align: center; 
+  }    
 }
 @media only screen and (max-width: 991px)
 {
   html {
     font-size: 70%;
   }
-  .noticias .btn{
-    height: 25px; 
-    width: 75px;
+  .site-section {
+    padding: 3em 2em 4em 2em; 
+  } 
+  .site-section-headingdocumentos {
+    padding: 3em 2em 0 2em; 
+  } 
+  .footer {
+    padding: 3em 0em 2em 0em; 
+    margin-left: 0em;
+  }
+  .iniciofooter{
+    margin-left: -1.7em;
+  }
+  .footer .divisionfooter a{
+    margin-bottom: 0em;
+  }
+  .go-top {
+    right: 6.8%;
   }
 }
 @media only screen and (max-width: 575px)
 {
-    html {
-      font-size: 60%;
-    }
-    .site-section {
-        padding: 3em 2em 0 2em; 
-    } 
-    .partner2_item
-    {
-        margin: 10%;
-    }
-    .noticias .btn{
-      height: 25px; 
-      width: 70px;
-    }
-	
+  html {
+    font-size: 50%;
+  }
+  .site-section {
+    padding: 3em 2em 0 2em; 
+  } 
+  .noticias_descr{
+    padding: 0.5em 4em 4em 4em;
+  }
+  .accesos_image svg{
+    max-width: 55%;
+    display: inline-block;
+    position: relative;
+  }
+  .accesos_body{
+    padding: 0.1em 1em 1em 1em;
+  }
+  .partner_item {
+      margin: 10%;
+  }
+  .partner2_item{
+      margin: 10%;
+  }
+  .site-section-headingdocumentos {
+    padding: 3em 2em 0 2em; 
+  } 
+  .footer {
+    padding: 3em 0; 
+  } 
+  .footer p{
+    text-align: center;
+  }
+  .col-sm-12ths {
+    width: 100%;
+    line-height: 0;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-left: 3.3em;
+  }
+  .col-sm-9ths {
+    width: 15%;
+    float: left;
+  }
+  .divisionfooter{
+    margin-left: -2em;;
+  }
+  .footer .divisionfooter a{
+    margin-bottom: 0em;
+  }
+
+  .footer_social ul li:not(:last-child)
+  {
+    margin-right: -2em;
+  }
+
 }
+
 

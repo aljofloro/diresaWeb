@@ -30,18 +30,13 @@ ul
 *********************************/
 .header
 {
-	top: 0;
-	left: 0;
 	width: 100%;
 	z-index: 100;
-	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
 }
-
 
 /*********************************
 3.1 Top Bar
 *********************************/
-
 .top_bar
 {
 	width: 100%;
@@ -144,6 +139,7 @@ nav.navbar ul li {
 {
 	width: 100%;
   height: 100%;
+  
 }
 
 
@@ -162,7 +158,7 @@ nav.navbar ul li {
 .nav li a
 {
   font-family: "Nexa Bold",serif;
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   color:#3c495b;
 }
 .nav li a:hover,
@@ -191,23 +187,24 @@ nav.navbar ul li {
 5.NOTICIAS
 *********************************/
 .site-section {
-  padding: 6em 0; }
+  padding: 6em 0 5em 2em; 
+}
 
 .site-section-heading h2 {
-  font-size: 2.17rem;
+  font-size: 2rem;
   font-family: "Nexa Bold";
   text-transform: uppercase;
   color: #4d4d4d; 
 }
 .site-section-heading.w-border h2 {
   position: relative;
-  padding-bottom: 5px;
+  padding-bottom: 0.4em;
   display: inline-block; 
 }
 .site-section-heading.w-border h2:after {
     position: absolute;
     content: "";
-    width: 21px;
+    width: 0.7em;
     left: 0;
     bottom: 0;
     height: 2px;
@@ -225,50 +222,52 @@ nav.navbar ul li {
 .noticias_descr
 {
   width: 100%;
+  padding: 0.5em;
 }
 .noticias_descr_image
-{
+{ 
 	width: 100%;
 	overflow: hidden;
 }
 .noticias_descr_image img
 {
-	max-width: 100%;
+	max-width: 95%;
 }
 .noticias_descr_body
 {
-	padding-top: 27px;
-	padding-right: 19px;
-	padding-bottom: 23px;
+	padding-top: 1em;
+	padding-right: 0.5em;
+	padding-bottom: 1em;
 }
-.noticias_descr_title h4
+.noticias_descr_title
 {
-  margin-top: 28px;
-  margin-bottom: 21px;
+  margin-top: 0.5em;
+  margin-bottom: 0.6em;
   font-family: "Nexa Bold",serif;
-  font-size: 1.4167rem;
+  font-size: 1.3rem;
 }
 .noticias_descr_fecha
 {
   font-family: "Nexa Light",serif;
   font-size: 0.9167rem;
-  margin-bottom: 15px;
+  margin-bottom: 0.5em;
 }
 .noticias_descr_text 
 {
-  margin-top: 13px;
   font-family: "Nexa Light",serif;
-  font-size: 1.1667rem;
-  margin-bottom: 29px;
+  font-size: 0.9rem;
+  margin-bottom: 1.2em;
+  text-align: justify;
 }
 .noticias .btn{
   border-radius: 30px;
-  height: 35px; 
-  width: 130px;
-  font-size: 1rem;
+  height: 2.5em; 
+  width: 7em;
+  font-size: 0.92rem;
   text-align: center; 
   color:#ff1d25;
   border-color: #ff1d25;
+  font-family: "Nexa Light",serif;
 }
 .noticias .btn:hover{
   background-color:#ff1d25;
@@ -291,7 +290,7 @@ nav.navbar ul li {
   overflow: hidden;
   text-align: center;
 }
-.accesos_image img
+.accesos_image svg
 {
   max-width: 100%;
   display: inline-block;
@@ -299,16 +298,13 @@ nav.navbar ul li {
 }
 .accesos_body
 {
-	padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 19px;
+	padding: 0.8em;
 }
 .accesos_body p
 {
-  letter-spacing: 1px;
   color:#2b2b2b;
   font-family: "Nexa Light";
-  font-size: 1.17rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -326,27 +322,37 @@ svg:focus{
   
 }
 /*********************************
-7.Documentos
+7. partners
+*********************************/
+.partners
+{
+	width: 100%;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+/*********************************
+8.Documentos
 *********************************/
 .documentos{
   background-color: #ba2831;
   width: 100%;
 }
 .site-section-headingdocumentos h2 {
-  font-size: 2.17rem;
+  font-size: 2rem;
   font-family: "Nexa Bold";
   text-transform: uppercase;
   color: #ffffff; 
 }
 .site-section-headingdocumentos.w-border h2 {
   position: relative;
-  padding-bottom: 5px;
+  padding-bottom: 0.4em;
   display: inline-block; 
 }
 .site-section-headingdocumentos.w-border h2:after {
     position: absolute;
     content: "";
-    width: 21px;
+    width: 0.7em;
     left: 0;
     bottom: 0;
     height: 2px;
@@ -361,9 +367,10 @@ svg:focus{
 .documento{
   width: 100%;
 }
+
 .documento_image
 {
-  padding-top: 40px;
+  padding-top: 10%;
 	width: 100%;
   overflow: hidden;
   text-align: center;
@@ -371,16 +378,13 @@ svg:focus{
 .documento_image img
 {
   max-width: 100%;
-  height: 108px;
-  width: 105px;
   display: inline-block;
   position: relative;
 }
 .documento_body
 {
-	padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
+	padding-top: 2em;
+  padding-bottom: 2em;
 }
 .documento_body p
 {
@@ -394,37 +398,15 @@ svg:focus{
 {
   border: 3px white solid;
   border-radius: 0.7rem;
-
-}
-/*********************************
-8. partners
-*********************************/
-.partners
-{
-	width: 100%;
-	background: #f2f2f2;
-}
-.partners_slider_container
-	{
-		width: calc(100% + 160px);
-		left: -80px;
-	}
-.partner_item
-{
   height: 100%;
 }
-.partner_item img
-{
-	position: relative;
-	width: 150px !important;
-  top: 50%;
-  height: 80px;
-
-}
 
 /*********************************
-7. partners2
+9. partners2
 *********************************/
+.site-sectionpartner2{
+  padding: 4em 1em 4em 2em; 
+}
 .partners2
 {
 	width: 100%;
@@ -432,24 +414,62 @@ svg:focus{
   text-align: center;
 }
 
+/*********************************
+10. footer
+*********************************/
 .footer {
+  padding: 3em 0em 2em 0em; 
   background-color: #22252b;
 }
-@media (min-width: 768px) {
-    .footer {
-      padding: 3em 0; 
-      } 
-    }
-.footer a{
+.footer-menu{
+  width: 100%;
+}
+.divisionfooter{
+  margin-left: 1em;;
+}
+.footer .divisionfooter a{
   font-family: "Nexa Bold";
-  font-size: 0.70rem;
+  font-size: 0.6em;
   color:#ffffff;
+  margin-bottom: 2em;
+}
+.iniciofooter{
+  margin-left: -1em;
 }
 .footer p{
   color:#85898e;
   font-family: "Nexa Light";
-  font-size: 0.92rem;
-  margin-left: 68px;
+  font-size: 0.7rem;
+}
+.footer_social ul li
+{
+	display: inline-block;
+	width: 3em;
+	height:3em;
+}
+.footer_social ul li:not(:last-child)
+{
+	margin-right: 0.8em;
+}
+.footer_social ul li a
+{
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.footer_social ul li a i
+{
+	color: #FFFFFF;
+	line-height: 3em;
+}
+
+.col-xs-9ths,
+.col-sm-9ths,
+.col-md-9ths,
+.col-lg-9ths {
+  position: relative;
+  min-height: 1px;
+  text-align: center;
 }
 
 /* ------------------------------------------------------------------- 
@@ -458,7 +478,7 @@ svg:focus{
  .go-top {
   position: fixed;
   bottom:0px;
-  right: 68px;
+  right: 10%;
   z-index: 600;
   opacity: 0;
   visibility: hidden;
@@ -469,9 +489,11 @@ svg:focus{
   transform: translate3d(0, 200%, 0);
 }
 .go-top img{
-  width: 15px;
-  height: 14px;
-  margin-top:-2px;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.2em;
+  margin-bottom: 0.19em;
+
 }
 .go-top a, .go-top a:visited {
   font-family: "NimbusSanTBla";
