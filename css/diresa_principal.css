@@ -133,7 +133,7 @@ nav.navbar ul li {
 .header_bar
 {
 	width: 100%;
-  background: #ba2831;
+  background: #ffffff;
 }
 .header_container
 {
@@ -153,7 +153,7 @@ nav.navbar ul li {
 }
 .nav li:not(:last-child)
 {
-	margin-right:2px;
+	margin-right:4px;
 }
 .nav li a
 {
@@ -164,7 +164,7 @@ nav.navbar ul li {
 .nav li a:hover,
 .nav li.active a
 {
-	color: #ffffff;
+	color: #3c495b;
 }
 /*********************************
 4. Home
@@ -327,7 +327,7 @@ svg:focus{
 .partners
 {
 	width: 100%;
-  background: #f2f2f2;
+  background:#ffffff;
   text-align: center;
 }
 
@@ -527,3 +527,51 @@ svg:focus{
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+.table{
+  font-family: "Nexa Bold";
+  text-transform: uppercase;
+  border:none !important;
+  
+}
+.table .thead-blue th{
+    color: #4d4d4d;
+    background-color: #caf9ca;
+    border-color: #caf9ca;
+    padding:1em 1em 1em 1em; 
+    vertical-align: middle;
+}
+.table .thead-blue .numero{
+  border-right: solid #ffffff !important;   
+  text-align: center;
+}
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting {
+  padding-right: 2em !important;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+  content: "" !important;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+  content: "" !important;
+}
+.table-bordered td{
+  border: 2px solid #caf9ca !important;
+  padding:2em !important;
+
+}
+tbody:before {
+  content:"@";
+  display:block;
+  line-height:2em;
+  text-indent:-99999px;
+}
+th {
+  height: 4em;
+  text-align: left;
+}
+.table-bordered tbody td {
+  border-collapse: separate !important; 
+  border-spacing: 2em !important;
+}
+
