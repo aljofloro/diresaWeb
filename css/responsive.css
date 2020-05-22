@@ -102,6 +102,14 @@
   {
     margin-right: -2em;
   }
+  tbody svg image{
+    width: 20px;
+    height: 20px;
+  }
+  .table .thead-blue th{
+    padding:0.3em 1em 0.3em 1em; 
+    height: 2em;
+  }
 
 }
 

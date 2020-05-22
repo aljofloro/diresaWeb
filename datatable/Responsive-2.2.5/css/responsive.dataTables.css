@@ -16,7 +16,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control {
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td.dtr-control:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control:before {
-  top: 50%;
+  top: 5%;
   left: 5px;
   height: 14px;
   width: 14px;
