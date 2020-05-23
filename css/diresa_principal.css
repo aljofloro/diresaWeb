@@ -71,6 +71,7 @@ ul
 	font-size: 0.9rem;
 	color: #92b8dd;
 }
+
 .navbar-toggler-icon{
   background-image: url('../img/navbar/toggler.png');
   font-size: x-small;
@@ -164,7 +165,7 @@ nav.navbar ul li {
 .nav li a:hover,
 .nav li.active a
 {
-	color: #3c495b;
+	color: #ba2b31;
 }
 /*********************************
 4. Home
@@ -186,7 +187,7 @@ nav.navbar ul li {
 /*********************************
 5.NOTICIAS
 *********************************/
-.site-section {
+.site-section-noticias {
   padding: 6em 0 5em 2em; 
 }
 
@@ -277,6 +278,9 @@ nav.navbar ul li {
 /*********************************
 6.ACCESOS
 *********************************/
+.site-section {
+  padding: 6em 0 5em 0em; 
+}
 .accesos
 {
 	width: 100%;
@@ -405,15 +409,53 @@ svg:focus{
 9. partners2
 *********************************/
 .site-sectionpartner2{
-  padding: 4em 1em 4em 2em; 
+  padding: 6em 0em 5em 9.5em; 
 }
 .partners2
 {
 	width: 100%;
   background: #f2f2f2;
-  text-align: center;
+  
 }
-
+.partners_slider_container
+{
+	width: calc(100% + 20px);
+	left: -50px;
+}
+.partners_slider
+{
+	height: 150px;
+}
+.partner_item
+{
+	height: 100%;
+	cursor: pointer;
+}
+.partner_item img
+{
+  position: relative;
+  padding-left: 4em;
+	width: 110% !important;
+	top: 50%;
+	left: 500%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.partner_item:hover img
+{
+	-webkit-filter: grayscale(0%);
+  	filter: grayscale(0%);
+}
 /*********************************
 10. footer
 *********************************/
@@ -532,7 +574,7 @@ svg:focus{
 5.NOTICIAS
 *********************************/
 .site-section-administracion {
-  padding: 6em 0 5em 2em; 
+  padding: 6em 0 5em 0em; 
 }
 .administracion{
   background-color: #ffffff;
@@ -625,3 +667,127 @@ div.dataTables_wrapper div.dataTables_length label {
 select {
   font-family: "Nexa Light"!important ;
 }
+#loadMore {
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+#loadMore a {
+  background: #ffffff;
+  border-radius: 100%;
+  height: 75px;
+  color: #ba2831;
+  display: inline-block;
+  padding: 10px 30px;
+  transition: all 0.25s ease-out;
+  -webkit-font-smoothing: antialiased;
+}
+#loadMore a:hover {
+  background-color: #042a63;
+}
+#loadMore a i {
+  padding-top: 2px;
+}
+
+/*contact-html*/
+.contact_form
+{
+  font-family: "Nexa Light";
+  font-size:1em;
+	padding-right: 10px;
+}
+.comment_form
+{
+	margin-top: 35px;
+}
+.comment_input
+{
+	width: 100%;
+	height: 46px;
+	border: solid 1px #d9d9d9;
+	border-radius: 3px;
+	padding-left: 19px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #2c3145;
+}
+.comment_form > div:not(:last-child)
+{
+	margin-bottom: 25px;
+}
+.comment_input:focus
+{
+	border: solid 1px #14bdee;
+	outline: none;
+}
+.comment_textarea
+{
+	width: 100%;
+	height: 150px;
+	padding-top: 15px;
+}
+.comment_button
+{
+	width: 150px;
+	height: 46px;
+	background: #14bdee;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 15px;
+}
+.comment_button:hover
+{
+	box-shadow: 0px 5px 40px rgba(0,0,0,0.25);
+}
+.contact_info
+{
+	padding-left: 45px;
+}
+.contact_info_text
+{
+	margin-top: 27px;
+}
+
+/* documentos_de_gestion*/
+.collapsible-link::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+
+
+
+
