@@ -159,13 +159,19 @@ nav.navbar ul li {
 .nav li a
 {
   font-family: "Nexa Bold",serif;
-  font-size: 0.8rem;
+  font-size: 0.763rem;
   color:#3c495b;
 }
 .nav li a:hover,
 .nav li.active a
 {
 	color: #ba2b31;
+}
+.nav li .dropdown-menu a{
+  color: #3c495b;
+}
+.nav li .dropdown-item:hover{
+  background-color: #f3fbff;
 }
 /*********************************
 4. Home
@@ -234,6 +240,46 @@ nav.navbar ul li {
 {
 	max-width: 95%;
 }
+.MultiCarousel 
+{ 
+  float: left; 
+  overflow: hidden; 
+  padding: 0 15px 15px 15px;
+  width: 100%; 
+  position:relative; 
+}
+.MultiCarousel .MultiCarousel-inner 
+{ 
+  transition: 1s ease all; 
+  float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item
+{ 
+  float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div 
+{ 
+  padding:10px; 
+  margin:10px; 
+  color:#666;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst 
+{ 
+  position:absolute; 
+  border-radius:50%;
+  top:calc(50% - 20px); 
+}
+.MultiCarousel .leftLst 
+{ 
+  left:0; 
+}
+.MultiCarousel .rightLst { 
+  right:0; 
+}
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over 
+{ pointer-events: none; 
+  background:#ccc; 
+}
 .noticias_descr_body
 {
 	padding-top: 1em;
@@ -260,7 +306,7 @@ nav.navbar ul li {
   margin-bottom: 1.2em;
   text-align: justify;
 }
-.noticias .btn{
+.noticias .noticias_descr_footer .btn{
   border-radius: 30px;
   height: 2.5em; 
   width: 7em;
@@ -270,7 +316,7 @@ nav.navbar ul li {
   border-color: #ff1d25;
   font-family: "Nexa Light",serif;
 }
-.noticias .btn:hover{
+.noticias .noticias_descr_footer .btn:hover{
   background-color:#ff1d25;
   color: #ffffff;
 }
@@ -324,6 +370,13 @@ nav.navbar ul li {
 svg:focus{
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
   
+}
+#botonclases {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  border: 1px solid #ff1d25;
+  background-color: #ff1d25;
 }
 /*********************************
 7. partners
@@ -404,7 +457,19 @@ svg:focus{
   border-radius: 0.7rem;
   height: 100%;
 }
-
+#botondoc {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  color:#ba2831;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+}
+.collapse.dont-collapse-sm {
+  visibility: visible;
+  display: block;
+  height: auto !important;
+}
 /*********************************
 9. partners2
 *********************************/
@@ -570,124 +635,6 @@ svg:focus{
   transform: translate3d(0, 0, 0);
 }
 
-/*********************************
-5.NOTICIAS
-*********************************/
-.site-section-administracion {
-  padding: 6em 0 5em 0em; 
-}
-.administracion{
-  background-color: #ffffff;
-}
-
-/*TABLE*/
-.table{
-  font-family: "Nexa Bold";
-  text-transform: uppercase;
-  border:none !important;
-  border-collapse: separate;
-  border-spacing: 0 18px !important;
-}
-.table td, .table th {
-  border: 1px solid #caf9ca !important;
-}
-/*THEAD*/
-.table .thead-blue th{
-    color: #4d4d4d;
-    background-color: #caf9ca;
-    border-color: #caf9ca;
-    padding:1em 1em 1em 1em; 
-    vertical-align: middle;
-    height: 4em;
-    text-align: left;
-}
-.table .thead-blue .numero{
-  border-right: solid #ffffff !important;  
-  text-align: center;
-}
-table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting {
-  padding-right: 2em !important;
-}
-table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
-  content: "" !important;
-}
-table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
-  content: "" !important;
-}
-/*TBODY*/
-.table-bordered td{
-  border: 1px solid #caf9ca !important;
-  padding:2em !important;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0,0,0,0) !important;
-}
-tbody .texto{
-  border-right: none  !important;
-}
-tbody .download{
-  border-left: none !important;
-}
-
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-
-/*page*/
-.page-item.active .page-link {
-  color:#4d4d4d;
-  background-color: #caf9ca !important;
-  border-color: #caf9ca !important;
-  font-family: "Nexa Bold";
-}
-
-.page-link {
-  color: #4d4d4d;
-  font-family: "Nexa Light";
-}
-.custom-select {
-  border: 1px solid #caf9ca !important;
-  border-radius: none !important;
-}
-div.dataTables_wrapper div.dataTables_filter{
- display: none;
-}
-
-div.dataTables_wrapper div.dataTables_length {
-  text-align: right !important;
-}
-div.dataTables_wrapper div.dataTables_length label {
-  font-weight: normal !important;
-  white-space: nowrap !important;
-  text-align: left !important;
-}
-select {
-  font-family: "Nexa Light"!important ;
-}
-#loadMore {
-  padding-top: 30px;
-  text-align: center;
-  width: 100%;
-}
-#loadMore a {
-  background: #ffffff;
-  border-radius: 100%;
-  height: 75px;
-  color: #ba2831;
-  display: inline-block;
-  padding: 10px 30px;
-  transition: all 0.25s ease-out;
-  -webkit-font-smoothing: antialiased;
-}
-#loadMore a:hover {
-  background-color: #042a63;
-}
-#loadMore a i {
-  padding-top: 2px;
-}
 
 /*contact-html*/
 .contact_form
@@ -754,40 +701,107 @@ select {
 	margin-top: 27px;
 }
 
-/* documentos_de_gestion*/
+/*INSTITUCIÓN*/
+/*INSTITUCIÓN INFORMACIÓN*/
+.site-section-seccion {
+  padding: 6em 0 5em 6em; 
+}
+.institucion{
+  margin: 2em 6em 2em 6em;
+}
+.btn-institucion{
+  font-family:"Nexa Bold";
+  font-size:0.8em;
+  color: #5c5d5e;
+  background-color: #ffffff;
+  border: none;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+.btn-institucion:not(:disabled):not(.disabled).active, .btn-institucion:not(:disabled):not(.disabled):active, .show>.btn-institucion.dropdown-toggle {
+  color: #68b7f7;
+  background-color: #ffffff;
+  border-color: #68b7f7;
+}
+.btn-primary:hover {
+  color: #68b7f7;
+  background-color: transparent;
+  border-color: #68b7f7;
+}
+.btn-primary.focus, .btn-primary:focus {
+  color: #68b7f7;
+  background-color:none!important;
+  border-top-color: #68b7f7;
+  border-right-color: #68b7f7;
+  border-left-color: #68b7f7;
+}
+.bg-lead{
+ background-color: #f9fafa;
+}
+a.text-dark{
+  font-family:"Nexa Bold";
+  font-size:1.1em;
+  color:#4d4d4d!important;
+}
+a.text-dark:focus, a.text-dark:hover {
+  color: #4d4d4d!important;
+  text-decoration: none;
+}
 .collapsible-link::before {
   content: '';
   width: 14px;
   height: 2px;
-  background: #333;
+  background: #76b4fc;
   position: absolute;
   top: calc(50% - 1px);
   right: 1rem;
   display: block;
   transition: all 0.3s;
 }
-
-/* Vertical line */
 .collapsible-link::after {
   content: '';
   width: 2px;
   height: 14px;
-  background: #333;
+  background: #76b4fc;
   position: absolute;
   top: calc(50% - 7px);
   right: calc(1rem + 6px);
   display: block;
   transition: all 0.3s;
 }
-
 .collapsible-link[aria-expanded='true']::after {
   transform: rotate(90deg) translateX(-1px);
 }
-
 .collapsible-link[aria-expanded='true']::before {
   transform: rotate(180deg);
 }
-
-
-
-
+.card{
+  border-top:none!important;
+  border-right:none!important;
+  border-left:none!important;
+  border-bottom: 1px solid #e7e7f5!important;
+}
+/*AUTORIDADES*/
+.autoridades .section_subtitle{
+  text-align: center;
+}
+.autoridades .section_subtitle .nombre{
+  font-size: 1.5em;
+  font-family:"Nexa Bold";
+}
+/*CONSEJO*/
+.consejo .section_subtitle{
+  text-align: center;
+}
+/*DIRECTORIO*/
+.directorio .texto{
+  font-size: 1rem;
+}
+.directorio .textoinfo{
+  font-family: "Nexa Light";
+  font-size:1rem;
+  text-transform: capitalize;
+}
+tbody .textodirectorio{
+  border-right: 1px solid #caf9ca !important
+}
