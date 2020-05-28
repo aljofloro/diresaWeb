@@ -8,10 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/regular.min.css">
 	<link rel="stylesheet" type="text/css" href="vendor/components/font-awesome/css/solid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/diresa_principal.css">
-	<link rel="stylesheet" type="text/css" href="css/administracion.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="datatable/DataTables-1.10.21/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="datatable/Responsive-2.2.5/css/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="datatable/DataTables-1.10.21/css/jquery.dataTables.min.css">
 </head>

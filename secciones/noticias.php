@@ -70,8 +70,8 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn btn-primary leftLst"><</button>
-						<button class="btn btn-primary rightLst">></button>
+						<button class="btn btn-primary leftLst d-lg-none d-md-none"><</button>
+						<button class="btn btn-primary rightLst d-lg-none d-md-none">></button>
 					</div>
 				</div>
 			</div>

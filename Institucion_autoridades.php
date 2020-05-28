@@ -24,7 +24,7 @@ include_once("secciones/head.php");
                 </p>
             </div>
             <div class="row">
-                <div class="mx-auto ">
+                <div class="mx-auto">
                     <div class="collapse" id="collapseExample">
                         <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
                             <h2 class="mb-md-4">DIRECTOR REGIONAL</h2>

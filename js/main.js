@@ -3,20 +3,20 @@
  *
  * ------------------------------------------------------------------- */
 
-(function($) {
-   /* Back to Top
-    * ------------------------------------------------------ */
-    var clBackToTop = function() {
-        
-        var pxShow      = 500,
+(function ($) {
+    /* Back to Top
+     * ------------------------------------------------------ */
+    var clBackToTop = function () {
+
+        var pxShow = 500,
             goTopButton = $(".go-top")
 
         // Show or hide the button
         if ($(window).scrollTop() >= pxShow) goTopButton.addClass('link-is-visible');
 
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             if ($(window).scrollTop() >= pxShow) {
-                if(!goTopButton.hasClass('link-is-visible')) goTopButton.addClass('link-is-visible')
+                if (!goTopButton.hasClass('link-is-visible')) goTopButton.addClass('link-is-visible')
             } else {
                 goTopButton.removeClass('link-is-visible')
             }
@@ -24,119 +24,131 @@
     };
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+    /* Initialize
+     * ------------------------------------------------------ */
     (function ssInit() {
         clBackToTop();
     })();
-        
+
 })(jQuery);
 
-$(document).ready(function()
-{
-	"use strict";
-/*BOTON DE + DE ACCESOS*/
-	$("#botonclases").click(function(){
-		$("#collapse1").removeClass("col-sm-none");
-		$("#collapse2").removeClass("col-sm-none");
-		$("#collapse3").removeClass("col-sm-none");
-		$("#collapse4").removeClass("col-sm-none");
-		$("#collapse5").removeClass("col-sm-none");
-		$("#btn_context").addClass("d-none");
+$(document).ready(function () {
+
+    initPartnersSlider();
+    initPartnersSlider2();
+    "use strict";
+    /*BOTON DE + DE ACCESOS*/
+    $("#botonclases").click(function () {
+        $("#collapse1").removeClass("col-sm-none");
+        $("#collapse2").removeClass("col-sm-none");
+        $("#collapse3").removeClass("col-sm-none");
+        $("#collapse4").removeClass("col-sm-none");
+        $("#collapse5").removeClass("col-sm-none");
+        $("#btn_context").addClass("d-none");
     });
-/*BOTON DE + DOCUMENTOS*/
-	$("#botondoc").click(function(){
-		$("#collapsedoc1").removeClass("col-sm-none");
-		$("#collapsedoc2").removeClass("col-sm-none");
-		$("#collapsedoc3").removeClass("col-sm-none");
-		$("#collapsedoc4").removeClass("col-sm-none");
-		$("#collapsedoc5").removeClass("col-sm-none");
-		$("#btn_contextdoc").addClass("d-none");
-	});
-	
-	$('#example').DataTable();
-	initPartnersSlider();
-	initPartnersSlider2()
-/*SLIDE DE PARTNERS*/
-	function initPartnersSlider2()
-	{
-		if($('.partners_slider_partners').length)
-		{
-			var partnersSlider = $('.partners_slider_partners');
-			partnersSlider.owlCarousel(
-			{
-				loop:true,
-				autoplay:true,
-				smartSpeed:1200,
-				nav:false,
-				dots:false,
-				responsive:
-				{
-					0:
-					{
-						items:1
-					},
-					480:
-					{
-						items:2
-					},
-					720:
-					{
-						items:3
-					},
-					991:
-					{
-						items:4
-					},
-					1199:
-					{
-						items:6
-					}
-				}
-			});
-		}
-    }
+    /*BOTON DE + DOCUMENTOS*/
+    $("#botondoc").click(function () {
+        $("#collapsedoc1").removeClass("col-sm-none");
+        $("#collapsedoc2").removeClass("col-sm-none");
+        $("#collapsedoc3").removeClass("col-sm-none");
+        $("#collapsedoc4").removeClass("col-sm-none");
+        $("#collapsedoc5").removeClass("col-sm-none");
+        $("#btn_contextdoc").addClass("d-none");
+    });
+
+    /*TABLA DE CONVOCATORIAS*/
+    $('#convocatoria').DataTable({
+        "scrollX": true,
+
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+    });
+    /*TABLA GENERAL*/
+    $('#example').DataTable({
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+    });
     
-	function initPartnersSlider()
-	{
-		if($('.partners_slider').length)
-		{
-			var partnersSlider = $('.partners_slider');
-			partnersSlider.owlCarousel(
-			{
-				loop:true,
-				autoplay:true,
-				smartSpeed:1200,
-				nav:false,
-				dots:false,
-				responsive:
-				{
-					0:
-					{
-						items:1
-					},
-					480:
-					{
-						items:2
-					},
-					720:
-					{
-						items:3
-					},
-					991:
-					{
-						items:4
-					},
-					1199:
-					{
-						items:4
-					}
-				}
-			});
-		}
+    /*SLIDE DE PARTNERS*/
+    function initPartnersSlider2() {
+        if ($('.partners_slider_partners').length) {
+            var partnersSlider = $('.partners_slider_partners');
+            partnersSlider.owlCarousel(
+                {
+                    loop: true,
+                    autoplay: true,
+                    smartSpeed: 1200,
+                    nav: false,
+                    dots: false,
+                    responsive:
+                    {
+                        0:
+                        {
+                            items: 1
+                        },
+                        480:
+                        {
+                            items: 2
+                        },
+                        720:
+                        {
+                            items: 3
+                        },
+                        991:
+                        {
+                            items: 4
+                        },
+                        1199:
+                        {
+                            items: 6
+                        }
+                    }
+                });
+        }
+    }
+
+    function initPartnersSlider() {
+        if ($('.partners_slider').length) {
+            var partnersSlider = $('.partners_slider');
+            partnersSlider.owlCarousel(
+                {
+                    loop: true,
+                    autoplay: true,
+                    smartSpeed: 1200,
+                    nav: false,
+                    dots: false,
+                    responsive:
+                    {
+                        0:
+                        {
+                            items: 1
+                        },
+                        480:
+                        {
+                            items: 2
+                        },
+                        720:
+                        {
+                            items: 3
+                        },
+                        991:
+                        {
+                            items: 4
+                        },
+                        1199:
+                        {
+                            items: 4
+                        }
+                    }
+                });
+        }
     }
     /*CAROUSEL DE NOTICIAS*/
-	var itemsMainDiv = ('.MultiCarousel');
+    var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
 

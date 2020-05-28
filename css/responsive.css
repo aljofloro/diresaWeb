@@ -18,15 +18,10 @@
     visibility: visible;
   }
   .col-lg-9ths {
-      width: 11.2%;
+      width: 11%;
       float: left;
       text-align: center; 
   }   
-  .col-lg-9ths {
-      width: 11.2%;
-      float: left;
-      text-align: center; 
-  }  
   .documento_ocultar{
     display: block;
   }  
@@ -35,6 +30,7 @@
     display: block;
     height: auto !important;
   }
+  
   
 }
 @media only screen and (max-width: 991px)
@@ -56,19 +52,11 @@
 		width: 100%;
 		left: -40px;
 	}
-  .footer {
-    padding: 3em 0em 2em 0em; 
-    margin-left: 0em;
-  }
-  .iniciofooter{
-    margin-left: -1.7em;
-  }
-  .footer .divisionfooter a{
-    margin-bottom: 0em;
-  }
+
   .go-top {
     right: 6.8%;
   }
+
 
 
 }
@@ -115,12 +103,12 @@
   .site-section-headingdocumentos {
     padding: 3em 2em 0 2em; 
   } 
-  .footer {
-    padding: 3em 0; 
-  } 
   .footer p{
     text-align: center;
   }
+  .footer_end{
+    margin-left: -2em;
+    }
   .col-sm-12ths {
     width: 100%;
     line-height: 0;
@@ -133,26 +121,11 @@
     float: left;
   }
 
-  .divisionfooter{
-    margin-left: -2em;;
-  }
-  .footer .divisionfooter a{
-    margin-bottom: 0em;
-  }
-
-  .footer_social ul li:not(:last-child)
-  {
-    margin-right: -2em;
-  }
-
   tbody svg image{
     width: 20px;
     height: 20px;
   }
-  .table .thead-blue th{
-    padding:0.3em 1em 0.3em 1em; 
-    height: 2em;
-  }
+
 
   /*INSTITUCION*/
   .institucion{

@@ -11,7 +11,7 @@ include_once("secciones/head.php");
     <?php
     include_once("secciones/home.php");
     ?>
-    <div class="site-section">
+    <div class="site-section-seccion">
         <div class="container">
             <div class="row">
                 <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
@@ -21,14 +21,14 @@ include_once("secciones/head.php");
             <table id="example" class=" table table-striped display " style="width:100%">
                 <thead class="thead-blue">
                     <tr>
-                        <th class="numero">N°</th>
-                        <th>DATOS</th>
+                        <th class="linea">N°</th>
+                        <th >DATOS</th>
                     </tr>
                 </thead>
-                <tbody class="directorio">
+                <tbody class="tabla">
                     <tr>
                         <td>001</td>
-                        <td class="textodirectorio">
+                        <td class="textotabla">
                             <p>DIRECCIÓN GENERAL</p>
                             <div class="row textoinfo">
                                 <div class="col-md-4">

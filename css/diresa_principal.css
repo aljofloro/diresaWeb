@@ -25,6 +25,10 @@ ul
 	list-style: none;
 	margin-bottom: 0px;
 }
+a:link
+{
+text-decoration:none;
+}
 /*********************************
 3. Header
 *********************************/
@@ -77,14 +81,22 @@ ul
   font-size: x-small;
 }
 .navbar-brand img{
-  float: right;
+  /*float: right;*/
 }
 .spanDiresa{
   font-family: "Calibri Bold", serif;
   font-size: 0.7rem;
   color:#fff;
 }
-
+.menuimagen{
+  padding-right:0!important;
+  
+}
+.menusm{
+  font-size: 0.5rem;
+  padding-top: 1em;
+  color:#ffffff;
+}
 /* cambiar tipo de letra */
 nav.navbar ul li {
   font-family: "Nexa Bold",serif;
@@ -306,7 +318,7 @@ nav.navbar ul li {
   margin-bottom: 1.2em;
   text-align: justify;
 }
-.noticias .noticias_descr_footer .btn{
+.noticias_descr_footer .btn{
   border-radius: 30px;
   height: 2.5em; 
   width: 7em;
@@ -316,7 +328,7 @@ nav.navbar ul li {
   border-color: #ff1d25;
   font-family: "Nexa Light",serif;
 }
-.noticias .noticias_descr_footer .btn:hover{
+.noticias_descr_footer .btn:hover{
   background-color:#ff1d25;
   color: #ffffff;
 }
@@ -531,43 +543,40 @@ svg:focus{
 .footer-menu{
   width: 100%;
 }
-.divisionfooter{
-  margin-left: 1em;;
-}
-.footer .divisionfooter a{
+.footer .iniciofooter a{
   font-family: "Nexa Bold";
   font-size: 0.6em;
   color:#ffffff;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
-.iniciofooter{
-  margin-left: -1em;
+.footer .iniciofooter a:hover{
+  color:#f4db05;
+}
+.footer_end{
+margin-left: 0.6em;
 }
 .footer p{
-  color:#85898e;
   font-family: "Nexa Light";
-  font-size: 0.7rem;
+  font-size: 0.6em;
 }
 .footer_social ul li
 {
 	display: inline-block;
 	width: 3em;
-	height:3em;
+  height:3em;
 }
 .footer_social ul li:not(:last-child)
 {
-	margin-right: 0.8em;
+	margin-right: 0.1em;
 }
 .footer_social ul li a
 {
 	display: block;
 	position: relative;
-	text-align: center;
 }
 .footer_social ul li a i
 {
 	color: #FFFFFF;
-	line-height: 3em;
 }
 
 .col-xs-9ths,
@@ -641,26 +650,27 @@ svg:focus{
 {
   font-family: "Nexa Light";
   font-size:1em;
-	padding-right: 10px;
+  width: 40em;
 }
 .comment_form
 {
-	margin-top: 35px;
+  margin-top: 30px;
+  
 }
 .comment_input
 {
 	width: 100%;
-	height: 46px;
+	height: calc(1.5em + .75rem + 2px);
 	border: solid 1px #d9d9d9;
 	border-radius: 3px;
-	padding-left: 19px;
-	font-size: 16px;
+	padding-left: 10px;
 	font-weight: 400;
-	color: #2c3145;
+  color: #2c3145;
+  background-color: #f2f2f2;
 }
 .comment_form > div:not(:last-child)
 {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 .comment_input:focus
 {
@@ -671,40 +681,46 @@ svg:focus{
 {
 	width: 100%;
 	height: 150px;
-	padding-top: 15px;
 }
 .comment_button
 {
-	width: 150px;
-	height: 46px;
-	background: #14bdee;
+	width: calc(7em + .75rem + 2px);
+	height: calc(2em + .75rem + 2px);
+	background: transparent;
 	text-transform: uppercase;
-	font-size: 14px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ff1d25 !important;
 	cursor: pointer;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	margin-top: 15px;
+  border:solid 1px #ff1d25;
+	border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 1.7em;
+  font-family: "Nexa Light";
+  outline: none;
+  box-shadow: none!important;
+  text-decoration:none;
 }
 .comment_button:hover
 {
-	box-shadow: 0px 5px 40px rgba(0,0,0,0.25);
+  background-color: #ff1d25!important;
+  box-shadow: none!important;
+  color:#ffffff!important;
 }
-.contact_info
+.comment_button:focus
 {
-	padding-left: 45px;
+  outline: none!important;
+  background-color: #ff1d25!important;
+  box-shadow: none!important;
+  color:#ffffff!important;
 }
-.contact_info_text
-{
-	margin-top: 27px;
+.form-control{
+  background-color: #f2f2f2;
 }
 
 /*INSTITUCIÓN*/
 /*INSTITUCIÓN INFORMACIÓN*/
 .site-section-seccion {
-  padding: 6em 0 5em 6em; 
+  padding: 6em 5em 5em 6em; 
 }
 .institucion{
   margin: 2em 6em 2em 6em;
@@ -781,6 +797,9 @@ a.text-dark:focus, a.text-dark:hover {
   border-left:none!important;
   border-bottom: 1px solid #e7e7f5!important;
 }
+.card-header{
+  background-color: #f9fafa;
+}
 /*AUTORIDADES*/
 .autoridades .section_subtitle{
   text-align: center;
@@ -794,14 +813,147 @@ a.text-dark:focus, a.text-dark:hover {
   text-align: center;
 }
 /*DIRECTORIO*/
-.directorio .texto{
+.tabla .texto{
   font-size: 1rem;
 }
-.directorio .textoinfo{
+.tabla .textoinfo{
   font-family: "Nexa Light";
   font-size:1rem;
   text-transform: capitalize;
 }
-tbody .textodirectorio{
+tbody .textotabla{
   border-right: 1px solid #caf9ca !important
+}
+/*CONVOCATORIAS*/
+
+/*TABLE*/
+.table{
+  font-family: "Nexa Bold";
+  text-transform: uppercase;
+  border:none !important;
+  border-collapse: separate;
+  border-spacing: 0 18px !important;
+}
+.table td {
+  border: 1px solid #caf9ca !important;
+}
+/*THEAD*/
+.table .thead-blue th{
+    color: #4d4d4d;
+    background-color: #caf9ca;
+    border-color: #caf9ca;
+    padding:1em 1em 1em 1em; 
+    vertical-align: middle;
+    height: 4em;
+    text-align: left;
+}
+.table .thead-blue .linea{
+  border-right: solid #ffffff !important;  
+  text-align: center;
+}
+/*TBODY*/
+.table-bordered td{
+  border: 1px solid #caf9ca !important;
+  padding:2em !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,0) !important;
+}
+tbody .texto{
+  border-right: none  !important;
+}
+tbody .download{
+  border-left: none !important;
+  text-align: center;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+/*page*/
+.page-item.active .page-link {
+  color:#4d4d4d;
+  background-color: #caf9ca !important;
+  border-color: #caf9ca !important;
+  font-family: "Nexa Bold";
+}
+
+.page-link {
+  color: #4d4d4d;
+  font-family: "Nexa Light";
+}
+.custom-select {
+  border: 1px solid #caf9ca !important;
+  border-radius: none !important;
+}
+div.dataTables_wrapper div.dataTables_filter{
+ display: none;
+}
+
+div.dataTables_wrapper div.dataTables_length {
+  text-align: right !important;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+select {
+  font-family: "Nexa Light"!important ;
+}
+.section_subtitle
+{
+line-height: 1.5em;
+  margin-top: 1.8em;
+  font-size: 1rem;
+  font-family: "Nexa Light";
+}
+/*CAS*/
+.tabla .textoinfocas{
+  font-family: "Nexa Light";
+  font-size:1rem;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+.tabla .comunicado{
+  color:red;
+}
+/*NOTICIAS INTERIOR*/
+/*documentos de gestion*/
+.btndescargar
+{
+	width: calc(7em + .75rem + 2px);
+	height: calc(2em + .75rem + 2px);
+	background: transparent;
+	text-transform: uppercase;
+	color: #76b4fc !important;
+	cursor: pointer;
+  border:solid 1px #76b4fc;
+  font-family: "Nexa Light";
+  outline: none;
+  box-shadow: none!important;
+  text-decoration:none;
+}
+.btndescargar:hover
+{
+  background-color: #76b4fc!important;
+  box-shadow: none!important;
+  color:#ffffff!important;
+}
+.btndescargar:focus
+{
+  outline: none!important;
+  background-color: #76b4fc!important;
+  box-shadow: none!important;
+  color:#ffffff!important;
+}
+.tabla_documentos{
+  border-collapse: collapse!important;
+}
+.tabla_documentos .texto{
+  font-size: 1rem;
+  text-transform: capitalize;
 }

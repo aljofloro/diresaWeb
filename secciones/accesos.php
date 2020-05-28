@@ -118,7 +118,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row mt-5" id="btn_context">
+		<div class="row mt-5 d-lg-none d-md-none" id="btn_context">
 			<div class="mx-auto">
 				<button id="botonclases" class="btn btn-success d-block " type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4 collapse5">
 					<i class="fa fa-plus fa-2x " aria-hidden="true"></i>
