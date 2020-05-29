@@ -594,7 +594,7 @@ margin-left: 0.6em;
  .go-top {
   position: fixed;
   bottom:0px;
-  right: 10%;
+  right: 7%;
   z-index: 600;
   opacity: 0;
   visibility: hidden;
@@ -723,7 +723,10 @@ margin-left: 0.6em;
   padding: 6em 5em 5em 6em; 
 }
 .institucion{
-  margin: 2em 6em 2em 6em;
+  width: 100%!important;
+}
+.font-weight-light{
+  font-family: "Nexa Light";
 }
 .btn-institucion{
   font-family:"Nexa Bold";
@@ -739,12 +742,12 @@ margin-left: 0.6em;
   background-color: #ffffff;
   border-color: #68b7f7;
 }
-.btn-primary:hover {
+.btn-institucion:hover {
   color: #68b7f7;
   background-color: transparent;
   border-color: #68b7f7;
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-institucion.focus, .btn-institucion:focus {
   color: #68b7f7;
   background-color:none!important;
   border-top-color: #68b7f7;
@@ -756,7 +759,7 @@ margin-left: 0.6em;
 }
 a.text-dark{
   font-family:"Nexa Bold";
-  font-size:1.1em;
+  font-size:1.3em;
   color:#4d4d4d!important;
 }
 a.text-dark:focus, a.text-dark:hover {
@@ -800,6 +803,7 @@ a.text-dark:focus, a.text-dark:hover {
 .card-header{
   background-color: #f9fafa;
 }
+
 /*AUTORIDADES*/
 .autoridades .section_subtitle{
   text-align: center;

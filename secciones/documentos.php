@@ -49,7 +49,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-6 col-lg-3 blogBox moreBox">
-				<a href="">
+				<a href="planeamientoestrategico.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">

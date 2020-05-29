@@ -40,8 +40,8 @@
 			<div class="footer_social col-md-2 row flex-md-row-reverse">
 				<div class="mx-auto">
 					<ul>
-						<li><a href="#"><i class="fab fa-facebook-f fa-2x " aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f " aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
