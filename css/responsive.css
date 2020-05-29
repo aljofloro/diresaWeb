@@ -30,7 +30,9 @@
     display: block;
     height: auto !important;
   }
-  
+  .go-top {
+    right: 7%;
+  }
   
 }
 @media only screen and (max-width: 991px)

@@ -557,7 +557,7 @@ margin-left: 0.6em;
 }
 .footer p{
   font-family: "Nexa Light";
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 .footer_social ul li
 {
@@ -956,4 +956,9 @@ line-height: 1.5em;
 .tabla_documentos .texto{
   font-size: 1rem;
   text-transform: capitalize;
+}
+
+/*salud personas*/
+.documentositems .texto{
+  text-transform: none!important;
 }

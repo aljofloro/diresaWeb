@@ -31,13 +31,13 @@
 
 		</div>
 		<div class="footer_end row d-md-flex">
-			<div class="col-md-9 col-sm-12 ml-2">
+			<div class="col-md-10 col-sm-12 ml-2">
 				<p>DIRECCIÓN MATRIZ</br>Calle Los Nardos N 33 - Urb. Pescasseroli</br>© 2019 - DIRECCIÓN
 					REGIONAL DE
 					SALUD TACNA.</p>
 			</div>
 
-			<div class="footer_social col-md-3 row flex-md-row-reverse">
+			<div class="footer_social col-md-2 row flex-md-row-reverse">
 				<div class="mx-auto">
 					<ul>
 						<li><a href="#"><i class="fab fa-facebook-f fa-2x " aria-hidden="true"></i></a></li>
