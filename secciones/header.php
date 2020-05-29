@@ -50,17 +50,22 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="header_bar">
 		<div class="header_container">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<div class="d-flex flex-row align-items-center justify-content-start">
-							<nav class="navbar navbar-expand-sm justify-content-center">
+						<div class="d-flex flex-row align-items-center">
+							<nav class="navbar navbar-expand-sm ">
+
 								<div class="align-items-stretch my-auto d-flex d-md-none">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"></a>
+									<button class="navbar-toggler" type="button" data-toggle="collapse" 
+											data-target="#navbarCollapse" aria-controls="navbarCollapse" 
+											aria-expanded="false" aria-label="Toggle navigation">
 										<span class="navbar-toggler-icon"></span>
 									</button>
+
 									<div class="d-flex">
 										<div class="menuimagen col-6">
 											<a href="index.php" class="d-flex flex-row-reverse align-items-stretch mt-2"><img width="40%" class="img-fluid" src="img/logo/isologo.png" alt="RegionTacna"></a>
@@ -73,8 +78,10 @@
 											</div>
 										</div>
 									</div>
+									
 								</div>
-								<div class="collapse navbar-collapse " id="navbarNavDropdown">
+
+								<div class="collapse navbar-collapse " id="navbarCollapse">
 									<ul class="nav navbar-nav mr-auto">
 										<li class="nav-item active">
 											<a class="nav-link font-weight-bold" href="index.php">INICIO <span class="sr-only">(current)</span></a>
@@ -135,4 +142,5 @@
 			</div>
 		</div>
 	</div>
+
 </header>

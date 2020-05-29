@@ -54,6 +54,7 @@
 	</div>
 	<script src="js/jquery.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="vendor/components/jquery/jquery.slim.min.js"></script>
 	<script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
