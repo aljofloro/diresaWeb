@@ -63,7 +63,7 @@
 									</button>
 									<div class="d-flex">
 										<div class="menuimagen col-6">
-											<a href="index-php" class="d-flex flex-row-reverse align-items-stretch mt-2"><img width="40%" class="img-fluid" src="img/logo/isologo.png" alt="RegionTacna"></a>
+											<a href="index.php" class="d-flex flex-row-reverse align-items-stretch mt-2"><img width="40%" class="img-fluid" src="img/logo/isologo.png" alt="RegionTacna"></a>
 										</div>
 										<div class="col-2">
 											<div class="menusm d-flex flex-row">
