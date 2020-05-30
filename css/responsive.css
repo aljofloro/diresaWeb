@@ -103,6 +103,11 @@
   .accesos_body{
     padding: 0.1em 1em 1em 1em;
   }
+
+  .enlaces {
+    padding-left: 0%;
+  }
+
    .partners_slider_container
 	{
 		width: 100%;
