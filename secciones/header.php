@@ -57,9 +57,9 @@
 				<div class="row">
 					<div class="col">
 						<div class="d-flex flex-row align-items-center">
-							<nav class="navbar navbar-expand-sm ">
+							<nav class="navbar navbar-expand-md ">
 
-								<div class="align-items-stretch my-auto d-flex d-md-none">
+								<div class="align-items-stretch my-auto d-flex d-mn-none">
 									<button class="navbar-toggler" type="button" data-toggle="collapse" 
 											data-target="#navbarCollapse" aria-controls="navbarCollapse" 
 											aria-expanded="false" aria-label="Toggle navigation">
