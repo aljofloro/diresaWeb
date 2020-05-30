@@ -115,8 +115,6 @@ $(document).ready(function () {
     });
 
 
-    initPartnersSlider();
-    initPartnersSlider2();
     "use strict";
     /*BOTON DE + DE ACCESOS*/
     $("#botonclases").click(function () {
@@ -154,80 +152,6 @@ $(document).ready(function () {
         }
     });
     
-    /*SLIDE DE PARTNERS*/
-    function initPartnersSlider2() {
-        if ($('.partners_slider_partners').length) {
-            var partnersSlider = $('.partners_slider_partners');
-            partnersSlider.owlCarousel(
-                {
-                    loop: true,
-                    autoplay: true,
-                    smartSpeed: 1200,
-                    nav: false,
-                    dots: false,
-                    responsive:
-                    {
-                        0:
-                        {
-                            items: 1
-                        },
-                        480:
-                        {
-                            items: 2
-                        },
-                        720:
-                        {
-                            items: 3
-                        },
-                        991:
-                        {
-                            items: 4
-                        },
-                        1199:
-                        {
-                            items: 6
-                        }
-                    }
-                });
-        }
-    }
-
-    function initPartnersSlider() {
-        if ($('.partners_slider').length) {
-            var partnersSlider = $('.partners_slider');
-            partnersSlider.owlCarousel(
-                {
-                    loop: true,
-                    autoplay: true,
-                    smartSpeed: 1200,
-                    nav: false,
-                    dots: false,
-                    responsive:
-                    {
-                        0:
-                        {
-                            items: 1
-                        },
-                        480:
-                        {
-                            items: 2
-                        },
-                        720:
-                        {
-                            items: 3
-                        },
-                        991:
-                        {
-                            items: 4
-                        },
-                        1199:
-                        {
-                            items: 4
-                        }
-                    }
-                });
-        }
-    }
 
     /* DOCUMENTOS DE GESTION*/
     function myFunction() {

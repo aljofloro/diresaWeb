@@ -497,57 +497,7 @@ svg:focus{
   display: block;
   height: auto !important;
 }
-/*********************************
-9. partners2
-*********************************/
-.site-sectionpartner2{
-  padding: 6em 0em 5em 9.5em; 
-}
-.partners2
-{
-	width: 100%;
-  background: #f2f2f2;
-  
-}
-.partners_slider_container
-{
-	width: calc(100% + 20px);
-	left: -50px;
-}
-.partners_slider
-{
-	height: 150px;
-}
-.partner_item
-{
-	height: 100%;
-	cursor: pointer;
-}
-.partner_item img
-{
-  position: relative;
-  padding-left: 4em;
-	width: 110% !important;
-	top: 50%;
-	left: 500%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	-webkit-filter: grayscale(100%);
-  	filter: grayscale(100%);
-  	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.partner_item:hover img
-{
-	-webkit-filter: grayscale(0%);
-  	filter: grayscale(0%);
-}
+
 /*********************************
 10. footer
 *********************************/
