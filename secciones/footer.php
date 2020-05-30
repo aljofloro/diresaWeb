@@ -52,8 +52,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/jquery.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="vendor/components/jquery/jquery.min.js"></script>
 	<script src="datatable/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
 	<script src="datatable/DataTables-1.10.21/js/dataTables.bootstrap4.min.js"></script>
 	<script src="datatable/Responsive-2.2.5/js/dataTables.responsive.min.js"></script>
@@ -61,7 +60,6 @@
 	<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>	
-	
 	<script src="datatable/Responsive-2.2.5/js/responsive.bootstrap4.min.js"></script>
 
 </footer>
