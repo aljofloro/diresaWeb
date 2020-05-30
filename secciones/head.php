@@ -14,8 +14,4 @@
 	<link rel="stylesheet" type="text/css" href="datatable/DataTables-1.10.21/css/jquery.dataTables.min.css"/>
 	<link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2/dist/assets/owl.carousel.min.css"/>
 	<link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2/dist/assets/owl.theme.default.min.css"/>
-	<!--
-	<link rel="stylesheet" type="text/css" href="css/carousel.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
--->
 </head>

@@ -114,8 +114,6 @@ $(document).ready(function () {
         }
     });
 
-
-    "use strict";
     /*BOTON DE + DE ACCESOS*/
     $("#botonclases").click(function () {
         $("#collapse1").removeClass("col-sm-none");
@@ -138,7 +136,6 @@ $(document).ready(function () {
     /*TABLA DE CONVOCATORIAS*/
     $('#convocatoria').DataTable({
         "scrollX": true,
-
         "ordering": false,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
@@ -151,7 +148,7 @@ $(document).ready(function () {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         }
     });
-    
+
 
     /* DOCUMENTOS DE GESTION*/
     function myFunction() {
