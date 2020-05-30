@@ -50,7 +50,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="header_bar">
 		<div class="header_container">
 			<div class="container">

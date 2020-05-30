@@ -34,6 +34,19 @@
 
 $(document).ready(function () {
 
+    /** INIT Ddel BAnner */
+    $("#main-slider").owlCarousel({
+        loop: true,
+        dots: true,
+        nav: true,        
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+
     /** INIT noticias Carousel */
     $("#noticialCarousel").owlCarousel({
         loop:true,

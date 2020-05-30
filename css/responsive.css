@@ -85,6 +85,9 @@
 
 @media only screen and (max-width: 575px)
 {
+  #main-slider .owl-dots{
+    display: none;
+  }
   
   .collapse.dont-collapse-sm.col-sm-none{
     display: none !important;

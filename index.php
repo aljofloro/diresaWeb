@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <?php
+    require_once("config/config.php");
     include_once("secciones/head.php");
     ?>
 <body id="top">
