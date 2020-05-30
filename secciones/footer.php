@@ -61,6 +61,5 @@
 	<script src="vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="datatable/Responsive-2.2.5/js/responsive.bootstrap4.min.js"></script>
-
 </footer>
 </main>
