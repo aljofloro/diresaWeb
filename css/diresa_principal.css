@@ -391,7 +391,7 @@ svg:focus{
   background-color: #ff1d25;
 }
 /*********************************
-7. partners
+7. partners y enlaces
 *********************************/
 .owl-centered .owl-wrapper {
   display: table !important;
@@ -404,6 +404,15 @@ svg:focus{
 .owl-centered .owl-item > div {
   text-align: center;
 }
+
+.partner {
+  margin-bottom: 3%;
+}
+
+.enlaces{
+  margin: 2%;
+}
+
 
 /*********************************
 8.Documentos
@@ -563,6 +572,7 @@ margin-left: 0.6em;
 .footer p{
   font-family: "Nexa Light";
   font-size: 0.8em;
+  color:#fff
 }
 .footer_social ul li
 {

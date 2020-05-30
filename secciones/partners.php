@@ -1,4 +1,4 @@
-<div class="container ">
+<div class="container partner">
 	<div class="owl-carousel owl-centered" id="partnerDiresa">
 		<!-- Partner Item -->
 		<div>

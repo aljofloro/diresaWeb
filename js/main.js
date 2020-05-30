@@ -85,6 +85,36 @@ $(document).ready(function () {
             }
         }
     });
+
+    /** INIT de carousel partners2 - enlaces */
+    $("#enlacesDiresa").owlCarousel({
+        loop: true,
+        autoplay: true,
+        smartSpeed: 1200,
+        nav: false,
+        dots: false,
+        responsive:
+        {
+            0:
+            {
+                items: 1
+            },
+            480:
+            {
+                items: 2
+            },
+            720:
+            {
+                items: 3
+            },
+            991:
+            {
+                items: 4
+            }
+        }
+    });
+
+
     initPartnersSlider();
     initPartnersSlider2();
     "use strict";
