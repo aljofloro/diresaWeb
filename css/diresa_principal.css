@@ -862,6 +862,14 @@ tbody .textotabla{
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(0,0,0,0) !important;
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  border:none!important;
+  background:none!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:active{
+  box-shadow: none!important;
+}
 tbody .texto{
   border-right: none  !important;
 }
@@ -869,6 +877,7 @@ tbody .download{
   border-left: none !important;
   text-align: center;
 }
+
 tr {
   display: table-row;
   vertical-align: inherit;
@@ -964,4 +973,9 @@ line-height: 1.5em;
 /*salud personas*/
 .documentositems .texto{
   text-transform: none!important;
+}
+/*Medicamentos*/
+tbody .downloadmedicamento{
+    border-right: none !important;
+    border-left: none!important;
 }
