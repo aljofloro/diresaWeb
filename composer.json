@@ -2,7 +2,6 @@
     "require": {
         "components/jquery": "^3.4",
         "components/font-awesome": "^5.12",
-        "twbs/bootstrap": "^4.4",
-        "nahid/jsonq": "^5.2"
+        "twbs/bootstrap": "^4.4"
     }
 }
