@@ -7,6 +7,11 @@
 		</div>
 		<div class="row">
 			<div id="noticialCarousel" class="owl-carousel">
+			<?php
+			$Configuracion = Configuracion::getConfiguracion();
+			$jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_NOTICIAS_MAIN"),true));
+			$datos = $jsonq->data;
+			?>
 				<div class="item">
 					<div class="noticias_descr">
 						<div class="noticias_descr_image">

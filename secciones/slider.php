@@ -2,7 +2,10 @@
 <?php
 	$Configuracion = Configuracion::getConfiguracion();
 	$jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_BANNER"),true));
+	$error = $jsonq->error;
+	print_r($error);
 	$datos = $jsonq->data;
+	
 	foreach ($datos as $banner) {
 		$idBanner = $banner->id_banner;
 		$urlImagen = $banner->imagen;
