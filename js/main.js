@@ -148,12 +148,16 @@ $(document).ready(function () {
 
     /*TABLA DE CONVOCATORIAS*/
     $('#convocatoria').DataTable({
+        "destroy": true,
         "scrollX": true,
         "ordering": false,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
-        }
+        },
+        "lengthMenu": [[5, 10, 20, -1], [5, 10, 20, "Todas"]],
+        "dom": '<"selectConvocatoria"><"#top_convocatoria"l>t<"bottom"ip><"clear">'
     });
+
     /*TABLA GENERAL*/
     $('#example').DataTable({
         "ordering": false,
