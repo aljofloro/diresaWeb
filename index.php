@@ -26,7 +26,7 @@
     include_once("secciones/documentos.php");
     include_once("secciones/partners2.php");
   ?>
-    <footer>
+    <footer class="footer">
     <?php
       include_once("secciones/footer.php");
       include_once("secciones/loader.php");
