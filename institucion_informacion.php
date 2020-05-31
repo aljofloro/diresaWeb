@@ -37,8 +37,8 @@ include_once("secciones/head.php");
                 <div class="mx-auto">
                     <div class="collapse" id="misionvision">
                         <!-- Accordion -->
-                        <div class="institucion card-body d-flex m-5 ">
-                            <div class="col-md-10 mx-auto">
+                        <div class="institucion card-body d-flex mr-5  ml-md-5">
+                            <div class="col-md-10 mx-auto col-12">
                                 <div id="visionmision" class="accordion">
                                     <!-- Accordion item 1 -->
                                     <div class="card">

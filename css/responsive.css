@@ -155,11 +155,11 @@
 
 
   /*INSTITUCION*/
-  .institucion{
-    margin: 0em 2em 0em 2em;
-  }
   .site-section-seccion {
-    padding: 6em 0 5em 2em;
+    padding: 3em 5em 5em 3em; 
+  }
+  .institucion{
+    width: 100%!important;
   }
   .card-body {
     padding: 1rem;
