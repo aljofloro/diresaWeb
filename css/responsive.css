@@ -164,6 +164,13 @@
   .card-body {
     padding: 1rem;
   }
+  #main-slider .owl-prev { 
+   display: none!important;
+  } 
+  
+  #main-slider .owl-next { 
+    display: none !important;
+  }
 }
 
 
