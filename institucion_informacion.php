@@ -44,7 +44,7 @@
                 </div>
                 <div class="row">
                     <div class="mx-auto">
-                        <div class="collapse show" id="misionvision">
+                        <div class="collapse multi-collapse show" id="misionvision">
                             <!-- Accordion -->
                             <div class="institucion card-body d-flex mr-5  ml-md-5">
                                 <div class="col-md-10 mx-auto col-12">
@@ -133,7 +133,7 @@
                 </div>
                 <div class="row">
                     <div class="mx-auto">
-                        <div class="collapse" id="reseña">
+                        <div class="collapse multi-collapse" id="reseña">
                             <div class="col-md-10 mx-auto">
                                 <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
                                     <h2 class="mb-md-4">RESEÑA HISTÓRICA</h2>
