@@ -38,37 +38,37 @@ $(document).ready(function () {
     $("#main-slider").owlCarousel({
         loop: true,
         dots: true,
-        nav: true,        
+        nav: true,
         autoplay: true,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             }
         }
     });
 
     /** INIT noticias Carousel */
     $("#noticialCarousel").owlCarousel({
-        loop:true,
-        margin:10,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             }
         }
     });
 
     /** INIT de carousel partners */
     $("#partnerDiresa").owlCarousel({
-        loop:true,
+        loop: true,
         autoplay: true,
         nav: false,
         dots: false,
-        margin:10,
-        responsive:{
+        margin: 10,
+        responsive: {
             0:
             {
                 items: 1,
@@ -93,7 +93,7 @@ $(document).ready(function () {
             1199:
             {
                 items: 6,
-                loop:false,
+                loop: false,
                 autoplay: false
             }
         }
@@ -177,5 +177,11 @@ $(document).ready(function () {
         }
     }
 
-    
+    /*informacion*/
+
+    $('.collapse').on('show.bs.collapse', function () {
+        $('.collapse.show').collapse('toggle');
+    });
+
+
 });

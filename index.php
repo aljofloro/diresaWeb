@@ -31,6 +31,7 @@
       include_once("secciones/footer.php");
       include_once("secciones/loader.php");
     ?>
+    
     </footer>
   </main>
 </body>
