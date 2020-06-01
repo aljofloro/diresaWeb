@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <?php
     require_once("config/config.php");
@@ -25,7 +24,7 @@
             <div class="container">
                 <div class="row">
                     <p>
-                        <a class="btn-institucion btn" data-toggle="collapse" href="#director" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn-institucion btn active" data-toggle="collapse" href="#director" role="button" aria-expanded="false" aria-controls="collapseExample">
                             DIRECTOR REGIONAL
                         </a>
                         <a class="btn-institucion btn" data-toggle="collapse" href="#subdirectora" role="button" aria-expanded="false" aria-controls="collapseExample">

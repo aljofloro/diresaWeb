@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<?php
-include_once("secciones/head.php");
-?>
+<html lang="es">
+
+<head>
+    <?php
+    require_once("config/config.php");
+    include_once("secciones/head.php");
+    include_once("secciones/estilos.php");
+    ?>
+</head>
 
 <body id="top">
-    <?php
-    include_once("secciones/header.php");
-    ?>
-    <?php
-    include_once("secciones/home.php");
-    ?>
+    <header>
+        <?php
+        include_once("secciones/horario.php");
+        include_once("secciones/presentacion.php");
+        include_once("secciones/menu.php");
+        ?>
+    </header>
+    <main role="main">
+        <?php
+        include_once("secciones/slider.php");
+        ?>
     <div class="site-section">
         <div class="container">
             <div class="row">
@@ -21,14 +31,14 @@ include_once("secciones/head.php");
             <table id="convocatoria" class="table table-striped display nowrap" style="width:100%">
                 <thead class="thead-blue">
                     <tr>
-                        <th class="numero">N°</th>
-                        <th>DESCRIPCIÓN</th>
-                        <th>BASES</th>
-                        <th>APTOS</th>
-                        <th>PRUEBAS CONOCIMIENTO</th>
-                        <th>CALIFICACIÓN CURRICULAR</th>
-                        <th>ENTREVISTA PERSONAL</th>
-                        <th>RESULTADO FINAL</th>
+                        <th class="linea">N°</th>
+                        <th class="linea">DESCRIPCIÓN</th>
+                        <th class="linea">BASES</th>
+                        <th class="linea">APTOS</th>
+                        <th class="linea">PRUEBAS CONOCIMIENTO</th>
+                        <th class="linea">CALIFICACIÓN CURRICULAR</th>
+                        <th class="linea">ENTREVISTA PERSONAL</th>
+                        <th class="linea">RESULTADO FINAL</th>
                     </tr>
                 </thead>
                 <tbody class="tabla">
@@ -37,12 +47,12 @@ include_once("secciones/head.php");
                         <td class="textotabla">
                             <p>CONVOCATORIA Nº 019-2019</p>
                             <p class="textoinfocas">
-                                    DIRECCION REGIONAL DE SALUD</br>
-                                    1 SECRETARIO TECNICO - ABOGADO</br>
-                                    1 TECNICO ADMINISTRATIVO</br>
-                                    2 TECNICOS ADMINISTRATIVOS - EQUIPO TRABAJO TRAMITE DOCUMENTARIO</p>
+                                DIRECCION REGIONAL DE SALUD</br>
+                                1 SECRETARIO TECNICO - ABOGADO</br>
+                                1 TECNICO ADMINISTRATIVO</br>
+                                2 TECNICOS ADMINISTRATIVOS - EQUIPO TRABAJO TRAMITE DOCUMENTARIO</p>
                             <p class="comunicado">COMUNICADO</p>
-                                
+
                         </td>
                         <td class="download">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="33px">
@@ -80,12 +90,12 @@ include_once("secciones/head.php");
                         <td class="textotabla">
                             <p>CONVOCATORIA Nº 019-2019</p>
                             <p class="textoinfocas">
-                                    DIRECCION REGIONAL DE SALUD</br>
-                                    1 SECRETARIO TECNICO - ABOGADO</br>
-                                    1 TECNICO ADMINISTRATIVO</br>
-                                    2 TECNICOS ADMINISTRATIVOS - EQUIPO TRABAJO TRAMITE DOCUMENTARIO</p>
+                                DIRECCION REGIONAL DE SALUD</br>
+                                1 SECRETARIO TECNICO - ABOGADO</br>
+                                1 TECNICO ADMINISTRATIVO</br>
+                                2 TECNICOS ADMINISTRATIVOS - EQUIPO TRABAJO TRAMITE DOCUMENTARIO</p>
                             <p class="comunicado">COMUNICADO</p>
-                                
+
                         </td>
                         <td class="download">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="33px">
@@ -126,9 +136,13 @@ include_once("secciones/head.php");
     <?php
     include_once("secciones/partners2.php");
     ?>
-    <?php
-    include_once("secciones/footer.php");
-    ?>
+    <footer class="footer">
+        <?php
+        include_once("secciones/footer.php");
+        include_once("secciones/loader.php");
+        ?>
+    </footer>
+    </main>
 </body>
 
 </html>

@@ -452,7 +452,7 @@ svg:focus{
 
 .enlaces{
   margin: 4%;
-  padding-left: 5%;
+ /* padding-left: 5%;*/
 }
 
 
@@ -836,13 +836,24 @@ a.text-dark:focus, a.text-dark:hover {
   text-transform: capitalize;
 }
 tbody .textotabla{
-  border-right: 1px solid #caf9ca !important
+  border-right: 1px solid #caf9ca !important;
+ 
 }
 /*CONVOCATORIAS*/
 
+.dt-button {
+  padding: 0!important;
+  border: none!important;}
+.btn-convocatorias{
+  background-color: transparent!important;
+  font-family: "Nexa Light";
+  font-size: 0.91rem;
+
+}
 #top_convocatoria{
   float: right;
 }
+
 
 /*TABLE*/
 .table{
