@@ -3,10 +3,10 @@
  *
  * ------------------------------------------------------------------- */
 
-(function ($) {
+(function($) {
     /* Back to Top
      * ------------------------------------------------------ */
-    var clBackToTop = function () {
+    var clBackToTop = function() {
 
         var pxShow = 500,
             goTopButton = $(".go-top")
@@ -14,7 +14,7 @@
         // Show or hide the button
         if ($(window).scrollTop() >= pxShow) goTopButton.addClass('link-is-visible');
 
-        $(window).on('scroll', function () {
+        $(window).on('scroll', function() {
             if ($(window).scrollTop() >= pxShow) {
                 if (!goTopButton.hasClass('link-is-visible')) goTopButton.addClass('link-is-visible')
             } else {
@@ -32,7 +32,7 @@
 
 })(jQuery);
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     /** INIT Ddel BAnner */
     $("#main-slider").owlCarousel({
@@ -69,29 +69,24 @@ $(document).ready(function () {
         dots: false,
         margin: 10,
         responsive: {
-            0:
-            {
+            0: {
                 items: 1,
                 center: true
 
             },
-            480:
-            {
+            480: {
                 items: 2,
                 center: true
             },
-            720:
-            {
+            720: {
                 items: 3,
                 center: true
             },
-            991:
-            {
+            991: {
                 items: 4,
                 center: true
             },
-            1199:
-            {
+            1199: {
                 items: 6,
                 loop: false,
                 autoplay: false
@@ -106,29 +101,24 @@ $(document).ready(function () {
         smartSpeed: 1200,
         nav: false,
         dots: false,
-        responsive:
-        {
-            0:
-            {
+        responsive: {
+            0: {
                 items: 1
             },
-            480:
-            {
+            480: {
                 items: 2
             },
-            720:
-            {
+            720: {
                 items: 3
             },
-            991:
-            {
+            991: {
                 items: 4
             }
         }
     });
 
     /*BOTON DE + DE ACCESOS*/
-    $("#botonclases").click(function () {
+    $("#botonclases").click(function() {
         $("#collapse1").removeClass("col-sm-none");
         $("#collapse2").removeClass("col-sm-none");
         $("#collapse3").removeClass("col-sm-none");
@@ -137,7 +127,7 @@ $(document).ready(function () {
         $("#btn_context").addClass("d-none");
     });
     /*BOTON DE + DOCUMENTOS*/
-    $("#botondoc").click(function () {
+    $("#botondoc").click(function() {
         $("#collapsedoc1").removeClass("col-sm-none");
         $("#collapsedoc2").removeClass("col-sm-none");
         $("#collapsedoc3").removeClass("col-sm-none");
@@ -154,14 +144,16 @@ $(document).ready(function () {
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         },
-        "lengthMenu":  [[5, 10, 20, -1], [5, 10, 20, "Todas"]],
+        "lengthMenu": [
+            [5, 10, 20, -1],
+            [5, 10, 20, "Todas"]
+        ],
         "dom": '<"selectConvocatoria"><"#top_convocatoria"Bl>t<"bottom"ip><"clear">',
-       /* "dom": 'Bfrtip',*/
-        "buttons": [
-            {
+        /* "dom": 'Bfrtip',*/
+        "buttons": [{
                 "text": '<button class="btn btn-convocatorias">Convocatorias Vigentes</button>',
                 "key": '1',
-                "action": function (e, dt, node, config) {
+                "action": function(e, dt, node, config) {
                     alert('Button 1 activated');
                 }
             },
@@ -171,7 +163,7 @@ $(document).ready(function () {
                     "shiftKey": true,
                     "key": '2'
                 },
-                action: function (e, dt, node, config) {
+                action: function(e, dt, node, config) {
                     alert('Button 2 activated');
                 }
             },
@@ -181,7 +173,7 @@ $(document).ready(function () {
                     "shiftKey": true,
                     "key": '3'
                 },
-                action: function (e, dt, node, config) {
+                action: function(e, dt, node, config) {
                     alert('Button 3 activated');
                 }
             }
@@ -190,26 +182,27 @@ $(document).ready(function () {
 
     /*convocatoria sin anexo*/
     $('#convocatoriasinanexo').DataTable({
-        "columnDefs": [ {
-            "targets": [1,2],
+        "columnDefs": [{
+            "targets": [1, 2],
             "width": "10em!important"
-        },
-        ],
+        }, ],
         "destroy": true,
         "scrollX": true,
         "ordering": false,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         },
-        "lengthMenu":  [[5, 10, 20, -1], [5, 10, 20, "Todas"]],
+        "lengthMenu": [
+            [5, 10, 20, -1],
+            [5, 10, 20, "Todas"]
+        ],
         "dom": '<"selectConvocatoria"><"#top_convocatoria"Bl>t<"bottom"ip><"clear">',
-        
-       /* "dom": 'Bfrtip',*/
-        "buttons": [
-            {
+
+        /* "dom": 'Bfrtip',*/
+        "buttons": [{
                 "text": '<button class="btn btn-convocatorias">Convocatorias Vigentes</button>',
                 "key": '1',
-                "action": function (e, dt, node, config) {
+                "action": function(e, dt, node, config) {
                     alert('Button 1 activated');
                 }
             },
@@ -219,7 +212,7 @@ $(document).ready(function () {
                     "shiftKey": true,
                     "key": '2'
                 },
-                action: function (e, dt, node, config) {
+                action: function(e, dt, node, config) {
                     alert('Button 2 activated');
                 }
             },
