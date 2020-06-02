@@ -33,12 +33,12 @@
 						</div>
 						<div class="noticias_descr_body">
 							<h4 class="noticias_descr_title"><?php echo $titulo; ?></h4>
-							<div class="noticias_descr_fecha"><?php echo $nombreTipoNoticia." // ".date_format($date,"l, d/m/Y");  ?></div>
+							<div class="noticias_descr_fecha"><?php echo $nombreTipoNoticia." // ".date_format($date,"D. d / M / Y");  ?></div>
 							<div class="noticias_descr_text">
 								<p><?php echo $entrada; ?></p>
 							</div>
 							<div class="noticias_descr_footer">
-								<p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
+								<p><a class="btn" href="noticias-interior.php?idNoticia=<?php echo $idNoticia;	?>" role="button">LEER MAS</a></p>
 							</div>
 						</div>
 					</div>
