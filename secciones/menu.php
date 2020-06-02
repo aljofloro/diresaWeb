@@ -36,36 +36,36 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INSTITUCIÓN</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="institucion_informacion.php">Información</a>
-                      <a class="dropdown-item" href="institucion_autoridades.php">Autoridades</a>
-                      <a class="dropdown-item" href="institucion_consejo.php">Consejo Regional de Salud</a>
-                      <a class="dropdown-item" href="institucion_directorio.php">Directorio</a>
+                      <a class="dropdown-item" href="institucion-informacion.php">Información</a>
+                      <a class="dropdown-item" href="institucion-autoridades.php">Autoridades</a>
+                      <a class="dropdown-item" href="institucion-consejo.php">Consejo Regional de Salud</a>
+                      <a class="dropdown-item" href="institucion-directorio.php">Directorio</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONVOCATORIAS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item" href="convocatorias.php">Nombramiento y otros Procesos</a>
-                      <a class="dropdown-item" href="convocatorias_cas.php">CAS(D. LEG. N.1057)</a>
-                      <a class="dropdown-item" href="convocatorias_externa.php">Provisión Externa(D. LEG. N.276)</a>
-                      <a class="dropdown-item" href="convocatorias_practicas.php">Practicas</a>
+                      <a class="dropdown-item" href="convocatorias-cas.php">CAS(D. LEG. N.1057)</a>
+                      <a class="dropdown-item" href="convocatorias-externa.php">Provisión Externa(D. LEG. N.276)</a>
+                      <a class="dropdown-item" href="convocatorias-practicas.php">Practicas</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NOTICIAS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="noticias_institucionales.php">Noticias Insitucionales</a>
-                      <a class="dropdown-item" href="noticias_regionales.php">Noticias Regionales</a>
-                      <a class="dropdown-item" href="noticias_minsa.php">Noticias MINSA</a>
-                      <a class="dropdown-item" href="noticias_galeriafotos.php">Galería De Fotos</a>
-                      <a class="dropdown-item" href="noticias_galeriavideos.php">Galería De Videos</a>
+                      <a class="dropdown-item" href="noticias-institucionales.php">Noticias Insitucionales</a>
+                      <a class="dropdown-item" href="noticias-regionales.php">Noticias Regionales</a>
+                      <a class="dropdown-item" href="noticias-minsa.php">Noticias MINSA</a>
+                      <a class="dropdown-item" href="noticias-galeriafotos.php">Galería De Fotos</a>
+                      <a class="dropdown-item" href="noticias-galeriavideos.php">Galería De Videos</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NORMATIVIDAD</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="normatividad_resolucionesdirectoriales.php">Resoluciones Directoriales</a>
-                      <a class="dropdown-item" href="normatividad_resolucionesadmin.php">Resoluciones Administrativas</a>
+                      <a class="dropdown-item" href="normatividad-resolucionesdirectoriales.php">Resoluciones Directoriales</a>
+                      <a class="dropdown-item" href="normatividad-resolucionesadmin.php">Resoluciones Administrativas</a>
                     </div>
                   </li>
                   <li class="nav-item">
@@ -78,7 +78,7 @@
                     <a class="nav-link" href="contacto.php">CONTACTO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="documentos_gestion.php">DOCUMENTOS DE GESTIÓN</a>
+                    <a class="nav-link" href="documentos-gestion.php">DOCUMENTOS DE GESTIÓN</a>
                   </li>
                 </ul>
               </div>

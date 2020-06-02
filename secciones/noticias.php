@@ -38,7 +38,7 @@
 								<p><?php echo $entrada; ?></p>
 							</div>
 							<div class="noticias_descr_footer">
-								<p><a class="btn" href="noticias_interior.php" role="button">LEER MAS</a></p>
+								<p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
 							</div>
 						</div>
 					</div>
