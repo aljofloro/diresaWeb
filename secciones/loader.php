@@ -7,5 +7,8 @@
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>	
+<script src="js/carousel.init.js"></script>
+<script src="js/collapse.init.js"></script>
+<script src="js/dataTable.init.js"></script>
+<script src="js/top.init.js"></script>
 <script src="datatable/Buttons-1.6.2/js/dataTables.buttons.min.js"></script>
