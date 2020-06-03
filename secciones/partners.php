@@ -16,7 +16,7 @@ $error = $jsonq->error;
 			$urlImagen = $Configuracion->get("SERVER_IMG").$enlace->imagen;
 			$urlDestino = $enlace->url;
 		?>
-		<div>
+		<div class="partner-contenedor">
 			<a href="<?php echo $urlDestino; ?>">
 				<img src="<?php echo $urlImagen; ?>" alt="<?php echo $nombre; ?>" />
 			</a>			

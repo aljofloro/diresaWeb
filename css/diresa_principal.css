@@ -493,12 +493,51 @@ svg:focus {
 }
 
 .partner {
-    margin-bottom: 3%;
+    margin-bottom: auto;
+}
+
+.owl-carousel .partner-contenedor {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.owl-carousel .partner-contenedor img {
+    height: 75%;
+    width: 75%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 10%;
 }
 
 .enlaces {
-    margin: 4%;
-    padding-left: 15%;
+    margin-bottom: auto;
+}
+
+.owl-carousel .enlaces-contenedor {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.owl-carousel .enlaces-contenedor img {
+    height: 50%;
+    width: 50%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 10%;
 }
 
 
