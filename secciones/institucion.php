@@ -117,7 +117,7 @@ if($error){
               <h2 class="mb-md-4">MARCO LEGAL</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->marco_legal; ?></p>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ if($error){
               <h2 class="mb-md-4">ESTRUCTURA ORGÁNICA</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->estructura_organica; ?></p>
               </div>
             </div>
           </div>
@@ -139,7 +139,8 @@ if($error){
               <h2 class="mb-md-4">ORGANIGRAMA</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5">
+                <img src="<?php echo $Configuracion->get("SERVER_IMG").$institucion->organigrama; ?>" alt="organigrama">              
               </div>
             </div>
           </div>
