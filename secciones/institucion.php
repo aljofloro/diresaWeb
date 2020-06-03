@@ -106,7 +106,8 @@ if ($error) {
               <h2 class="mb-md-4">RESEÑA HISTÓRICA</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5">
+                <p><?php echo $institucion->historia; ?></p>
               </div>
             </div>
           </div>
@@ -117,7 +118,8 @@ if ($error) {
               <h2 class="mb-md-4">MARCO LEGAL</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->marco_legal; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5">
+                <p><?php echo $institucion->marco_legal; ?></p>
               </div>
             </div>
           </div>
@@ -128,7 +130,8 @@ if ($error) {
               <h2 class="mb-md-4">ESTRUCTURA ORGÁNICA</h2>
             </div>
             <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->estructura_organica; ?></p>
+              <div class="section_subtitle mb-3 mr-5 ml-5">
+                <p><?php echo $institucion->estructura_organica; ?></p>
               </div>
             </div>
           </div>
@@ -140,7 +143,7 @@ if ($error) {
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-center">
-                <img class="img-fluid"  src="<?php echo $Configuracion->get("SERVER_IMG").$institucion->organigrama; ?>" alt="organigrama">              
+                <img class="img-fluid" src="<?php echo $Configuracion->get("SERVER_IMG") . $institucion->organigrama; ?>" alt="organigrama">
               </div>
             </div>
           </div>
