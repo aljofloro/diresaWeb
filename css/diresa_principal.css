@@ -657,7 +657,7 @@ svg:focus {
 }
 
 .footer_end {
-    margin-left: 0.6em;
+    margin-left: 0.2%;
 }
 
 .footer p {
@@ -672,8 +672,8 @@ svg:focus {
 
 .footer_social ul li {
     display: inline-block;
-    width: 3em;
-    height: 3em;
+    width: 2%;
+    height: 2%;
 }
 
 .footer_social ul li:not(:last-child) {
