@@ -12,19 +12,19 @@ if ($error) {
   <div class="container">
     <div class="row">
       <p>
-        <a class="btn-institucion btn active" data-toggle="collapse" href="#misionvision" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#misionvision" role="button" aria-expanded="false" aria-controls="collapseExample">
           MISIÓN VISIÓN
         </a>
-        <a class="btn-institucion btn" data-toggle="collapse" href="#reseña" role="button" aria-expanded="false" aria-controls="collapseExample2">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#reseña" role="button" aria-expanded="false" aria-controls="collapseExample">
           RESEÑA HISTÓRICA
         </a>
-        <a class="btn-institucion btn" data-toggle="collapse" href="#marco" role="button" aria-expanded="false" aria-controls="collapseExample2">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#marco" role="button" aria-expanded="false" aria-controls="collapseExample">
           MARCO LEGAL
         </a>
-        <a class="btn-institucion btn" data-toggle="collapse" href="#estructura" role="button" aria-expanded="false" aria-controls="collapseExample2">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#estructura" role="button" aria-expanded="false" aria-controls="collapseExample">
           ESTRUCTURA ORGÁNICA
         </a>
-        <a class="btn-institucion btn" data-toggle="collapse" href="#organigrama" role="button" aria-expanded="false" aria-controls="collapseExample2">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#organigrama" role="button" aria-expanded="false" aria-controls="collapseExample">
           ORGANIGRAMA
         </a>
       </p>
