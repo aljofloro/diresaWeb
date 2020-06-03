@@ -9,5 +9,7 @@ $Configuracion->set('GET_NOTICIAS_POR_ID','NoticiaObtenerAprobado.php?id=');
 $Configuracion->set('GET_ENLACES_1','EnlaceInteresListar.php?grupo=1');
 $Configuracion->set('GET_ENLACES_2','EnlaceInteresListar.php?grupo=2');
 $Configuracion->set('GET_INSTITUCION','InstitucionObtener.php');
+$Configuracion->set('GET_AUTORIDADES','AutoridadListar.php');
+$Configuracion->set('GET_CONSEJO','ConsejoRegionalObtener.php');
 
 ?>
