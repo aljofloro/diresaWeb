@@ -138,9 +138,9 @@ if ($error) {
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">ORGANIGRAMA</h2>
             </div>
-            <div class="text-center card-body">
-              <div class="section_subtitle mb-3 mr-5 ml-5">
-                <img src="<?php echo $Configuracion->get("SERVER_IMG").$institucion->organigrama; ?>" alt="organigrama">              
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <img class="img-fluid"  src="<?php echo $Configuracion->get("SERVER_IMG").$institucion->organigrama; ?>" alt="organigrama">              
               </div>
             </div>
           </div>
