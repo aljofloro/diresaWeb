@@ -21,7 +21,7 @@
 					$fecha = $noticia->fecha;
 					$titulo = $noticia->titular;
 					$entrada = $noticia->entradilla;
-					$urlImagen = $noticia->imagen;
+					$urlImagen = $Configuracion->get("SERVER_IMG").$noticia->imagen;
 					$tipoNoticia = $noticia->tipo_noticia;
 					$nombreTipoNoticia = $tipoNoticia->nombre;
 					$date = date_create($fecha);
@@ -29,7 +29,7 @@
 				<div class="item">
 					<div class="noticias_descr">
 						<div class="noticias_descr_image">
-							<img src="<?php echo $Configuracion->get("SERVER_IMG").$urlImagen; ?>" />
+							<img src="<?php echo $urlImagen; ?>" />
 						</div>
 						<div class="noticias_descr_body">
 							<h4 class="noticias_descr_title"><?php echo $titulo; ?></h4>

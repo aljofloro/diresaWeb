@@ -6,5 +6,6 @@ $Configuracion->set('SERVER_IMG','http://api.proydir.nom.pe/');
 $Configuracion->set('GET_BANNER','BannerListar.php');
 $Configuracion->set('GET_NOTICIAS_MAIN','NoticiaListarAprobados.php');
 $Configuracion->set('GET_NOTICIAS_POR_ID','NoticiaObtenerAprobado.php?id=');
-
+$Configuracion->set('GET_ENLACES_1','EnlaceInteresListar.php?grupo=1');
+$Configuracion->set('GET_ENLACES_2','EnlaceInteresListar.php?grupo=2');
 ?>
