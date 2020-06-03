@@ -111,6 +111,39 @@ if($error){
             </div>
           </div>
         </div>
+        <div class="collapse" id="marco">
+          <div class="col-md-10 mx-auto">
+            <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
+              <h2 class="mb-md-4">MARCO LEGAL</h2>
+            </div>
+            <div class="text-center card-body">
+              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="estructura">
+          <div class="col-md-10 mx-auto">
+            <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
+              <h2 class="mb-md-4">ESTRUCTURA ORGÁNICA</h2>
+            </div>
+            <div class="text-center card-body">
+              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="organigrama">
+          <div class="col-md-10 mx-auto">
+            <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
+              <h2 class="mb-md-4">ORGANIGRAMA</h2>
+            </div>
+            <div class="text-center card-body">
+              <div class="section_subtitle mb-3 mr-5 ml-5"><?php echo $institucion->historia; ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
