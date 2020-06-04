@@ -1170,6 +1170,10 @@ select {
     text-transform: capitalize;
 }
 
+.card-body p {
+    font-family: "Nexa Light";
+}
+
 
 /*salud personas*/
 
