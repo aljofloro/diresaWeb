@@ -11,5 +11,7 @@ $Configuracion->set('GET_ENLACES_2','EnlaceInteresListar.php?grupo=2');
 $Configuracion->set('GET_INSTITUCION','InstitucionObtener.php');
 $Configuracion->set('GET_AUTORIDADES','AutoridadListar.php');
 $Configuracion->set('GET_CONSEJO','ConsejoRegionalObtener.php');
+$Configuracion->set('GET_DIRECTORIO','OficinaListar.php');
+
 
 ?>

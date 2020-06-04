@@ -7,7 +7,10 @@
     </div>
     <table id="tablitaPrueba" class="table table-striped display">
       <thead class="thead-blue">
-        
+        <tr>
+          <th class="linea text-center">N°</th>
+          <th>DATOS</th>
+        </tr>
       </thead>
     </table>
     <table id="tablageneral" class=" table table-striped display " style="width:100%">
