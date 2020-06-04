@@ -8,7 +8,7 @@
 		<div class="row">
 
 			<!-- Accesos Item -->
-			<div class="col-md-3 col-6">
+			<div class="col-md-3 col-lg-3 col-6">
 				<div class="acceso"  onclick="location.href='accesos-nombramiento.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -20,7 +20,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-6">
+			<div class="col-md-3 col-lg-3 col-6">
 				<div class="acceso" onclick="location.href='accesos-controlinterno.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-6">
+			<div class="col-md-3 col-lg-3 col-6">
 				<div class="acceso" onclick="location.href='accesos-estadistica.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91px" height="91px" viewBox="0 0 91 91">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-6 ">
+			<div class="col-md-3 col-lg-3 col-6 ">
 				<div class="acceso" onclick="location.href='accesos-establecimientos.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -56,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-6 col-sm-none" id="collapse1">
+			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapse1">
 				<div class="acceso" onclick="location.href='accesos-nombramiento.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-6 col-sm-none" id="collapse2">
+			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapse2">
 				<div class="acceso" onclick="location.href='accesos-materiales.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -80,7 +80,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="collapse dont-collapse-sm multi-collapse col-6 col-md-3 col-sm-none" id="collapse3">
+			<div class="collapse dont-collapse-sm multi-collapse col-6 col-md-3 col-lg-3 col-sm-none" id="collapse3">
 				<div class="acceso" onclick="location.href='accesos-SIS.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-6 col-sm-none" id="collapse4">
+			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-6 col-lg-3 col-sm-none" id="collapse4">
 				<div class="acceso" onclick="location.href='accesos-requisitos.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-6 collapse dont-collapse-sm multi-collapse col-sm-none" id="collapse5">
+			<div class="col-md-3 col-lg-3 col-6 collapse dont-collapse-sm multi-collapse col-sm-none" id="collapse5">
 				<div class="acceso" onclick="location.href='accesos-playas.php';">
 					<div class="accesos_image">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">

@@ -13,7 +13,6 @@
         </tr>
       </thead>
     </table>
-
     <table id="tablageneral" class=" table table-striped display " style="width:100%">
       <thead class="thead-blue">
         <tr>
