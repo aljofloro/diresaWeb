@@ -5,7 +5,7 @@
         <h2 class="mb-md-4">DIRECTORIO</h2>
       </div>
     </div>
-    <table id="tablitaPrueba" class="table table-striped display">
+    <table id="tablaDirectorio" class="table table-striped display" style="width:100%">
       <thead class="thead-blue">
         <tr>
           <th class="linea text-center">N°</th>
@@ -13,6 +13,7 @@
         </tr>
       </thead>
     </table>
+
     <table id="tablageneral" class=" table table-striped display " style="width:100%">
       <thead class="thead-blue">
         <tr>
@@ -28,13 +29,9 @@
             <div class="row textoinfo">
               <div class="col-md-4">
                 <p>Méd. Juan Manuel Cánepa Yzaga</br>
-
                 Director Regional de Salud Tacna</br>
-
                 Dirección: Calle Los Nardos N° 33, Urb. Pescaserolli</br>
-
                 Correo electrónico: dg@diresatacna.gob.pe</br>
-
                 Teléfono: 052-423872</p>
               </div>
               <div class="col-md-4">
