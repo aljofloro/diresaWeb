@@ -482,6 +482,11 @@ svg:focus {
 7. partners y enlaces
 *********************************/
 
+.site-section-partners {
+    padding: 2em 4em 2em 4em;
+    background-color: #e6e6e6;
+}
+
 .owl-centered .owl-wrapper {
     display: table !important;
 }
@@ -520,16 +525,17 @@ svg:focus {
     padding-left: 10%;
 }
 
-.enlaces {
+
+/*.enlaces {
     margin-bottom: auto;
-}
+}*/
 
 .owl-carousel .enlaces-contenedor {
     position: relative;
     width: 100%;
     height: 90px;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 10%
 }
 
 .owl-carousel .enlaces-contenedor img {
