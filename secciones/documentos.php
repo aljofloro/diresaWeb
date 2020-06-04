@@ -21,7 +21,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-6 col-lg-3 blogBox moreBox">
-				<a href="administracion.php">
+				<a href="documentos-administracion.php">
 					<div class="documento text-center">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -35,7 +35,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-6 col-lg-3 blogBox moreBox">
-				<a href="gestion.php">
+				<a href="documentos-gestiondesarrollo.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -49,7 +49,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-6 col-lg-3 blogBox moreBox">
-				<a href="planeamiento-estrategico.php">
+				<a href="documentos-planeamiento.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -63,7 +63,7 @@
 				</a>
 			</div>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapsedoc1">
-				<a href="promociondelasalud.php">
+				<a href="documentos-promociondelasalud.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -77,7 +77,7 @@
 				</a>
 			</div>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapsedoc2">
-				<a href="saluddelaspersonas.php">
+				<a href="documentos-saluddelaspersonas.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -91,7 +91,7 @@
 				</a>
 			</div>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapsedoc3">
-				<a href="saludambiental.php">
+				<a href="documentos-saludambiental.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
@@ -105,7 +105,7 @@
 				</a>
 			</div>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="collapsedoc4">
-				<a href="medicamentos.php">
+				<a href="documentos-medicamentos.php">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
