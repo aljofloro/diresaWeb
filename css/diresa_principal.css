@@ -1038,6 +1038,13 @@ tbody .textotabla p {
 
 
 /*THEAD*/
+#tablaDirectorio tbody .textoinfo {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+
 
 .table .thead-blue th {
     color: #4d4d4d;

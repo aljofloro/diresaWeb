@@ -99,4 +99,12 @@ $(document).ready(function() {
       "ajax": "async/tablaDirectorio.php"
     });
 
+    /** TABLA CONVOCATORIA NOMBRAMIENTO */
+    $('#tablaConvocatoriaNombramiento').DataTable( {	  	
+        "scrollX": true,
+        "language": {
+            "url" : "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+      "ajax": "async/tablaConvocatoriaNombramiento.php"
+    });
 });

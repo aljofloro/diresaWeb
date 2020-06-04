@@ -12,4 +12,6 @@ $Configuracion->set('GET_INSTITUCION','InstitucionObtener.php');
 $Configuracion->set('GET_AUTORIDADES','AutoridadListar.php');
 $Configuracion->set('GET_CONSEJO','ConsejoRegionalObtener.php');
 $Configuracion->set('GET_DIRECTORIO','OficinaListar.php');
+$Configuracion->set('GET_CONVOCATORIA_NOMBRAMIENTO','ConvocatoriaListar.php?id_tipo_convocatoria=1');
+
 ?>
