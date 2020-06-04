@@ -28,6 +28,7 @@
                         <h2 class="mb-md-4">PRÁCTICAS</h2>
                     </div>
                 </div>
+                
                 <table id="convocatoriasinanexo" class=" table table-striped display " style="width:100%">
                     <thead class="thead-blue">
                         <tr>

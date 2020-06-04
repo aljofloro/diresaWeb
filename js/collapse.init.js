@@ -31,8 +31,7 @@ $(document).ready(function() {
     }
 
     /*informacion*/
-
-
+    /*  $("#visionmision").collapse({ "toggle": false, 'parent': '#navaccordion' });*/
 
 
 

@@ -28,7 +28,7 @@
                         <h2 class="mb-md-4">PREVISIÓN EXTERNA</h2>
                     </div>
                 </div>
-                <table id="convocatoria" class=" table table-striped display nowrap" style="width:100%">
+                <table id="convocatoria" class=" table table-striped" style="width:100%">
                     <thead class="thead-blue">
                         <tr>
                             <th class="linea">N°</th>

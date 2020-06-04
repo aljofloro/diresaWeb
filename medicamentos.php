@@ -41,9 +41,9 @@
                         <table id="example" class=" table table-striped display " style="width:100%">
                             <thead class="thead-blue">
                                 <tr>
-                                    <th class="numero">N°</th>
-                                    <th>RESOLUCIONES ADMINISTRATIVAS 2019</th>
-                                    <th></th>
+                                    <th class="linea">N°</th>
+                                    <th >RESOLUCIONES ADMINISTRATIVAS 2019</th>
+                                    <th ></th>
                                     <th></th>
                                 </tr>
                             </thead>

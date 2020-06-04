@@ -426,6 +426,7 @@ nav.navbar ul li {
 
 .acceso {
     width: 100%;
+    cursor: pointer;
 }
 
 .accesos_image {
@@ -451,18 +452,20 @@ nav.navbar ul li {
     text-align: center;
 }
 
-.accesos_body p:hover {
-    color: red;
-}
-
 .accesos_image svg {
     width: 100px;
     height: 100px;
 }
 
-.accesos_image svg:hover,
+
+/*.accesos_image svg:hover,
 svg:focus {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+}*/
+
+.acceso:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    color: red;
 }
 
 #botonclases {

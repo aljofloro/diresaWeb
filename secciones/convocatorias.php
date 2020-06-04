@@ -5,7 +5,7 @@
                 <h2 class="mb-md-4">CONVOCATORIAS</h2>
             </div>
         </div>
-        <table id="convocatoriasinanexo" class="table table-striped display nowrap " style="width:100%">
+        <table id="convocatoriasinanexo" class="table table-striped " style="width:100%">
             <thead class="thead-blue">
                 <tr>
                     <th class="linea">N°</th>
