@@ -271,9 +271,10 @@ nav.navbar ul li {
 5.NOTICIAS
 *********************************/
 
-.site-section-noticias {
+
+/*.site-section-noticias {
     padding: 6em 0 5em 2em;
-}
+}*/
 
 .site-section-heading h2 {
     font-size: 2rem;
@@ -861,7 +862,8 @@ svg:focus {
     background-color: #ffffff;
     border: none;
     margin-right: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 10%;
+    text-transform: uppercase;
 }
 
 .btn-institucion:not(:disabled):not(.disabled).active,
@@ -958,6 +960,11 @@ a.text-dark:hover {
     font-family: "Nexa Bold";
 }
 
+.autoridades img {
+    width: 50%;
+    height: 50%;
+}
+
 
 /*CONSEJO*/
 
@@ -974,12 +981,20 @@ a.text-dark:hover {
 
 .tabla .textoinfo {
     font-family: "Nexa Light";
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: capitalize;
 }
 
 tbody .textotabla {
     border-right: 1px solid #caf9ca !important;
+}
+
+tbody .numero {
+    font-size: 0.9rem;
+}
+
+tbody .textotabla p {
+    font-size: 0.9rem;
 }
 
 
@@ -1119,13 +1134,14 @@ select {
 
 .tabla .textoinfocas {
     font-family: "Nexa Light";
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: capitalize;
     line-height: 2em;
 }
 
 .tabla .comunicado {
     color: red;
+    font-size: 0.9rem;
 }
 
 

@@ -8,7 +8,7 @@
         <table id="convocatoriasinanexo" class="table table-striped " style="width:100%">
             <thead class="thead-blue">
                 <tr>
-                    <th class="linea">N°</th>
+                    <th class="linea text-center">N°</th>
                     <th class="linea">DESCRIPCIÓN</th>
                     <th class="linea"> BASES</th>
                     <th class="linea">APTOS</th>
@@ -20,7 +20,7 @@
             </thead>
             <tbody class="tabla">
                 <tr>
-                    <td>001</td>
+                    <td class="text-center numero">001</td>
                     <td class="textotabla">
                         <p>Cronograma Proceso Nombramiento 2019</p>
                         <p class="textoinfo">Cronograma proceso nombramiento 2019</p>

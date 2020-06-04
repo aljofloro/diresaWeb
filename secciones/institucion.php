@@ -74,11 +74,11 @@ if ($error) {
                 </div>
                 <!-- Accordion item 4 -->
                 <div class="card">
-                  <div id="headingThree" class="card-header bg-lead shadow-sm border-0">
+                  <div id="headingFour" class="card-header bg-lead shadow-sm border-0">
                     <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed text-dark  collapsible-link py-2">
                         Relaciones Internas</a></h6>
                   </div>
-                  <div id="collapseFour" aria-labelledby="headingThree" data-parent="#visionmision" class="collapse">
+                  <div id="collapseFour" aria-labelledby="headingFour" data-parent="#visionmision" class="collapse">
                     <div class="card-body p-5">
                       <p class="font-weight-light m-0"><?php echo $institucion->relacion_interna; ?></p>
                     </div>
@@ -86,11 +86,11 @@ if ($error) {
                 </div>
                 <!-- Accordion item 5 -->
                 <div class="card">
-                  <div id="headingThree" class="card-header bg-lead shadow-sm border-0">
+                  <div id="headingFive" class="card-header bg-lead shadow-sm border-0">
                     <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="d-block position-relative collapsed text-dark  collapsible-link py-2">
                         Relaciones Externas</a></h6>
                   </div>
-                  <div id="collapseFive" aria-labelledby="headingThree" data-parent="#visionmision" class="collapse">
+                  <div id="collapseFive" aria-labelledby="headingFive" data-parent="#visionmision" class="collapse">
                     <div class="card-body p-5">
                       <p class="font-weight-light m-0"><?php echo $institucion->relacion_externa; ?></p>
                     </div>

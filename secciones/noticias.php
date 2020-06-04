@@ -1,4 +1,4 @@
-<div class="site-section-noticias noticias">
+<div class="site-section-seccion noticias">
 	<div class="container">
 		<div class="row">
 			<div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">

@@ -5,16 +5,16 @@
                 <h2 class="mb-md-4">DIRECTORIO</h2>
             </div>
         </div>
-        <table id="example" class=" table table-striped display " style="width:100%">
+        <table id="tablageneral" class=" table table-striped display " style="width:100%">
             <thead class="thead-blue">
                 <tr>
-                    <th class="linea">N°</th>
+                    <th class="linea text-center">N°</th>
                     <th>DATOS</th>
                 </tr>
             </thead>
             <tbody class="tabla">
                 <tr>
-                    <td>001</td>
+                    <td class="text-center">001</td>
                     <td class="textotabla">
                         <p>DIRECCIÓN GENERAL</p>
                         <div class="row textoinfo">

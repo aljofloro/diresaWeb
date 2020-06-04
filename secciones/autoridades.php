@@ -6,11 +6,12 @@ if($jsonq->error){
 }else{
   $autoridades = $jsonq->data;
   foreach ($autoridades as $autoridad) {
+
     $cabecera .='<a class="btn-institucion btn" data-toggle="collapse" href="#'.str_replace(' ', '', $autoridad->cargo).$autoridad->id_autoridad.'" 
     role="button" aria-expanded="false" aria-controls="collapseExample">'.$autoridad->cargo.'</a>';
     $detalle .='
     <div class="collapse" id="'.str_replace(' ', '', $autoridad->cargo).$autoridad->id_autoridad.'">
-      <div class="col-md-10 mx-auto">
+      <div class="col-md-10 mx-auto col-12">
         <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
             <h2 class="mb-md-4">'.strtoupper($autoridad->cargo).'</h2>
         </div>
