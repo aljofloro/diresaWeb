@@ -91,12 +91,13 @@ $(document).ready(function() {
     });
 
     /** TABLA DIRECTORIO */
-    $('#tablaDirectorio').DataTable( {	  	
+    $('#tablaDirectorio').DataTable({
         "scrollX": true,
+        "ordering": false,
         "language": {
-            "url" : "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         },
-      "ajax": "async/tablaDirectorio.php"
+        "ajax": "async/tablaDirectorio.php"
     });
 
     /** TABLA CONVOCATORIA NOMBRAMIENTO */
