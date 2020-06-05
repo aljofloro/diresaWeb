@@ -20,6 +20,7 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
+        $tipoConvocatoria = 1;
         include_once("secciones/convocatorias.php");
         include_once("secciones/noticias.php");
         ?>

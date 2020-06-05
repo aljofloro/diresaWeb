@@ -14,7 +14,7 @@ $error = $jsonq->error;
 				foreach ($enlaces as $enlace) {
 					$idEnlaceInteres = $enlace->id_enlace_interes;
 					$nombre = $enlace->nombre;
-					$urlImagen = $Configuracion->get("SERVER_IMG") . $enlace->imagen;
+					$urlImagen = $Configuracion->get("SERVER") . $enlace->imagen;
 					$urlDestino = $enlace->url;
 			?>
 					<div class="enlaces-contenedor">

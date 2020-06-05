@@ -17,7 +17,7 @@ if($jsonq->error){
         </div>
         <div class="autoridades card-body">
           <div class="d-flex justify-content-center">
-              <img src="'.$Configuracion->get("SERVER_IMG").$autoridad->foto.'" class="img-fluid" />
+              <img src="'.$Configuracion->get("SERVER").$autoridad->foto.'" class="img-fluid" />
           </div>
           <div class="section_subtitle pb-4">
               <p class="nombre">'.$autoridad->nombre_completo.'</p>

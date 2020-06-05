@@ -21,7 +21,7 @@
 					$fecha = $noticia->fecha;
 					$titulo = $noticia->titular;
 					$entrada = $noticia->entradilla;
-					$urlImagen = $Configuracion->get("SERVER_IMG").$noticia->imagen;
+					$urlImagen = $Configuracion->get("SERVER").$noticia->imagen;
 					$tipoNoticia = $noticia->tipo_noticia;
 					$nombreTipoNoticia = $tipoNoticia->nombre;
 					$date = date_create($fecha);
