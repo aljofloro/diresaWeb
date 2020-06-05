@@ -143,7 +143,7 @@ if ($error) {
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-center">
-                <img class="img-fluid" src="<?php echo $Configuracion->get("SERVER_IMG") . $institucion->organigrama; ?>" alt="organigrama">
+                <img class="img-fluid" src="<?php echo $Configuracion->get("SERVER") . $institucion->organigrama; ?>" alt="organigrama">
               </div>
             </div>
           </div>
