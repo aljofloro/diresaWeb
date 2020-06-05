@@ -99,17 +99,46 @@ $(document).ready(function() {
       "ajax": "async/tablaDirectorio.php"
   });
 
-  /** TABLA CONVOCATORIA NOMBRAMIENTO */
+  /** TABLA CONVOCATORIA GENERICA */
   dataTableConvocatoriaInit();
   function dataTableConvocatoriaInit(){
     var params = $('#tablaConvocatoria').attr("data-params");
     $('#tablaConvocatoria').DataTable({
+      "destroy": true,
       "serverSide": false,
       "scrollX": true,
       "language": {
         "url" : "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
       },
-      "ajax": "async/tablaConvocatoria.php?"+params
+      "ajax": "async/tablaConvocatoria.php?"+params,
+      "dom": '<"selectConvocatoria"><"#top_convocatoria"Bl>t<"bottom"ip><"clear">',
+      "buttons": [{
+        "text": '<button class="btn btn-convocatorias">Convocatorias Vigentes</button>',
+        "key": '1',
+        "action": function(e, dt, node, config) {
+            alert('Button 1 activated');
+        }
+      },
+      {
+        "text": '<button class="btn btn-convocatorias">Convocatorias Pasadas</button>',
+        "key": {
+            "shiftKey": true,
+            "key": '2'
+        },
+        action: function(e, dt, node, config) {
+            alert('Button 2 activated');
+        }
+      },
+      {
+        "text": '<button class="btn btn-convocatorias">Anexos</button>',
+        "key": {
+            "shiftKey": true,
+            "key": '3'
+        },
+        action: function(e, dt, node, config) {
+            alert('Button 3 activated');
+        }
+      }]
     });
   }
   
