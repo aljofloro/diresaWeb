@@ -1,0 +1,176 @@
+/*TABLE GENERAL*/
+
+.table {
+    font-family: "Nexa Bold";
+    text-transform: uppercase;
+    border: none !important;
+    border-collapse: separate;
+    border-spacing: 0 8px !important;
+}
+
+.table td {
+    border: 1px solid #caf9ca !important;
+}
+
+
+/*THEAD*/
+
+.table .thead-blue th {
+    color: #4d4d4d;
+    background-color: #caf9ca;
+    border-color: #caf9ca;
+    padding: 1em 1em 1em 1em;
+    vertical-align: middle;
+    height: 4em;
+    text-align: left;
+}
+
+.table .thead-blue .linea {
+    border-right: solid #ffffff !important;
+    text-align: center;
+}
+
+
+/*TBODY*/
+
+.table-bordered td {
+    border: 1px solid #caf9ca !important;
+    padding: 2em !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: none!important;
+    background: none!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    box-shadow: none!important;
+}
+
+tbody .texto {
+    border-right: none !important;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+/*page*/
+
+.page-item.active .page-link {
+    color: #4d4d4d;
+    background-color: #caf9ca !important;
+    border-color: #caf9ca !important;
+    font-family: "Nexa Bold";
+}
+
+.page-link {
+    color: #4d4d4d;
+    font-family: "Nexa Light";
+}
+
+.custom-select {
+    border: 1px solid #caf9ca !important;
+    border-radius: none !important;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    display: none;
+}
+
+div.dataTables_wrapper div.dataTables_length {
+    text-align: right !important;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: normal !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+}
+
+select {
+    font-family: "Nexa Light"!important;
+}
+
+.section_subtitle {
+    line-height: 1.5em;
+    margin-top: 1.8em;
+    font-size: 1rem;
+    font-family: "Nexa Light";
+}
+
+
+/*DIRECTORIO*/
+
+
+/*.tabla .texto {
+    font-size: 1rem;
+}*/
+
+.tabla .textoinfo {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+#tablaDirectorio tbody .textoinfo {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+#tablaDirectorio .row {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+
+/*tbody .textotabla {
+    border-right: 1px solid #caf9ca !important;
+}*/
+
+
+/*tbody .numero {
+    font-size: 0.9rem;
+}*/
+
+
+/*tbody .textotabla p {
+    font-size: 0.9rem;
+}*/
+
+
+/*CONVOCATORIAS*/
+
+.dt-button {
+    padding: 0!important;
+    border: none!important;
+}
+
+.btn-convocatorias {
+    background-color: transparent!important;
+    font-family: "Nexa Light";
+    font-size: 0.91rem;
+}
+
+#top_convocatoria {
+    float: right;
+}
+
+tbody .download {
+    border-left: none !important;
+    text-align: center;
+}
+
+#tablaConvocatoria tbody.textoinfo {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
