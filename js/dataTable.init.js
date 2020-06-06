@@ -1,13 +1,7 @@
 $(document).ready(function() {
-<<<<<<< HEAD
-  const NO_VIGENTE = 10;
-  const VIGENTE = 20;
-  const ANEXO = 30;
-=======
-<<<<<<< HEAD
-    const NO_VIGENTE = 0;
-    const VIGENTE = 1;
-    const ANEXO = 2;
+  const NO_VIGENTE = 1;
+  const VIGENTE = 2;
+  const ANEXO = 3;
     /*TABLA DE CONVOCATORIAS*/
     $('#convocatoria').DataTable({
         "destroy": true,
