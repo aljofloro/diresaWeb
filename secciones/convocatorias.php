@@ -10,7 +10,7 @@
         <tr>
           <th class="linea text-center">N°</th>
           <th class="linea">DESCRIPCIÓN</th>
-          <th class="linea"> BASES</th>
+          <th class="linea">BASES</th>
           <th class="linea">APTOS</th>
           <th class="linea">PRUEBAS CONOCIMIENTO</th>
           <th class="linea">CALIFICACIÓN CURRICULAR</th>

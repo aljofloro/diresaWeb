@@ -25,6 +25,10 @@ if ($error) {
           $descripcion .= '<p class="detalleInfo"> Remuneración: '.$puesto->remuneracion.'</p>';
           $descripcion .= '<p class="detalleInfo"> Vacantes: '.$puesto->vacantes.'</p>';
         }
+        $urlAnexo = $convocatoria->anexo;
+        if($urlAnexo != null){
+          $descripcion .='<a href="'.$Configuracion->get("SERVER").$urlAnexo.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_ANEXO").'</a>';
+        }
         $urlBases = $convocatoria->bases;
         $basesTabla = '';
         if($urlBases != null){
