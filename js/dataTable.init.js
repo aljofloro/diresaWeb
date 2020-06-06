@@ -137,17 +137,7 @@ $(document).ready(function() {
                         "key": '2'
                     },
                     action: function(e, dt, node, config) {
-                        alert('Button 2 activated');
-                    }
-                },
-                {
-                    "text": '<button class="btn btn-convocatorias">Anexos</button>',
-                    "key": {
-                        "shiftKey": true,
-                        "key": '3'
-                    },
-                    action: function(e, dt, node, config) {
-                        alert('Button 3 activated');
+                      dataTableConvocatoriaInit(NO_VIGENTE);
                     }
                 }
             ]

@@ -21,80 +21,80 @@ if ($error) {
         $descripcion .= '<p class="textoinfo">'.$convocatoria->contenido.'</p>';
         $puestos = $convocatoria->puestos;
         foreach ($puestos as $puesto) {
-          $descripcion .= '<p class="detalleInfo"> Puesto: '.$puesto->nombre.'</p>';
-          $descripcion .= '<p class="detalleInfo"> Remuneración: '.$puesto->remuneracion.'</p>';
-          $descripcion .= '<p class="detalleInfo"> Vacantes: '.$puesto->vacantes.'</p>';
+          $descripcion .= '<b> Puesto:</b><span class="textoinfo">'.$puesto->nombre.'</span><br>';
+          $descripcion .= '<b> Remuneración:</b> <span class="textoinfo">'.$puesto->remuneracion.'</span><br>';
+          $descripcion .= '<b> Vacantes:</b> <span class="textoinfo">'.$puesto->vacantes.'</span><br>';
         }
         $urlAnexo = $convocatoria->anexo;
         if($urlAnexo != null){
-          $descripcion .='<a href="'.$Configuracion->get("SERVER").$urlAnexo.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_ANEXO").'</a>';
+          $descripcion .='<a href="'.$Configuracion->get("SERVER").$urlAnexo.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_ANEXO").'</a><br><br>';
         }
         $urlBases = $convocatoria->bases;
         $basesTabla = '';
         if($urlBases != null){
-          $basesTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBases.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $basesTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBases.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlBasesComunicado = $convocatoria->bases_comunicado;
         if($urlBasesComunicado != null){
-          $basesTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $basesTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
 
         $aptosTabla = '';
         $urlAptos = $convocatoria->aptos;
         if($urlAptos != null){
-          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlAptosComunicado = $convocatoria->aptos_comunicado;
         if($urlAptosComunicado != null){
-          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
         $urlAptosReclamo = $convocatoria->aptos_reclamo;
         if($urlAptosReclamo != null){
-          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_RECLAMO").'</a>';
+          $aptosTabla .= '<a href="'.$Configuracion->get("SERVER").$urlBasesComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_RECLAMO").'</a><br><br>';
         }
 
         $pruebaTabla = '';
         $urlPruebaConocimientos = $convocatoria->prueba_conocimientos;
         if($urlPruebaConocimientos != null){
-          $pruebaTabla .= '<a href="'.$Configuracion->get("SERVER").$urlPruebaConocimientos.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $pruebaTabla .= '<a href="'.$Configuracion->get("SERVER").$urlPruebaConocimientos.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlPruebaConocimientosComunicado = $convocatoria->prueba_conocimientos_comunicado;
         if($urlPruebaConocimientosComunicado != null){
-          $pruebaTabla .= '<a href="'.$Configuracion->get("SERVER").$urlPruebaConocimientosComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $pruebaTabla .= '<a href="'.$Configuracion->get("SERVER").$urlPruebaConocimientosComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
 
         $calificacionCurricularTabla = '';
         $urlCalificacionCurricular = $convocatoria->calificacion_curricular;
         if($urlCalificacionCurricular != null){
-          $calificacionCurricularTabla .= '<a href="'.$Configuracion->get("SERVER").$urlCalificacionCurricular.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $calificacionCurricularTabla .= '<a href="'.$Configuracion->get("SERVER").$urlCalificacionCurricular.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlCalificacionCurricularComunicado = $convocatoria->calificacion_curricular_comunicado;
         if($urlCalificacionCurricularComunicado != null){
-          $calificacionCurricularTabla .= '<a href="'.$Configuracion->get("SERVER").$urlCalificacionCurricularComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $calificacionCurricularTabla .= '<a href="'.$Configuracion->get("SERVER").$urlCalificacionCurricularComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
 
         $entrevistaPersonalTabla = '';
         $urlEntrevistaPersonal = $convocatoria->entrevista_personal;
         if($urlEntrevistaPersonal != null){
-          $entrevistaPersonalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlEntrevistaPersonal.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $entrevistaPersonalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlEntrevistaPersonal.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlEntrevistaPersonalComunicado = $convocatoria->entrevista_personal_comunicado;
         if($urlEntrevistaPersonalComunicado != null){
-          $entrevistaPersonalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlEntrevistaPersonalComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $entrevistaPersonalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlEntrevistaPersonalComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
 
         $resultadoFinalTabla = '';
         $urlResultadoFinal = $convocatoria->resultado_final;
         if($urlResultadoFinal != null){
-          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinal.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a>';
+          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinal.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_DESCARGA").'</a><br><br>';
         }
         $urlResultadoFinalComunicado = $convocatoria->resultado_final_comunicado;
         if($urlResultadoFinalComunicado != null){
-          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinalComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a>';
+          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinalComunicado.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_COMUNICADO").'</a><br><br>';
         }
         $urlResultadoFinalReclamo = $convocatoria->resultado_final_reclamo;
         if($urlResultadoFinalReclamo != null){
-          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinalReclamo.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_RECLAMO").'</a>';
+          $resultadoFinalTabla .= '<a href="'.$Configuracion->get("SERVER").$urlResultadoFinalReclamo.'" class="icono_convocatoria" target="_blank">'.$Configuracion->get("ICONO_RECLAMO").'</a><br>';
         }
 
         $tablaConvocatoria[] = array(str_pad($numero,3,'0',STR_PAD_LEFT),$descripcion,$basesTabla,$aptosTabla,$pruebaTabla,$calificacionCurricularTabla,$entrevistaPersonalTabla,$resultadoFinalTabla);
