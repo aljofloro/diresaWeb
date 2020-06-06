@@ -1,6 +1,10 @@
 <?php
 require_once($nivelProfundidad."clases/Configuracion.php");
 $Configuracion = Configuracion::getConfiguracion();
+$Configuracion->set('NO_VIGENTE',1);
+$Configuracion->set('VIGENTE',2);
+$Configuracion->set('ANEXO',3);
+
 $Configuracion->set('SERVER_API_PORTAL','http://api.proydir.nom.pe/src/Portal/');
 $Configuracion->set('SERVER','http://api.proydir.nom.pe/');
 $Configuracion->set('GET_BANNER','BannerListar.php');
