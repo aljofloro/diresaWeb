@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  const NO_VIGENTE = 0;
-  const VIGENTE = 1;
-  const ANEXO = 2;
+  const NO_VIGENTE = 1;
+  const VIGENTE = 2;
+  const ANEXO = 3;
   /*TABLA DE CONVOCATORIAS*/
   $('#convocatoria').DataTable({
     "destroy": true,
@@ -105,6 +105,7 @@ $(document).ready(function() {
   /** TABLA CONVOCATORIA GENERICA */
   dataTableConvocatoriaInit();
   function dataTableConvocatoriaInit(valor){
+    var vigencia = valor || '';
     var params = $('#tablaConvocatoria').attr("data-params");
     $('#tablaConvocatoria').DataTable({
       "destroy": true,
@@ -113,7 +114,7 @@ $(document).ready(function() {
       "language": {
         "url" : "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
       },
-      "ajax": "async/tablaConvocatoria.php?"+params+"&vigencia="+valor,
+      "ajax": "async/tablaConvocatoria.php?"+params+"&vigencia="+vigencia,
       "dom": '<"selectConvocatoria"><"#top_convocatoria"Bl>t<"bottom"ip><"clear">',
       "buttons": [{
         "text": '<button class="btn btn-convocatorias">Convocatorias Vigentes</button>',
@@ -129,7 +130,7 @@ $(document).ready(function() {
             "key": '2'
         },
         action: function(e, dt, node, config) {
-            alert('Button 2 activated');
+          dataTableConvocatoriaInit(NO_VIGENTE);
         }
       },
       {
