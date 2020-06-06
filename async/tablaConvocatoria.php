@@ -2,7 +2,7 @@
 $nivelProfundidad = "../";
 include_once($nivelProfundidad."config/config.php");
 $tipoConvocatoria = $_GET["tipoConvocatoria"];
-$vigencia = $_GET["vigencia"];
+$vigencia = $_GET["vigencia"] ;
 $Configuracion = Configuracion::getConfiguracion();
 $jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_CONVOCATORIA").$tipoConvocatoria, true));
 $error = $jsonq->error;

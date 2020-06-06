@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  const NO_VIGENTE = 1;
-  const VIGENTE = 2;
-  const ANEXO = 3;
+  const NO_VIGENTE = 10;
+  const VIGENTE = 20;
+  const ANEXO = 30;
   /*TABLA DE CONVOCATORIAS*/
   $('#convocatoria').DataTable({
     "destroy": true,
