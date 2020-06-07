@@ -13,6 +13,7 @@ switch ($tipoConvocatoria) {
     $titulo = 'Prácticas';
     break;
 }
+
 ?>
 <div class="site-section-seccion">
   <div class="container">
