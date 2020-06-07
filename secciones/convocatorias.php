@@ -35,6 +35,11 @@ switch ($tipoConvocatoria) {
           <th class="linea">RESULTADO FINAL</th>
         </tr>
       </thead>
+<<<<<<< HEAD
+    </table>
+
+=======
     </table>    
+>>>>>>> 327a87399ab4113cd527a9d88e822da783922f00
   </div>
 </div>
