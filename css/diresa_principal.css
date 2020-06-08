@@ -252,7 +252,8 @@ nav.navbar ul li {
     color: #ccc;
 }
 
-.home {
+
+/*.home {
     width: 100%;
 }
 
@@ -265,6 +266,7 @@ nav.navbar ul li {
     width: 100%;
     height: 100%;
 }
+*/
 
 
 /*********************************
@@ -979,21 +981,6 @@ a.text-dark:hover {
 }
 
 
-/*CAS*/
-
-.tabla .textoinfocas {
-    font-family: "Nexa Light";
-    font-size: 0.9rem;
-    text-transform: capitalize;
-    line-height: 2em;
-}
-
-.tabla .comunicado {
-    color: red;
-    font-size: 0.9rem;
-}
-
-
 /*NOTICIAS INTERIOR*/
 
 
@@ -1024,15 +1011,6 @@ a.text-dark:hover {
     background-color: #76b4fc!important;
     box-shadow: none!important;
     color: #ffffff!important;
-}
-
-.tabla_documentos {
-    border-collapse: collapse!important;
-}
-
-.tabla_documentos .texto {
-    font-size: 1rem;
-    text-transform: capitalize;
 }
 
 .card-body p {

@@ -14,7 +14,7 @@
 			$ref = $banner->url;
 			?>
 		<div>
-			<img class="bd-placeholder-img" width="100%" height="100%" src="<?php echo $Configuracion->get("SERVER").$urlImagen; ?>"
+			<img class="bd-placeholder-img" width="100%" height="550em" src="<?php echo $Configuracion->get("SERVER").$urlImagen; ?>"
 				alt="First slide">
 		</div>
 			<?php
