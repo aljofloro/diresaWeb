@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  const NO_VIGENTE = 1;
-  const VIGENTE = 2;
-  const ANEXO = 3;
+    const NO_VIGENTE = 1;
+    const VIGENTE = 2;
+    const ANEXO = 3;
     /*TABLA DE CONVOCATORIAS*/
     $('#convocatoria').DataTable({
         "destroy": true,
@@ -107,7 +107,7 @@ $(document).ready(function() {
     dataTableConvocatoriaInit();
 
     function dataTableConvocatoriaInit(valor) {
-      var vigencia = valor || '';
+        var vigencia = valor || '';
         var params = $('#tablaConvocatoria').attr("data-params");
         $('#tablaConvocatoria').DataTable({
             "ordering": false,
@@ -115,8 +115,8 @@ $(document).ready(function() {
             "serverSide": false,
             "scrollX": true,
             "lengthMenu": [
-              [5, 10, 20, -1],
-              [5, 10, 20, "Todas"]
+                [5, 10, 20, -1],
+                [5, 10, 20, "Todas"]
             ],
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
@@ -137,7 +137,7 @@ $(document).ready(function() {
                         "key": '2'
                     },
                     action: function(e, dt, node, config) {
-                      dataTableConvocatoriaInit(NO_VIGENTE);
+                        dataTableConvocatoriaInit(NO_VIGENTE);
                     }
                 }
             ]

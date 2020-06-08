@@ -7,7 +7,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3 col-6 col-lg-3 blogBox">
-				<a href="">
+				<a href="documentos-epidemiologia.php">
 					<div class="documento text-center">
 						<div class="documento_image">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81px" height="81px">
