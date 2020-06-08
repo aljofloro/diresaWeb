@@ -1031,3 +1031,10 @@ tbody .downloadmedicamento {
     border-right: none !important;
     border-left: none!important;
 }
+
+
+/*calendar*/
+
+.calendar {
+    height: 100%;
+}

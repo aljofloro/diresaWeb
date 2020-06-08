@@ -13,11 +13,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 mt-5">
-            <div class="calendar">
-                
-            </div>
+            <div class="col-lg-12 mt-5 ">
+                <div class="calendar">
 
+                </div>
             </div>
         </div>
     </div>
