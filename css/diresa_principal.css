@@ -1037,4 +1037,19 @@ tbody .downloadmedicamento {
 
 .calendar {
     height: 100%;
+    font-family: "Nexa Bold";
+}
+
+.calendar table.month th.month-title {
+    text-transform: uppercase;
+    background-color: #5d7a99;
+    font-size: 1rem!important;
+}
+
+.calendar table.month th.day-header {
+    font-size: 0.83rem!important;
+}
+
+.calendar table.month td.day {
+    font-size: 0.67rem!important;
 }

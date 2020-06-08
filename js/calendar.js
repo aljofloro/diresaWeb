@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    new Calendar('.calendar', {
+    new Calendar('.calendarboletin', {
+        language: 'es'
+    })
+    new Calendar('.calendarsala', {
         language: 'es'
     })
 });

@@ -1,4 +1,4 @@
-<div class="site-section-seccion ">
+<div class="site-section-seccion">
     <div class="container">
         <div class="row">
             <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
@@ -6,16 +6,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="text-center col-md-8 mx-auto mb-5">
-                <p> Dirección: Dirección: Av. Celestino Vargas N°409, Pocollay</br>
-                    Directora:Lic. Adm. Javier Enrique Sotomayor Galindo</br>
-                    Correo Electrónico: jsotomayorg@hotmail.com</br></p>
-            </div>
+            <p>
+                <a class="btn-institucion btn" data-toggle="collapse" href="#boletinepidemiologico" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    BOLETÍN EPIDEMIOLÓGICO
+                </a>
+                <a class="btn-institucion btn" data-toggle="collapse" href="#salasituacional" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    SALA SITUACIONAL
+                </a>
+                <a class="btn-institucion btn" data-toggle="collapse" href="#asis" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    ASIS
+                </a>
+                <a class="btn-institucion btn" data-toggle="collapse" href="#otros" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    OTROS BOLETINES
+                </a>
+            </p>
         </div>
-        <div class="row">
-            <div class="col-lg-12 mt-5 ">
-                <div class="calendar">
+        <div class="row ">
+            <div class="col-lg-12 ">
+                <div class="collapse show" id="boletinepidemiologico">
+                    <div class="calendarboletin">
 
+                    </div>
+                </div>
+                <div class="collapse " id="salasituacional">
+                    <div class="calendarsala">
+
+                    </div>
                 </div>
             </div>
         </div>
