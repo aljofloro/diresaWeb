@@ -32,7 +32,9 @@ $(document).ready(function() {
 
     /*informacion*/
     /*  $("#visionmision").collapse({ "toggle": false, 'parent': '#navaccordion' });*/
-
+    $('.colapsar2').on('show.bs.collapse', function() {
+        $('.colapsar2.show').collapse('target');
+    });
 
 
 });

@@ -178,3 +178,33 @@ tbody .download {
 .icono_convocatoria {
     margin: 40%;
 }
+
+
+/*CAS*/
+
+.tabla .textoinfocas {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    line-height: 2em;
+}
+
+.tabla .comunicado {
+    color: red;
+    font-size: 0.9rem;
+}
+
+
+/*NOTICIAS INTERIOR*/
+
+
+/*documentos de gestion*/
+
+.tabla_documentos {
+    border-collapse: collapse!important;
+}
+
+.tabla_documentos .texto {
+    font-size: 1rem;
+    text-transform: capitalize;
+}

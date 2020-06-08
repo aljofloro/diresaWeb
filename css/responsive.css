@@ -41,19 +41,12 @@
     html {
         font-size: 57%;
     }
-    .site-section-noticias {
-        padding: 3em 2em 4em 2em;
-    }
     .site-section {
         padding: 3em 2em 4em 2em;
     }
     .site-section-headingdocumentos {
         padding: 3em 2em 0 2em;
     }
-    /*.partners_slider_container {
-        width: 100%;
-        left: -40px;
-    }*/
     .go-top {
         right: 6.8%;
     }
@@ -91,9 +84,6 @@
     .header_bar {
         background-color: #ba2831;
     }
-    /*.enlaces {
-        padding-left: 15%;
-    }*/
     .footer p {
         text-align: center;
     }
@@ -106,6 +96,9 @@
 }
 
 @media only screen and (max-width: 575px) {
+    .bd-placeholder-img {
+        height: 20em;
+    }
     #main-slider .owl-dots {
         display: none;
     }
@@ -114,9 +107,6 @@
     }
     .col {
         padding-left: 0px !important;
-    }
-    .site-section-noticias {
-        padding: 3em 2em 4em 2em;
     }
     .site-section {
         padding: 3em 2em 4em 2em;
