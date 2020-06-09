@@ -1069,6 +1069,10 @@ tbody .downloadmedicamento {
     border-radius: 3em;
 }
 
+#tablaagenda .textoinfo {
+    text-transform: none!important;
+}
+
 .datepicker td,
 .datepicker th {
     width: 2.5rem;
@@ -1091,4 +1095,33 @@ input.form-control:focus {
 
 .input-group-text {
     border: none;
+}
+
+.botonbusqueda {
+    width: calc(6em + .75rem + 2px);
+    height: calc(2em + .75rem + 5px);
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #caf9ca !important;
+    cursor: pointer;
+    border: solid 1px #caf9ca;
+    border-radius: 5px;
+    font-family: "Nexa Light";
+    outline: none;
+    box-shadow: none!important;
+    text-decoration: none;
+}
+
+.botonbusqueda:hover {
+    background-color: #caf9ca!important;
+    box-shadow: none!important;
+    color: #ffffff!important;
+}
+
+.botonbusqueda:focus {
+    outline: none!important;
+    background-color: #caf9ca!important;
+    box-shadow: none!important;
+    color: #ffffff!important;
 }
