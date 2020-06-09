@@ -16,3 +16,4 @@
 <script src="node_modules/js-year-calendar/locales/js-year-calendar.es.js"></script>
 <script src="js/calendar.js"></script>
 <script src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="js/infinite.init.js"></script>
