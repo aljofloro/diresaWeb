@@ -9,7 +9,7 @@
 <script src="vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
 <script src="datatable/Buttons-1.6.2/js/dataTables.buttons.min.js"></script>
 <script src="node_modules/js-year-calendar/locales/js-year-calendar.es.js"></script>
-<script src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js"></script>
 <script src="js/infinite.init.js"></script>
 <script src="js/carousel.init.js"></script>
 <script src="js/collapse.init.js"></script>
