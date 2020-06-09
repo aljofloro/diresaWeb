@@ -24,7 +24,7 @@
         <div class="row ">
             <div class="col-lg-12 ">
                 <div class="collapse show" id="boletinepidemiologico">
-                    <div class="calendarboletin">
+                    <div class="calendarboletin" >
 
                     </div>
                 </div>

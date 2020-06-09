@@ -5,9 +5,11 @@
                 <h2 class="mb-md-4">AGENDA</h2>
             </div>
         </div>
-        <div class="form-group pmd-textfield pmd-textfield-floating-label">
-            <label class="control-label" for="datepicker">Select Date</label>
-            <input type="text" class="form-control" id="datepicker">
+        <div class="row">
+            <div class="datepicker date input-group p-0 shadow-sm">
+                <input type="text" placeholder="Choose a reservation date" class="form-control py-4 px-4" id="reservationDate">
+                <div class="input-group-append"><span class="input-group-text px-4"><i class="fa fa-clock-o"></i></span></div>
+            </div>
         </div>
         <table id="tablaagenda" class=" table table-striped display " style="width:100%">
             <thead class="thead-blue">

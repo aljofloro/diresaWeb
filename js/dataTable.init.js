@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('.hidethis').hide();
     const NO_VIGENTE = 1;
     const VIGENTE = 2;
     const ANEXO = 3;

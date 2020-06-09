@@ -12,6 +12,7 @@
 <script src="js/dataTable.init.js"></script>
 <script src="js/top.init.js"></script>
 <script src="datatable/Buttons-1.6.2/js/dataTables.buttons.min.js"></script>
-<script src="node_modules/js-year-calendar/dist/js-year-calendar.js"></script>
+<script src="node_modules/js-year-calendar/dist/js-year-calendar.min.js"></script>
 <script src="node_modules/js-year-calendar/locales/js-year-calendar.es.js"></script>
+<script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 <script src="js/calendar.js"></script>
