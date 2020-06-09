@@ -1057,3 +1057,14 @@ tbody .downloadmedicamento {
 .calendar .months-container .month-container.month-3 {
     padding-bottom: 15em;
 }
+
+
+/*agenda*/
+
+#tablaagenda .textoinfo i {
+    background: #3fa9f5;
+    color: #ffffff;
+    padding: 0.8em;
+    margin-right: 0.5em;
+    border-radius: 3em;
+}

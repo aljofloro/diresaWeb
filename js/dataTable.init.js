@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('.hidethis').hide();
     const NO_VIGENTE = 1;
     const VIGENTE = 2;
     const ANEXO = 3;
@@ -143,4 +144,12 @@ $(document).ready(function() {
             ]
         });
     }
+    /*TABLA AGENDA*/
+    $('#tablaagenda').DataTable({
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+    });
+
 });

@@ -208,3 +208,12 @@ tbody .download {
     font-size: 1rem;
     text-transform: capitalize;
 }
+
+
+/*AGENDA*/
+
+#tablaagenda tbody .textoinfo {
+    font-family: "Nexa Light";
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
