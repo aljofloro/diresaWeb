@@ -1053,3 +1053,7 @@ tbody .downloadmedicamento {
 .calendar table.month td.day {
     font-size: 0.67rem!important;
 }
+
+.calendar .months-container .month-container.month-3 {
+    padding-bottom: 15em;
+}
