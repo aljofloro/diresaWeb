@@ -93,6 +93,12 @@
     .footer_social ul li:not(:last-child) {
         margin-right: 2em;
     }
+    #botonclases {
+        visibility: hidden;
+    }
+    #botondoc {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -194,5 +200,13 @@
     }
     #main-slider .owl-next {
         display: none !important;
+    }
+    @media only screen and (max-width: 414px) {
+        #botonclases {
+            visibility: visible;
+        }
+        #botondoc {
+            visibility: visible;
+        }
     }
 }
