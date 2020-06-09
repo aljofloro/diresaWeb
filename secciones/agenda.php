@@ -6,11 +6,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="datepicker date input-group p-0 shadow-sm col-md-4 mr-3">
+            <div class="datepicker date input-group p-0 shadow-sm col-md-4 col-sm-12 mr-md-3">
                 <input type="text" placeholder="Desde" class="form-control py-4 px-4" id="fechainicial">
                 <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
             </div>
-            <div class="datepicker date input-group p-0 shadow-sm col-md-4">
+            <div class="datepicker date input-group p-0 shadow-sm col-md-4 col-sm-12">
                 <input type="text" placeholder="Hasta" class="form-control py-4 px-4" id="fechafinal">
                 <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
             </div>
