@@ -20,6 +20,7 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
+        
         include_once("secciones/noticiasinstitucionales.php");
         include_once("secciones/partners2.php");
         ?>
