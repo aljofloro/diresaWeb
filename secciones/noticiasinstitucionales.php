@@ -5,7 +5,7 @@
         <h2 class="mb-md-4">NOTICIAS</h2>
       </div>
     </div>
-    <div id="listaNoticias" class="row">
+    <div class="row listaNoticias">
       <div class="row itemNoticia">
         <div class=" col-md-4 col-6 col-lg-4">
           <div class="noticias_descr">
