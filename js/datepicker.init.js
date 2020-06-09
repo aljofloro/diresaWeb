@@ -1,12 +1,13 @@
 $(document).ready(function() {
     $('.datepicker').datepicker({
         clearBtn: true,
-        format: "dd/mm/yyyy"
+        format: "dd/mm/yyyy",
+        language: 'es'
     });
 
 
     // FOR DEMO PURPOSE
-    $('#reservationDate').on('change', function() {
+    $('#fechainicial').on('change', function() {
         var pickedDate = $('input').val();
         $('#pickedDate').html(pickedDate);
     });
