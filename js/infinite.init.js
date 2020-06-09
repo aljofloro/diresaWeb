@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.listaNoticias').infiniteScroll({
+  $("#listaNoticias").infiniteScroll({
     // options
     path: '.pagination__next',
     append: '.itemNoticia',
