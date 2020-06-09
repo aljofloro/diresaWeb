@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
-  $("#listaNoticias").infiniteScroll({
-    // options
+  $('.article-feed').infiniteScroll({
     path: '.pagination__next',
-    append: '.itemNoticia',
-    history: false
+    append: '.article',
+    status: '.scroller-status',
+    hideNav: '.pagination',
+    scrollThreshold: 700
   });
 
 });
