@@ -13,7 +13,7 @@
     $titulo = $noticia->titular;
     $introduccion = $noticia->entradilla;
     $contenido = $noticia->contenido;
-    $urlImagen = $Configuracion->get("SERVER_IMG").$noticia->imagen;
+    $urlImagen = $Configuracion->get("SERVER").$noticia->imagen;
     $date = date_create($fecha);
 ?>
 <div class="site-section-seccion">
