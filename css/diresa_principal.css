@@ -1084,26 +1084,26 @@ tbody .downloadmedicamento {
     margin-bottom: 3rem;
 }
 
-input.form-control {
+.datepicker input.form-control {
     border: none;
 }
 
-input.form-control:focus {
+.datepicker input.form-control:focus {
     box-shadow: none;
     background-color: #caf9ca;
 }
 
-.input-group-text {
+.datepicker .input-group-text {
     border: none;
 }
 
 .botonbusqueda {
     width: calc(6em + .75rem + 2px);
     height: calc(2em + .75rem + 5px);
-    background: transparent;
+    background: #caf9ca;
     text-transform: uppercase;
     font-weight: 500;
-    color: #caf9ca !important;
+    color: #ffffff !important;
     cursor: pointer;
     border: solid 1px #caf9ca;
     border-radius: 5px;
@@ -1114,7 +1114,7 @@ input.form-control:focus {
 }
 
 .botonbusqueda:hover {
-    background-color: #caf9ca!important;
+    background-color: #caf9d5!important;
     box-shadow: none!important;
     color: #ffffff!important;
 }
