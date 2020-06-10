@@ -20,7 +20,7 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        $tipoNoticias = $Configuracion->get("NOTICIA_INSTITUCIONAL");
+        $tipoNoticias = $Configuracion->get("NOTICIA_MINSA");
         include_once("secciones/noticiasTipo.php");
         include_once("secciones/partners2.php");
         ?>
