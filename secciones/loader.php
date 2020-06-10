@@ -12,8 +12,6 @@
 <script src="node_modules/js-year-calendar/locales/js-year-calendar.es.js"></script>
 <script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 <script src="node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js"></script>
-<script src="node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js"></script>
-<script src="js/infinite.init.js"></script>
 <script src="js/carousel.init.js"></script>
 <script src="js/collapse.init.js"></script>
 <script src="js/dataTable.init.js"></script>
