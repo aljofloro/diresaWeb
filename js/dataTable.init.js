@@ -2,7 +2,6 @@ $(document).ready(function() {
     const NO_VIGENTE = 1;
     const VIGENTE = 2;
     const ANEXO = 3;
-    
 
     /*TABLA GENERAL*/
     $('#tablageneral').DataTable({
@@ -62,6 +61,36 @@ $(document).ready(function() {
             ]
         });
     }
+
+    /** TABLA RESOLUCIONES */
+    dataTableResolucionesInit();
+
+    function dataTableResolucionesInit(){
+        var params = $('#tablaResolucion').attr("data-params");
+        $('#tablaResolucion').DataTable({
+            "ordering": false,
+            "destroy": true,
+            "serverSide": false,
+            "scrollX": true,
+            "lengthMenu": [
+                [5, 10, 20, -1],
+                [5, 10, 20, "Todas"]
+            ],
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+            },
+            "ajax": "async/tablaResolucion.php?" + params,
+            "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+                $('td:eq(0)', nRow).addClass('text-center');
+                $('td:eq(1)', nRow).addClass('texto');
+                $('td:eq(2)', nRow).addClass('download textoinfo align-middle text-right');
+                return nRow;
+                }
+        });
+    }
+
+
+
     /*TABLA AGENDA*/
     $('#tablaagenda').DataTable({
         "ordering": false,
