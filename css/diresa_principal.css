@@ -435,25 +435,25 @@ nav.navbar ul li {
     border-color: #e6e6e6;
 }
 
-.page-item.disabled .page-link {
+.pagination.page-item.disabled .page-link {
     color: #ffffff!important;
     background-color: #e6e6e6!important;
     border-color: #e6e6e6!important;
 }
 
-.page-item.prev.disabled .page-link {
+.pagination.page-item.prev.disabled .page-link {
     color: #3fa9f5!important;
     background-color: #ffffff!important;
     border-color: #e6e6e6!important;
 }
 
-.page-item.next.disabled .page-link {
+.pagination.page-item.next.disabled .page-link {
     color: #3fa9f5!important;
     background-color: #ffffff!important;
     border-color: #e6e6e6!important;
 }
 
-.page-item.page-inf.disabled .page-link {
+.pagination.page-item.page-inf.disabled .page-link {
     color: #3fa9f5!important;
     background-color: #ffffff!important;
     border-color: #e6e6e6!important;
