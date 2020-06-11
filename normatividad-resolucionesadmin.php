@@ -29,7 +29,11 @@
             include_once("secciones/footer.php");
             include_once("secciones/loader.php");
             ?>
-
+            <script>
+                $(document).ready(function() {
+                    $('.menuresoluciones').addClass('active');
+                });
+            </script>
         </footer>
     </main>
 </body>

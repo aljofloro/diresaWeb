@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <?php
     require_once("config/config.php");
@@ -30,6 +31,11 @@
             include_once("secciones/footer.php");
             include_once("secciones/loader.php");
             ?>
+            <script>
+                $(document).ready(function() {
+                    $('.menuinstitucion').addClass('active');
+                });
+            </script>
         </footer>
     </main>
 </body>

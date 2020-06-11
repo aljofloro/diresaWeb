@@ -26,11 +26,16 @@
         <?php
         include_once("secciones/partners2.php");
         ?>
-             <footer class="footer">
+        <footer class="footer">
             <?php
             include_once("secciones/footer.php");
             include_once("secciones/loader.php");
             ?>
+            <script>
+                $(document).ready(function() {
+                    $('.menudocumentos').addClass('active');
+                });
+            </script>
         </footer>
     </main>
 </body>
