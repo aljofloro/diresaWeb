@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <?php
     require_once("config/config.php");
@@ -20,7 +19,6 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        $tipoConvocatoria = 2;
         include_once("secciones/agenda.php");
         include_once("secciones/noticias.php");
         ?>

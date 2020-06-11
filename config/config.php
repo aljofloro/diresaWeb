@@ -31,6 +31,8 @@ $Configuracion->set('GET_CONSEJO','ConsejoRegionalObtener.php');
 $Configuracion->set('GET_DIRECTORIO','OficinaListar.php');
 $Configuracion->set('GET_CONVOCATORIA','ConvocatoriaListar.php?id_tipo_convocatoria=');
 $Configuracion->set('GET_RESOLUCIONES_POR_TIPO','ResolucionListar.php?id_tipo_resolucion=');
+$Configuracion->set('GET_ACTIVIDADES','ActividadListarAprobados.php');
+
 
 
 ?>

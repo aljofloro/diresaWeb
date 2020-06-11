@@ -92,11 +92,12 @@ $(document).ready(function() {
 
 
     /*TABLA AGENDA*/
-    $('#tablaagenda').DataTable({
+    $('#tablaAgenda').DataTable({
         "ordering": false,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
-        }
+        },
+        "ajax": "async/tablaAgenda.php"
     });
 
 });

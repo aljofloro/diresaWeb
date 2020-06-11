@@ -18,7 +18,7 @@
                 <button type="submit" class="botonbusqueda">BUSCAR</button>
             </div>
         </div>
-        <table id="tablaagenda" class=" table table-striped display " style="width:100%">
+        <table id="tablaAgenda" class=" table table-striped display " style="width:100%">
             <thead class="thead-blue">
                 <tr>
                     <th class="linea text-center">N°</th>
