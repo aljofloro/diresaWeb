@@ -30,6 +30,7 @@
     <?php
       include_once("secciones/footer.php");
       include_once("secciones/loader.php");
+      include_once("secciones/modal.php");
     ?>
     
     </footer>

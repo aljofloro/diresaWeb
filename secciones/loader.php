@@ -22,3 +22,5 @@
 <script src="js/top.init.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/datepicker.init.js"></script>
+<script src="js/comunicado.js"></script>
+
