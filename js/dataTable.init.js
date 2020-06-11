@@ -92,12 +92,50 @@ $(document).ready(function() {
 
 
     /*TABLA AGENDA*/
-    $('#tablaAgenda').DataTable({
-        "ordering": false,
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
-        },
-        "ajax": "async/tablaAgenda.php"
+    dataTableAgendaInit();
+    function dataTableAgendaInit(inicio,final){
+        var fechaInicio = inicio || '';
+        var fechaFinal = final || '';
+        var ajax = "async/tablaAgenda.php";
+        if(fechaInicio != '' && fechaFinal != ''){
+            ajax += "?fecha_inicio="+fechaInicio+"&fecha_fin="+fechaFinal;
+        }
+        $('#tablaAgenda').DataTable({
+            "destroy": true,
+            "ordering": false,
+            "scrollX": true,
+                "lengthMenu": [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, "Todas"]
+                ],
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+            },
+            "ajax": ajax,
+            "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+                $('td:eq(0)', nRow).addClass('text-center');
+                $('td:eq(1)', nRow).addClass('text-justify');
+                return nRow;
+                }
+        });
+    }
+
+    $('.botonbusqueda').click(function(){
+        var inicio = $('#fechainicial').val();
+        var final = $('#fechafinal').val();
+        if(inicio == '' || final == ''){
+            alert("Para realizar la búsqueda es necesario ingresar ambas fechas");
+            return false;
+        }
+
+        if(new Date(final).getTime() < new Date(inicio).getTime()){
+            alert("La fecha final debe ser posterior a la inicial");
+            return false;
+        }
+
+        dataTableAgendaInit(inicio,final);
+        
     });
+    
 
 });
