@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-  <?php
+  <?php    
     require_once("config/config.php");
     include_once("secciones/head.php");
     include_once("secciones/estilos.php");

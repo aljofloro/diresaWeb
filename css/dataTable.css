@@ -109,11 +109,6 @@ select {
 
 /*DIRECTORIO*/
 
-
-/*.tabla .texto {
-    font-size: 1rem;
-}*/
-
 .tabla .textoinfo {
     font-family: "Nexa Light";
     font-size: 0.9rem;
@@ -194,8 +189,6 @@ tbody .download {
     font-size: 0.9rem;
 }
 
-
-/*NOTICIAS INTERIOR*/
 
 
 /*documentos de gestion*/
