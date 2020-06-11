@@ -1,15 +1,22 @@
 <?php
 require_once($nivelProfundidad."clases/Configuracion.php");
 $Configuracion = Configuracion::getConfiguracion();
+$Configuracion->set('TODO',-1);
 $Configuracion->set('NO_VIGENTE',1);
 $Configuracion->set('VIGENTE',2);
 $Configuracion->set('ANEXO',3);
+$Configuracion->set('NOTICIA_INSTITUCIONAL',1);
+$Configuracion->set('NOTICIA_REGIONAL',2);
+$Configuracion->set('NOTICIA_MINSA',3);
+
 
 $Configuracion->set('SERVER_API_PORTAL','http://api.proydir.nom.pe/src/Portal/');
 $Configuracion->set('SERVER','http://api.proydir.nom.pe/');
 $Configuracion->set('GET_BANNER','BannerListar.php');
 $Configuracion->set('GET_NOTICIAS_MAIN','NoticiaListarAprobados.php');
 $Configuracion->set('GET_NOTICIAS_POR_ID','NoticiaObtenerAprobado.php?id=');
+$Configuracion->set('GET_NOTICIAS_POR_TIPO','NoticiaListarAprobados.php?registros=-1&id_tipo_noticia=');
+
 $Configuracion->set('GET_ENLACES_1','EnlaceInteresListar.php?grupo=1');
 $Configuracion->set('GET_ENLACES_2','EnlaceInteresListar.php?grupo=2');
 $Configuracion->set('GET_INSTITUCION','InstitucionObtener.php');
