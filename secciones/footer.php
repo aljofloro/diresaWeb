@@ -1,19 +1,19 @@
 <div class="container">
 	<div class="iniciofooter row d-md-flex col-md-10">
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="inicio.php">INICIO</a>
+			<a class="nav-link" href="index.php">INICIO</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="institucion_informacion.php">INSTITUCIÓN</a>
+			<a class="nav-link" href="institucion-informacion.php">INSTITUCIÓN</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
 			<a class="nav-link" href="convocatorias.php">CONVOCATORIAS</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="noticias_institucionales.php">NOTICIAS</a>
+			<a class="nav-link" href="noticias-institucionales.php">NOTICIAS</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="normatividad_resolucionesdirectoriales.php">NORMATIVIDAD</a>
+			<a class="nav-link" href="normatividad-resolucionesdirectoriales.php">NORMATIVIDAD</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
 			<a class="nav-link" href="agenda.php">AGENDA</a>
@@ -25,7 +25,7 @@
 			<a class="nav-link" href="contacto.php">CONTACTO</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="documentos_gestion.php">DOCUMENTOS DE GESTIÓN</a>
+			<a class="nav-link" href="documentos-gestion.php">DOCUMENTOS DE GESTIÓN</a>
 		</div>
 
 	</div>

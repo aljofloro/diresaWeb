@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-  <?php    
-    require_once("config/config.php");
-    include_once("secciones/head.php");
-    include_once("secciones/estilos.php");
+
+<head>
+  <?php
+  require_once("config/config.php");
+  include_once("secciones/head.php");
+  include_once("secciones/estilos.php");
   ?>
-  </head>
+</head>
+
 <body id="top">
   <header>
-  <?php
+    <?php
     include_once("secciones/horario.php");
     include_once("secciones/presentacion.php");
     include_once("secciones/menu.php");
-  ?>
+    ?>
   </header>
   <main role="main">
-  <?php
+    <?php
     include_once("secciones/slider.php");
-  ?>
-  <?php
+    ?>
+    <?php
     include_once("secciones/noticias.php");
     include_once("secciones/accesos.php");
     include_once("secciones/partners.php");
     include_once("secciones/documentos.php");
     include_once("secciones/partners2.php");
-  ?>
+    ?>
     <footer class="footer">
-    <?php
+      <?php
       include_once("secciones/footer.php");
       include_once("secciones/loader.php");
       include_once("secciones/modal.php");
-    ?>
-    
+      ?>
+      <script>
+        $(document).ready(function() {
+          $('.menuinicio').addClass('active');
+        });
+      </script>
     </footer>
   </main>
 </body>
+
 </html>
