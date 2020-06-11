@@ -1,3 +1,7 @@
+.modal {
+    margin-top: 2%;
+}
+
 .modal-content {
     background: #ffffff;
     padding: 2%;
@@ -5,7 +9,7 @@
     border-radius: 2em;
 }
 
-button.close {
+.modal button.close {
     background: red;
     border: none;
     -webkit-border-radius: 50%;
@@ -16,11 +20,11 @@ button.close {
     color: #FFFFFF;
     cursor: pointer;
     outline: none;
-    width: 52px;
-    height: 52px;
+    width: 6%;
+    height: 6%;
     position: absolute;
-    right: -10px;
-    top: -10px;
+    right: -1%;
+    top: -1%;
     -webkit-transition: -webkit-transform 600ms;
     -moz-transition: -moz-transform 600ms;
     -ms-transition: -ms-transform 600ms;
@@ -28,7 +32,7 @@ button.close {
     transition: transform 600ms;
 }
 
-button.close:hover {
+.modal button.close:hover {
     background: red;
     color: #FFFFFF;
     -webkit-transform: rotate(360deg) scale(1.10);
@@ -43,7 +47,9 @@ button.close:hover {
     transition: transform 600ms;
 }
 
-button.close span,
+
+/*
+.modal button.close span,
 span:before,
 span:after {
     background: #FFFFFF;
@@ -54,8 +60,9 @@ span:after {
     position: absolute;
     width: 20px;
 }
+*/
 
-button.close span:first-child {
+.modal button.close span:first-child {
     background: none;
     bottom: 0;
     left: 0;
@@ -65,7 +72,7 @@ button.close span:first-child {
     top: 0;
 }
 
-button.close span:before {
+.modal button.close span:before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -73,13 +80,12 @@ button.close span:before {
     transform: rotate(45deg);
 }
 
-button.close span:after {
+.modal button.close span:after {
     -webkit-transform: translateY(-2px) rotate(-45deg);
     -moz-transform: translateY(-2px) rotate(-45deg);
     -ms-transform: translateY(-2px) rotate(-45deg);
     -o-transform: translateY(-2px) rotate(-45deg);
     transform: translateY(-2px) rotate(-45deg);
-    top: 2px;
 }
 
 .modal-lg {
