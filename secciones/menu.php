@@ -29,7 +29,7 @@
 
               <div class="collapse navbar-collapse " id="navbarCollapse">
                 <ul class="nav navbar-nav mr-auto">
-                  <li class="nav-item ">
+                  <li class="nav-item active">
                     <a class="nav-link font-weight-bold" href="index.php">INICIO <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item dropdown menuinstitucion">
