@@ -20,7 +20,8 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        include_once("secciones/resolucionesdirectoriales.php");
+        $tipoResolucion = $Configuracion->get("DIRECTORAL");
+        include_once("secciones/resoluciones.php");
         include_once("secciones/noticias.php");
         include_once("secciones/partners2.php");
         ?>

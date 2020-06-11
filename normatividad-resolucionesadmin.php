@@ -20,7 +20,8 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        include_once("secciones/resolucionesadmin.php");
+        $tipoResolucion = $Configuracion->get("ADMINISTRATIVA");
+        include_once("secciones/resoluciones.php");
         include_once("secciones/noticias.php");
         include_once("secciones/partners2.php");
         ?>
