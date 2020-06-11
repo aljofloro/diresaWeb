@@ -21,7 +21,7 @@
         <?php
         include_once("secciones/slider.php");
         $tipoResolucion = $Configuracion->get("ADMINISTRATIVA");
-        include_once("secciones/resolucionesadmin.php");
+        include_once("secciones/resoluciones.php");
         include_once("secciones/noticias.php");
         include_once("secciones/partners2.php");
         ?>

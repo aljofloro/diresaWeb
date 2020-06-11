@@ -1,5 +1,4 @@
 <?php
-setlocale(LC_TIME,"es_PE");
 $nivelProfundidad = "../";
 include_once($nivelProfundidad."config/config.php");
 $Configuracion = Configuracion::getConfiguracion();
@@ -12,14 +11,13 @@ if ($error) {
   $resoluciones = $jsonq->data;
   $numero = 1;
   foreach ($resoluciones as $resolucion) {
-    $date = date_create($resolucion->$fecha);
-    $detalle = '<p>Resolución Directoral N° '.$resolucion->codigo.'</p>
+    $detalle = '<p><a href="'.$resolucion->documento.'" target="_blank">Resolución Directoral N° '.$resolucion->codigo.'</a></p>
     <div class="row textoinfo">
         <div class="col-md-4">
             <p>'.$resolucion->descripcion.'</p>
         </div>
     </div>';
-    $fechaResolucion = '<p>'.strftime("%A %d de %B de %G",strtotime($resolucion->$fecha))/*date_format($date,"l d F Y")*/.'</p>';//Miércoles 02 de Enero de 2019
+    $fechaResolucion = '<p>'.strftime("%A %d de %B de %G",strtotime($resolucion->fecha))/*date_format($fecha,"l d F Y")*/.'</p>';//Miércoles 02 de Enero de 2019
 
     $listaResolucion[] = array(str_pad($numero,3,'0',STR_PAD_LEFT),$detalle,$fechaResolucion);
     $numero ++;
