@@ -8,30 +8,31 @@
         <div class="row">
             <div class="mx-auto">
                 <div class="contact_form">
-                    <form action="#" class="comment_form">
+                    <form action="<?php echo $Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("PUT_CONSULTA"); ?>" class="comment_form">
                         <div class="form-group">
-                            <select id="inputState" class="form-control">
+                            <select id="idArea" name="id_area" class="form-control">
                                 <option selected>Para Dirección General</option>
                                 <option>...</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="comment_input" required="required" placeholder="Nombres y Apellidos:">
+                            <input type="text" name="nombre_completo" class="comment_input" required="required" placeholder="Nombres y Apellidos:">
                         </div>
                         <div class="form-row">
                             <div class="form-group col-6">
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email:">
+                                <input type="email" name="correo_electronico" class="form-control" id="inputEmail4" placeholder="Email:">
                             </div>
                             <div class="form-group col-6">
-                                <input type="celular" class="form-control" id="inputCelular" placeholder="Celular:">
+                                <input type="celular" name="numero_telefono" class="form-control" id="inputCelular" placeholder="Celular:">
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="comment_input comment_textarea" required="required" placeholder="Consulta:"></textarea>
+                            <textarea class="comment_input comment_textarea" name="descripcion" required="required" placeholder="Consulta:"></textarea>
                         </div>
                 </div>
                 <div class="row flex-row-reverse">
-                    <button type="submit" class="comment_button ">CANCELAR</button>
+                    <input type="hidden" name="mm_frm" value="form_diresa_consulta" />
+                    <button type="submit" class="comment_button">CANCELAR</button>
                     <button type="submit" class="comment_button">ENVIAR</button>
 
                 </div>

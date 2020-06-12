@@ -19,8 +19,8 @@
 <script src="js/carousel.init.js"></script>
 <script src="js/collapse.init.js"></script>
 <script src="js/dataTable.init.js"></script>
+<script src="js/select.init.js"></script>
 <script src="js/top.init.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/datepicker.init.js"></script>
 <script src="js/comunicado.js"></script>
-
