@@ -11,8 +11,6 @@
                     <form action="<?php echo $Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("PUT_CONSULTA"); ?>" class="comment_form">
                         <div class="form-group">
                             <select id="idArea" name="id_area" class="form-control">
-                                <option selected>Para Dirección General</option>
-                                <option>...</option>
                             </select>
                         </div>
                         <div class="form-group">

@@ -11,10 +11,10 @@ if ($error) {
   foreach ($tipos as $tipo) {
     $areas = $tipo->areas;
     foreach ($areas as $area) {
-      $listaAreas[] = array($area->id_area,$area->nombre);
+      $listaAreas[] = array('id_area'=>$area->id_area,'nombre'=>$area->nombre);
     }    
   }
 }
 $data = array('data' => $listaAreas);
-echo json_encode($data);
+echo json_encode($listaAreas);
 ?>
