@@ -8,7 +8,7 @@
         <div class="row">
             <div class="mx-auto">
                 <div class="contact_form">
-                    <form action="<?php echo $Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("PUT_CONSULTA"); ?>" class="comment_form">
+                    <form method="POST" action="<?php echo $Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("PUT_CONSULTA"); ?>" class="comment_form">
                         <div class="form-group">
                             <select id="idArea" name="id_area" class="form-control">
                             </select>
