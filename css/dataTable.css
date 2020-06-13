@@ -38,6 +38,10 @@
     padding: 2em !important;
 }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0!important;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -188,7 +192,6 @@ tbody .download {
     color: red;
     font-size: 0.9rem;
 }
-
 
 
 /*documentos de gestion*/
