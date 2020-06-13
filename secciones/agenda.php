@@ -5,18 +5,18 @@
                 <h2 class="mb-md-4">AGENDA</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3">
-                <input type="text" placeholder="Desde" class="form-control py-4 px-4" id="fechainicial" >
-                <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
-            </div>
-            <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3">
-                <input type="text" placeholder="Hasta" class="form-control py-4 px-4" id="fechafinal" >
-                <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
-            </div>
-            <div class="p-0 col-md-3">
-                <button type="submit" class="botonbusqueda" >BUSCAR</button>
-            </div>
+        <div class="row mb-5">
+                <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3 ml-auto mr-auto">
+                    <input type="text" placeholder="Desde" class="form-control py-4 px-4" id="fechainicial">
+                    <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
+                </div>
+                <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3">
+                    <input type="text" placeholder="Hasta" class="form-control py-4 px-4" id="fechafinal">
+                    <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
+                </div>
+                <div class="p-0 col-md-1 ">
+                    <button type="submit" class="botonbusqueda">BUSCAR</button>
+                </div>
         </div>
         <table id="tablaAgenda" class=" table table-striped display " style="width:100%">
             <thead class="thead-blue">

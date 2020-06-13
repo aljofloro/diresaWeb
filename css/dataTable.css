@@ -208,8 +208,20 @@ tbody .download {
 
 /*AGENDA*/
 
-#tablaagenda tbody .textoinfo {
+#tablaAgenda .textoinfo {
+    text-transform: none!important;
+}
+
+#tablaAgenda tbody .textoinfo {
     font-family: "Nexa Light";
     font-size: 0.9rem;
-    text-transform: capitalize;
+}
+
+#tablaAgenda tbody .textoinfo i {
+    width: 2.5em;
+    background: #3fa9f5;
+    color: #ffffff;
+    padding: 0.8em;
+    margin-right: 0.5em;
+    border-radius: 3em;
 }

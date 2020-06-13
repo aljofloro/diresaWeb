@@ -1121,18 +1121,6 @@ tbody .downloadmedicamento {
 
 /*agenda*/
 
-#tablaAgenda .textoinfo i {
-    background: #3fa9f5;
-    color: #ffffff;
-    padding: 0.8em;
-    margin-right: 0.5em;
-    border-radius: 3em;
-}
-
-#tablaAgenda .textoinfo {
-    text-transform: none!important;
-}
-
 .datepicker td,
 .datepicker th {
     width: 2.5rem;
@@ -1158,11 +1146,11 @@ tbody .downloadmedicamento {
 }
 
 .botonbusqueda {
-    width: calc(6em + .75rem + 2px);
+    width: calc(5em + .75rem + 2px);
     height: calc(2em + .75rem + 5px);
     background: #caf9ca;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     color: #ffffff !important;
     cursor: pointer;
     border: solid 1px #caf9ca;
