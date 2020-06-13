@@ -42,6 +42,7 @@ $Configuracion->set('GET_RESOLUCIONES_POR_TIPO','ResolucionListar.php?id_tipo_re
 $Configuracion->set('GET_ACTIVIDADES','ActividadListarAprobados.php');
 $Configuracion->set('GET_AREAS','TipoAreaListar.php');
 $Configuracion->set('GET_DOCUMENTOS_GESTION','DocumentoListar.php?id=');
+$Configuracion->set('GET_COMUNICADOS','VentanaEmergenteListar.php');
 
 
 
