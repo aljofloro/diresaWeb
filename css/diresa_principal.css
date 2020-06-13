@@ -205,6 +205,11 @@ nav.navbar ul li {
     background-color: #f3fbff;
 }
 
+.navbar-nav .dropdown-menu {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
 
 /*********************************
 4. Home
