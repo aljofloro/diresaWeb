@@ -7,15 +7,15 @@
         </div>
         <div class="row">
             <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3">
-                <input type="text" placeholder="Desde" class="form-control py-4 px-4" id="fechainicial">
+                <input type="text" placeholder="Desde" class="form-control py-4 px-4" id="fechainicial" >
                 <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
             </div>
             <div class="datepicker date input-group p-0 shadow-sm col-md-3 col-sm-12 mr-md-3">
-                <input type="text" placeholder="Hasta" class="form-control py-4 px-4" id="fechafinal">
+                <input type="text" placeholder="Hasta" class="form-control py-4 px-4" id="fechafinal" >
                 <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
             </div>
             <div class="p-0 col-md-3">
-                <button type="submit" class="botonbusqueda">BUSCAR</button>
+                <button type="submit" class="botonbusqueda" >BUSCAR</button>
             </div>
         </div>
         <table id="tablaAgenda" class=" table table-striped display " style="width:100%">
@@ -26,6 +26,7 @@
                 </tr>
             </thead>
             <tbody>
+                <!--
                 <tr>
                     <td class="text-center">001</td>
                     <td class="text-justify">
@@ -34,7 +35,7 @@
                         <p class="textoinfo"><i class="fas fa-map-marker-alt fa-sm"></i>Presidencia de la corte superior de justicia de tacna</p>
                         <p class="textoinfo"><i class="fas fa-pencil-alt fa-sm"></i>Corte Superior de Justicia de Tacna y Dirección Regional de Salud Tacna</p>
                     </td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
     </div>

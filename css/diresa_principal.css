@@ -1111,7 +1111,7 @@ tbody .downloadmedicamento {
 
 /*agenda*/
 
-#tablaagenda .textoinfo i {
+#tablaAgenda .textoinfo i {
     background: #3fa9f5;
     color: #ffffff;
     padding: 0.8em;
@@ -1119,7 +1119,7 @@ tbody .downloadmedicamento {
     border-radius: 3em;
 }
 
-#tablaagenda .textoinfo {
+#tablaAgenda .textoinfo {
     text-transform: none!important;
 }
 
