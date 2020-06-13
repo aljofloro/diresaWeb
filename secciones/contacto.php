@@ -26,13 +26,13 @@
                         </div>
                         <div class="form-group">
                             <textarea class="comment_input comment_textarea" name="descripcion" required="required" placeholder="Consulta:"></textarea>
+                            <input type="hidden" name="mm_frm" value="form_diresa_consulta" />
+                            <input type="hidden" name="mm_rtn" value="<?php echo $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]; ?>"/>
                         </div>
                 </div>
-                <div class="row flex-row-reverse">
-                    <input type="hidden" name="mm_frm" value="form_diresa_consulta" />
+                <div class="row flex-row-reverse">                    
                     <button type="submit" class="comment_button">CANCELAR</button>
                     <button type="submit" class="comment_button">ENVIAR</button>
-
                 </div>
                 </form>
             </div>
