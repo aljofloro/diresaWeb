@@ -11,6 +11,35 @@ $(document).ready(function() {
         }
     });
 
+    /** TABLA DOCUMENTOS OFICINA */
+    $('#tablaOficinaDocumentos').DataTable({
+        "scrollX": true,
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+        initComplete: function () {
+            this.api().columns([0, 1, 2]).every( function () {
+                var column = this;
+                var select = $('<select><option value=""></option></select>')
+                    .appendTo( $(column.footer()).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+ 
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
+                            .draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+        }
+    });
+
     /** TABLA DIRECTORIO */
     $('#tablaDirectorio').DataTable({
         "scrollX": true,

@@ -6,339 +6,77 @@
   <style>.hide {display:none!important }
   </style>
   <script src="vendor/components/jquery/jquery.min.js"></script>
-  <script src="vendor/pagination/pagination.min.js"></script>
-  <script src="js/pagination.init.js"></script>
+  <script src="datatable/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      
+    $('#example').DataTable( {
+      "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+        initComplete: function () {
+            this.api().columns([0, 1]).every( function () {
+                var column = this;
+                var select = $('<select><option value=""></option></select>')
+                    .appendTo( $(column.footer()).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+ 
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
+                            .draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+        }
+    } );
+} );
+  </script>
+  
 </head>
 <body>
-  <div class="article-feed row">
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
+<div class="row">
+            <div class="documentositems col-lg-12 mt-5">
+            <table id="example" class="display" style="width:100%">
+                    <thead class="thead-blue">
+                        <tr>
+                            <th class="numero text-center">N°</th>
+                            <th>AUTORIZACIONES SANITARIAS PARA LA IMPORTACIÓN DE JUGUETES</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabla">
+                        <tr>
+                            <td class="text-center">001</td>
+                            <td class="texto">Autorizaciones sanitarias para la importación de juguetes 2019 EEPASO</td>
+                            <td class="download">
+                            doe
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">002</td>
+                            <td class="texto">Autorizaciones sanitarias para la importación de juguetes 2017 - 2018 EEPASO</td>
+                            <td class="download">
+                            doe
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="numero text-center">N°</th>
+                            <th>AUTORIZACIONES SANITARIAS PARA LA IMPORTACIÓN DE JUGUETES</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="article col-md-4 col-6 col-lg-4">
-      <div class="noticias_descr">
-        <div class="noticias_descr_image">
-          <img src="img/noticias/hostpitalUnanue.png" />
-        </div>
-        <div class="noticias_descr_body">
-          <h4 class="noticias_descr_title">HOSPITAL HIPÓLITO UNANUE Y ESTABLECIMIENTOS EN ALERTA ANTE CORONAVIRUS</h4>
-          <div class="noticias_descr_fecha">Regional // Lun. 10 / Feb / 2020</div>
-          <div class="noticias_descr_text">
-            <p>El Director Ejecutivo de Epidemiología de la Diresa Tacna Dr.
-                Edgar Tejada Vásquez manifestó que el hospital Hipólit.</p>
-          </div>
-          <div class="noticias_descr_footer">
-            <p><a class="btn" href="noticias-interior.php" role="button">LEER MAS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  <div class="text-center">
-    <ul class="pagination example"></ul>
-  </div>
 </body>
 </html>
