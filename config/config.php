@@ -56,10 +56,19 @@ $Configuracion->set('GET_CONVOCATORIA','ConvocatoriaListar.php?id_tipo_convocato
 $Configuracion->set('GET_RESOLUCIONES_POR_TIPO','ResolucionListar.php?id_tipo_resolucion=');
 $Configuracion->set('GET_ACTIVIDADES','ActividadListarAprobados.php');
 $Configuracion->set('GET_AREAS','TipoAreaListar.php');
-$Configuracion->set('GET_DOCUMENTOS_GESTION','DocumentoListar.php?id=');
+$Configuracion->set('GET_DOCUMENTOS_GESTION','TipoSeccionObtener.php?id=1');
 $Configuracion->set('GET_COMUNICADOS','VentanaEmergenteListar.php');
 $Configuracion->set('GET_ENCARGADOS','EncargadoObtener.php?id=');
 $Configuracion->set('GET_DOCUMENTOS_SECCION','DocumentoListarSegunTipoSeccion.php?id=');
+$Configuracion->set('GET_NOMBRAMIENTO','TipoSeccionObtener.php?id=10');
+$Configuracion->set('GET_OCI','TipoSeccionObtener.php?id=11');
+$Configuracion->set('GET_EEI','TipoSeccionObtener.php?id=12');
+$Configuracion->set('GET_SERUMS','TipoSeccionObtener.php?id=13');
+$Configuracion->set('GET_MATERIALES','TipoSeccionObtener.php?id=14');
+$Configuracion->set('GET_SIS','TipoSeccionObtener.php?id=15');
+$Configuracion->set('GET_APERTURA','TipoSeccionObtener.php?id=16');
+
+
 
 
 

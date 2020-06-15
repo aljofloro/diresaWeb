@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
-                <h2 class="mb-md-4">NOMBRAMIENTO DL 1153 AÑO 2019</h2>
+                <h2 class="mb-md-4"><?php echo $tipoSeccion->nombre ?></h2>
             </div>
         </div>
         <div class="row">

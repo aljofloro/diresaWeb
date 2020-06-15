@@ -1,11 +1,11 @@
 <div class="site-section-seccion">
-    <div class="container">
+    <div class="container" id="accordion">
         <div class="row">
             <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
                 <h2 class="mb-md-4">DIRECCIÓN EJECUTIVA DE ADMINISTRACIÓN</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row" >
             <p>
                 <a class="btn-institucion btn" data-toggle="collapse" href="#boletinepidemiologico" role="button" aria-expanded="false" aria-controls="collapseExample">
                     BOLETÍN EPIDEMIOLÓGICO
@@ -23,12 +23,12 @@
         </div>
         <div class="row ">
             <div class="col-lg-12 ">
-                <div class="collapse show" id="boletinepidemiologico">
+                <div class="collapse show" id="boletinepidemiologico" data-parent="#accordion">
                     <div class="calendarboletin" >
 
                     </div>
                 </div>
-                <div class="collapse " id="salasituacional">
+                <div class="collapse " id="salasituacional" data-parent="#accordion">
                     <div class="calendarsala">
 
                     </div>
