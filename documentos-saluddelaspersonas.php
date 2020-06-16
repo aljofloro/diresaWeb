@@ -20,7 +20,9 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        include_once("secciones/saluddepersonas.php");
+        $encargoOficina = $Configuracion->get("ENCARGO_SALUD_PERSONAS");
+        $tipoSeccion = $Configuracion->get("DOCUMENTOS_SALUD_PERSONAS");
+        include_once("secciones/oficinaDocumentos.php");
         include_once("secciones/documentos.php");
         ?>
         <?php

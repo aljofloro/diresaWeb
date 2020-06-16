@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $("#myModal").modal('show');
+    $(".comunicado").modal('show');
 });

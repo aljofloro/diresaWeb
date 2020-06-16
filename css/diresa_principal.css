@@ -1048,6 +1048,7 @@ a.text-dark:hover {
 /*documentos de gestion*/
 
 .btndescargar {
+    padding: 4%;
     width: calc(7em + .75rem + 2px);
     height: calc(2em + .75rem + 2px);
     background: transparent;
