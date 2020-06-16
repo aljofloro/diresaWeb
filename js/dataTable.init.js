@@ -5,26 +5,32 @@ $(document).ready(function() {
 
     /*TABLA GENERAL*/
 
+
     $('#tablageneral').DataTable({
         "ordering": false,
-
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         }
     });
 
     /** TABLA DOCUMENTOS OFICINA */
+
     $('#tablaOficinaDocumentos').DataTable({
+
         "scrollX": true,
         "ordering": false,
-
+        "autoWidth": false,
+        "columnDefs": [{
+            "targets": [1, 2],
+            "width": '40%',
+        }],
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         },
         initComplete: function() {
             this.api().columns([0, 1, 2]).every(function() {
                 var column = this;
-                var select = $('<select><option value=""></option></select>')
+                var select = $('<select class="selectdocumentos"><option value=""></option></select>')
                     .appendTo($(column.footer()).empty())
                     .on('change', function() {
                         var val = $.fn.dataTable.util.escapeRegex(

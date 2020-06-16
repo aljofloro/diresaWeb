@@ -238,5 +238,10 @@ tbody .download {
 table.dataTable tfoot th,
 table.dataTable tfoot td {
     padding: 0px!important;
-    border-top: 1px solid #caf9ca!important;
+    border-top: none!important;
+}
+
+.selectdocumentos {
+    width: 100%;
+    border: 1px solid #caf9ca;
 }
