@@ -11,14 +11,16 @@ if ($error) {
 <div class="site-section-seccion">
   <div class="container">
     <div class="row">
+    <div class="col-12">
       <p>
-        <a class="btn-institucion btn active" data-toggle="collapse" href="#reseña" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <a class="btn-institucion btn" data-toggle="collapse" href="#reseña" role="button" aria-expanded="false" aria-controls="collapseExample">
           RESEÑA
         </a>
         <a class="btn-institucion btn" data-toggle="collapse" href="#funciones" role="button" aria-expanded="false" aria-controls="collapseExample">
           FUNCIONES
         </a>
       </p>
+    </div>
     </div>
     <div class="row">
       <div class="mx-auto">

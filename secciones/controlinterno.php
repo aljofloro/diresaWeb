@@ -64,7 +64,7 @@ if($error){
                     ?>
                     <tr>
                       <td class="texto align-middle"><?php echo str_pad($numero,3,'0',STR_PAD_LEFT); ?></td>
-                      <td class="texto align-middle"><?php echo $documento->nombre; ?></td>
+                      <td class="texto align-middle"  style="width:70%"><?php echo $documento->nombre; ?></td>
                       <td class="download">
                         <a href="<?php echo $Configuracion->get("SERVER").$documento->archivo; ?>" class="btndescargar" download="<?php echo $documento->nombre; ?>" target="_blank">DESCARGAR</a>
                       </td>

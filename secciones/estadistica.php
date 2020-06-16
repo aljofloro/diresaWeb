@@ -21,14 +21,14 @@
                                     <tbody class="">
                                         <tr>
                                             <td class="texto align-middle">001</td>
-                                            <td class="texto align-middle">Boletín Estadístico 2011</td>
+                                            <td class="texto align-middle"  style="width:70%">Boletín Estadístico 2011</td>
                                             <td class="download">
                                                 <button type="submit" class="btndescargar">DESCARGAR</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="texto align-middle">002</td>
-                                            <td class="texto align-middle">Boletín Estadístico 2012
+                                            <td class="texto align-middle"  style="width:70%">Boletín Estadístico 2012
                                             </td>
                                             <td class="download">
                                                 <button type="submit" class="btndescargar">DESCARGAR</button>

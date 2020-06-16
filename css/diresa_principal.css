@@ -930,9 +930,9 @@ svg:focus {
     background-color: #ffffff;
     border: none;
     margin-right: 1em;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     text-transform: uppercase;
-    width: 19%;
+    width: 14%;
 }
 
 .btn-institucion:not(:disabled):not(.disabled).active,
@@ -1049,7 +1049,7 @@ a.text-dark:hover {
 
 .btndescargar {
     padding: 4%;
-    width: calc(7em + .75rem + 2px);
+    width: calc(2em + .75rem + 2px);
     height: calc(2em + .75rem + 2px);
     background: transparent;
     text-transform: uppercase;

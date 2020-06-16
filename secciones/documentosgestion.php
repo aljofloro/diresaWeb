@@ -22,7 +22,7 @@ if($error){
             ?>
           <div class="card">
             <div id="headingOne" class="card-header ">
-              <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-expanded="true" aria-controls="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" class="d-block position-relative text-dark text-uppercase collapsible-link py-2"><?php echo $seccion->abreviatura; ?></a></h6>
+              <h6 class="mb-0 font-weight-bold"><a  href="#" data-toggle="collapse" data-target="#<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-expanded="true" aria-controls="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" class="d-block position-relative text-dark text-uppercase collapsible-link py-2"><?php echo $seccion->abreviatura; ?></a></h6>
             </div>
             <div id="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-labelledby="headingOne" data-parent="#accordionDocumentos" class="collapse">
               <div class="card-body p-5">
@@ -36,7 +36,7 @@ if($error){
                     ?>
                     <tr>
                       <td class="texto align-middle"><?php echo str_pad($numero,3,'0',STR_PAD_LEFT); ?></td>
-                      <td class="texto align-middle"><?php echo $documento->nombre; ?></td>
+                      <td class="texto align-middle" style="width:70%"><?php echo $documento->nombre; ?></td>
                       <td class="download">
                         <a href="<?php echo $Configuracion->get("SERVER").$documento->archivo; ?>" class="btndescargar" download="<?php echo $documento->nombre; ?>" target="_blank">DESCARGAR</a>
                       </td>

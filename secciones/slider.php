@@ -1,4 +1,4 @@
-<div class="botonajustes align-items-center">
+<!--<div class="botonajustes align-items-center">
 	<button>
 		<span class="sthGroup">
 			<span class="sth"><i class="fa fa-wheelchair fa-3x" aria-hidden="true"></i></span>
@@ -20,7 +20,7 @@
 			<p><a href="https://www.facebook.com/programacionnet" target="_blank">Like Us on<br>Facebook</a></p>
 		</li>
 	</ul>
-</div>
+</div>-->
 <div class="owl-carousel owl-theme" id="main-slider">
 	<?php
 	$Configuracion = Configuracion::getConfiguracion();
