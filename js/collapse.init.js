@@ -2,13 +2,14 @@ $(document).ready(function() {
 
     /*BOTON DE + DE ACCESOS*/
     $("#botonclases").click(function() {
-        $("#collapse1").removeClass("col-sm-none");
-        $("#collapse2").removeClass("col-sm-none");
-        $("#collapse3").removeClass("col-sm-none");
-        $("#collapse4").removeClass("col-sm-none");
-        $("#collapse5").removeClass("col-sm-none");
-        $("#btn_context").addClass("d-none");
+        var controls = $("#botonclases").attr("aria-controls");
+        var ids = controls.split(" ");
+        for (let index = 0; index < ids.length-1; index++) {
+            $("#btn_context").addClass("d-none");
+            $("#"+ids[index]).removeClass("col-sm-none");
+        }        
     });
+
     /*BOTON DE + DOCUMENTOS*/
     $("#botondoc").click(function() {
         $("#collapsedoc1").removeClass("col-sm-none");

@@ -68,6 +68,8 @@ $Configuracion->set('GET_MATERIALES','TipoSeccionObtener.php?id=14');
 $Configuracion->set('GET_SIS','TipoSeccionObtener.php?id=15');
 $Configuracion->set('GET_APERTURA','TipoSeccionObtener.php?id=16');
 
+$Configuracion->set('GET_ACCESOS','TipoSeccionListar.php?grupo=2');
+
 
 
 
