@@ -6,6 +6,7 @@
             </div>
         </div>
         <div class="row" >
+            <div class="col-12">
             <p>
                 <a class="btn-institucion btn" data-toggle="collapse" href="#boletinepidemiologico" role="button" aria-expanded="false" aria-controls="collapseExample">
                     BOLETÍN EPIDEMIOLÓGICO
@@ -20,6 +21,7 @@
                     OTROS BOLETINES
                 </a>
             </p>
+            </div>
         </div>
         <div class="row ">
             <div class="col-lg-12 ">

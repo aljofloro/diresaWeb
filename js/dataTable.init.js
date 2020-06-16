@@ -4,8 +4,10 @@ $(document).ready(function() {
     const ANEXO = 3;
 
     /*TABLA GENERAL*/
+
     $('#tablageneral').DataTable({
         "ordering": false,
+
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         }
@@ -15,28 +17,29 @@ $(document).ready(function() {
     $('#tablaOficinaDocumentos').DataTable({
         "scrollX": true,
         "ordering": false,
+
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
         },
-        initComplete: function () {
-            this.api().columns([0, 1, 2]).every( function () {
+        initComplete: function() {
+            this.api().columns([0, 1, 2]).every(function() {
                 var column = this;
                 var select = $('<select><option value=""></option></select>')
-                    .appendTo( $(column.footer()).empty() )
-                    .on( 'change', function () {
+                    .appendTo($(column.footer()).empty())
+                    .on('change', function() {
                         var val = $.fn.dataTable.util.escapeRegex(
                             $(this).val()
                         );
- 
+
                         column
-                            .search( val ? '^'+val+'$' : '', true, false )
+                            .search(val ? '^' + val + '$' : '', true, false)
                             .draw();
-                    } );
- 
-                column.data().unique().sort().each( function ( d, j ) {
-                    select.append( '<option value="'+d+'">'+d+'</option>' )
-                } );
-            } );
+                    });
+
+                column.data().unique().sort().each(function(d, j) {
+                    select.append('<option value="' + d + '">' + d + '</option>')
+                });
+            });
         }
     });
 
@@ -94,7 +97,7 @@ $(document).ready(function() {
     /** TABLA RESOLUCIONES */
     dataTableResolucionesInit();
 
-    function dataTableResolucionesInit(){
+    function dataTableResolucionesInit() {
         var params = $('#tablaResolucion').attr("data-params");
         $('#tablaResolucion').DataTable({
             "ordering": false,
@@ -109,12 +112,12 @@ $(document).ready(function() {
                 "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
             },
             "ajax": "async/tablaResolucion.php?" + params,
-            "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+            "fnRowCallback": function(nRow, aData, iDisplayIndex) {
                 $('td:eq(0)', nRow).addClass('text-center');
                 $('td:eq(1)', nRow).addClass('texto');
                 $('td:eq(2)', nRow).addClass('download textoinfo align-middle text-right');
                 return nRow;
-                }
+            }
         });
     }
 
@@ -122,49 +125,50 @@ $(document).ready(function() {
 
     /*TABLA AGENDA*/
     dataTableAgendaInit();
-    function dataTableAgendaInit(inicio,final){
+
+    function dataTableAgendaInit(inicio, final) {
         var fechaInicio = inicio || '';
         var fechaFinal = final || '';
         var ajax = "async/tablaAgenda.php";
-        if(fechaInicio != '' && fechaFinal != ''){
-            ajax += "?fecha_inicio="+fechaInicio+"&fecha_fin="+fechaFinal;
+        if (fechaInicio != '' && fechaFinal != '') {
+            ajax += "?fecha_inicio=" + fechaInicio + "&fecha_fin=" + fechaFinal;
         }
         $('#tablaAgenda').DataTable({
             "destroy": true,
             "ordering": false,
             "scrollX": true,
-                "lengthMenu": [
-                    [5, 10, 20, -1],
-                    [5, 10, 20, "Todas"]
-                ],
+            "lengthMenu": [
+                [5, 10, 20, -1],
+                [5, 10, 20, "Todas"]
+            ],
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
             },
             "ajax": ajax,
-            "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+            "fnRowCallback": function(nRow, aData, iDisplayIndex) {
                 $('td:eq(0)', nRow).addClass('text-center');
                 $('td:eq(1)', nRow).addClass('text-justify');
                 return nRow;
-                }
+            }
         });
     }
 
-    $('.botonbusqueda').click(function(){
+    $('.botonbusqueda').click(function() {
         var inicio = $('#fechainicial').val();
         var final = $('#fechafinal').val();
-        if(inicio == '' || final == ''){
+        if (inicio == '' || final == '') {
             alert("Para realizar la búsqueda es necesario ingresar ambas fechas");
             return false;
         }
 
-        if(new Date(final).getTime() < new Date(inicio).getTime()){
+        if (new Date(final).getTime() < new Date(inicio).getTime()) {
             alert("La fecha final debe ser posterior a la inicial");
             return false;
         }
 
-        dataTableAgendaInit(inicio,final);
-        
+        dataTableAgendaInit(inicio, final);
+
     });
-    
+
 
 });

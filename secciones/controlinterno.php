@@ -55,6 +55,7 @@ if($error){
             <div id="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-labelledby="headingOne" data-parent="#accordionDocumentos" class="collapse">
               <div class="card-body p-5">
                 <p class="pb-3"><?php echo $seccion->nombre; ?></p>
+                
                 <table class="tabla_documentos table table-striped display " style="width:100%">
                   <tbody class="">
                   <?php                    

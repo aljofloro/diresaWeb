@@ -74,6 +74,9 @@
         font-size: 1.3rem;
         color: #fff;
     }
+    .navbar-nav .dropdown-menu {
+        background-color: #ba2831;
+    }
     .nav li a:hover,
     .nav li.active a {
         color: #fff;
@@ -104,6 +107,9 @@
 @media only screen and (max-width: 575px) {
     .bd-placeholder-img {
         height: 20em;
+    }
+    .navbar-nav .dropdown-menu {
+        background-color: #ba2831;
     }
     #main-slider .owl-dots {
         display: none;
