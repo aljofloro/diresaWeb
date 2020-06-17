@@ -12,6 +12,13 @@ if($error){
         <h2 class="mb-md-4"><?php echo $tipoSecciones->nombre; ?></h2>
       </div>
     </div>
+
+    <div class="row">
+      <div class="text-center col-md-8 mx-auto mb-5">
+        <?php echo $tipoSecciones->descripcion; ?>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-lg-9 mx-auto">
         <!-- Accordion -->
