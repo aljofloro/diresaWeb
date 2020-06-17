@@ -10,28 +10,15 @@ $Configuracion->set('NOTICIA_REGIONAL',2);
 $Configuracion->set('NOTICIA_MINSA',3);
 $Configuracion->set('DIRECTORAL',1);
 $Configuracion->set('ADMINISTRATIVA',2);
-$Configuracion->set('CAP',1);
-$Configuracion->set('PLANES',2);
-$Configuracion->set('OTROS',3);
-$Configuracion->set('MAPRO',4);
-$Configuracion->set('MOF',5);
-$Configuracion->set('TUPA',6);
-$Configuracion->set('ORGANIGRAMA',7);
+
 
 $Configuracion->set('ENCARGO_ADMINISTRACION',20);
-$Configuracion->set('DOCUMENTOS_ADMINISTRACION',2);
 $Configuracion->set('ENCARGO_RRHH',29);
-$Configuracion->set('DOCUMENTOS_RRHH',3);
 $Configuracion->set('ENCARGO_PLANES',24);
-$Configuracion->set('DOCUMENTOS_PLANES',4);
 $Configuracion->set('ENCARGO_PROMSALUD',9);
-$Configuracion->set('DOCUMENTOS_PROMSALUD',5);
 $Configuracion->set('ENCARGO_SALUD_PERSONAS',12);
-$Configuracion->set('DOCUMENTOS_SALUD_PERSONAS',6);
 $Configuracion->set('ENCARGO_AMBIENTAL',17);
-$Configuracion->set('DOCUMENTOS_AMBIENTAL',7);
 $Configuracion->set('ENCARGO_DEMID',16);
-$Configuracion->set('DOCUMENTOS_DEMID',8);
 
 
 
@@ -56,10 +43,10 @@ $Configuracion->set('GET_CONVOCATORIA','ConvocatoriaListar.php?id_tipo_convocato
 $Configuracion->set('GET_RESOLUCIONES_POR_TIPO','ResolucionListar.php?id_tipo_resolucion=');
 $Configuracion->set('GET_ACTIVIDADES','ActividadListarAprobados.php');
 $Configuracion->set('GET_AREAS','TipoAreaListar.php');
-$Configuracion->set('GET_DOCUMENTOS_GESTION','TipoSeccionObtener.php?id=1');
 $Configuracion->set('GET_COMUNICADOS','VentanaEmergenteListar.php');
 $Configuracion->set('GET_ENCARGADOS','EncargadoObtener.php?id=');
 $Configuracion->set('GET_DOCUMENTOS_SECCION','DocumentoListarSegunTipoSeccion.php?id=');
+
 $Configuracion->set('GET_NOMBRAMIENTO','TipoSeccionObtener.php?id=10');
 $Configuracion->set('GET_OCI','TipoSeccionObtener.php?id=11');
 $Configuracion->set('GET_EEI','TipoSeccionObtener.php?id=12');
@@ -68,6 +55,9 @@ $Configuracion->set('GET_MATERIALES','TipoSeccionObtener.php?id=14');
 $Configuracion->set('GET_SIS','TipoSeccionObtener.php?id=15');
 $Configuracion->set('GET_APERTURA','TipoSeccionObtener.php?id=16');
 
+$Configuracion->set('GET_DOCUMENTOS_GESTION','TipoSeccionObtener.php?id=1');
+
+$Configuracion->set('GET_DOCUMENTOS','TipoSeccionObtener.php?id=');
 $Configuracion->set('GET_ACCESOS','TipoSeccionListar.php?grupo=2');
 $Configuracion->set('GET_DOCUMENTOS_DIRECCIONES','TipoSeccionListar.php?grupo=3');
 
