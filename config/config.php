@@ -69,6 +69,8 @@ $Configuracion->set('GET_SIS','TipoSeccionObtener.php?id=15');
 $Configuracion->set('GET_APERTURA','TipoSeccionObtener.php?id=16');
 
 $Configuracion->set('GET_ACCESOS','TipoSeccionListar.php?grupo=2');
+$Configuracion->set('GET_DOCUMENTOS_DIRECCIONES','TipoSeccionListar.php?grupo=3');
+
 
 
 
