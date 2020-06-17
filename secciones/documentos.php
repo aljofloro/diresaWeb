@@ -6,6 +6,54 @@
 			</div>
 		</div>
 		<div class="row">
+		<?php
+			$jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_DOCUMENTOS_DIRECCIONES"),true));
+			$error = $jsonq->error;
+			if($error){
+				print_r($jsonq->mensaje);
+			}else{
+				$tipoSecciones = $jsonq->data;
+				$muestra = 1;
+				foreach ($tipoSecciones as $tipoSeccion) {
+					if($muestra <= 4){
+					?>
+			<div class="col-md-3 col-6 col-lg-3 blogBox <?php if($muestra != 1){echo 'moreBox';}?>">
+				<a href="documentos-epidemiologia.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
+					<div class="documento text-center">
+						<div class="documento_image">
+							<?php echo $tipoSeccion->imagen; ?>
+						</div>
+						<div class="documento_body">
+							<p><?php echo $tipoSeccion->nombre; ?></p>
+						</div>
+					</div>
+				</a>
+			</div>
+					<?php
+					}
+					if($muestra > 4){
+						$tag = 'collapsedoc'.$muestra;
+					?>
+			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="<?php echo $tag; ?>">
+				<a href="documentos-promociondelasalud.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
+					<div class="documento text-center trans_400">
+						<div class="documento_image">
+							<?php echo $tipoSeccion->imagen; ?>
+						</div>
+						<div class="documento_body">
+							<p><?php echo $tipoSeccion->nombre; ?></p>
+						</div>
+					</div>
+				</a>
+			</div>
+					<?php
+						$target .= $tag.' ';
+					}
+					$muestra++;
+				}
+			}
+		?>
+		<!--
 			<div class="col-md-3 col-6 col-lg-3 blogBox">
 				<a href="documentos-epidemiologia.php">
 					<div class="documento text-center">
@@ -102,11 +150,11 @@
 					</div>
 				</a>
 			</div>
-
+-->
 		</div>
 		<div class="row d-lg-none d-md-none" id="btn_contextdoc">
 			<div class="mx-auto">
-				<button id="botondoc" class="btn btn-success d-block" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4 collapse5">
+				<button id="botondoc" class="btn btn-success d-block" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="<?php echo $target; ?>">
 					<i class="fa fa-plus fa-2x " aria-hidden="true"></i>
 				</button>
 			</div>
