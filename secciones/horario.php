@@ -1,3 +1,8 @@
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
 <div class="top_bar d-none d-md-block">
   <div class="top_bar_container">
     <div class="container">
