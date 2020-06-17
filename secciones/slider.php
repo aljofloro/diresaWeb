@@ -1,26 +1,51 @@
-<!--<div class="botonajustes align-items-center">
-	<button>
-		<span class="sthGroup">
-			<span class="sth"><i class="fa fa-wheelchair fa-3x" aria-hidden="true"></i></span>
-
-			<span class="sath">
-				<div class="botonajustesdetalle">
-
-				</div>
-			</span>
-
-		</span>
-	</button>
+<div id="left">
+	<a class="handle "><i class="fa fa-wheelchair fa-3x" aria-hidden="true"></i></a>
+	<div class="detallediscap">
+		<div class="col-12 m-auto">
+			<p class="tituloopcion">TAMAÑO DE TEXTO</p>
+		</div>
+		<div class="row m-auto">
+			<div class="col-6 mb-2">
+				<button id="botondetallediscap">
+					A-
+				</button>
+			</div>
+			<div class="col-6 mb-2">
+				<button id="botondetallediscap">
+					A+
+				</button>
+			</div>
+		</div>
+		<div class="col-12 mb-3">
+			<button id="botondetallediscap">
+				TEXTO LEGIBLE
+			</button>
+		</div>
+		<div class="col-12 m-auto">
+			<p class="tituloopcion">CONTRASTE</p>
+		</div>
+		<div class="col-12 mb-2">
+			<button id="botondetallediscap">
+				SUBRAYAR LINKS
+			</button>
+		</div>
+		<div class="col-12 mb-2">
+			<button id="botondetallediscap">
+				RESALTAR LINKS
+			</button>
+		</div>
+		<div class="col-12 mb-2">
+			<button id="botondetallediscap">
+				ELIMINAR COOKIES
+			</button>
+		</div>
+		<div class="col-12 mb-2">
+			<button id="botondetallediscap">
+				IMAGENES EN GRISES
+			</button>
+		</div>
+	</div>
 </div>
-
-<div class="sticky-container">
-	<ul class="sticky">
-		<li>
-			<i class="fa fa-wheelchair fa-3x" aria-hidden="true"></i>
-			<p><a href="https://www.facebook.com/programacionnet" target="_blank">Like Us on<br>Facebook</a></p>
-		</li>
-	</ul>
-</div>-->
 <div class="owl-carousel owl-theme" id="main-slider">
 	<?php
 	$Configuracion = Configuracion::getConfiguracion();

@@ -1,6 +1,7 @@
 <script src="vendor/components/jquery/jquery.min.js"></script>
 <script src="js/menu.init.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/jquery.tabSlideOut.js"></script>
 <script src="datatable/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="datatable/DataTables-1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script src="datatable/Responsive-2.2.5/js/dataTables.responsive.min.js"></script>
@@ -24,3 +25,4 @@
 <script src="js/calendar.js"></script>
 <script src="js/datepicker.init.js"></script>
 <script src="js/comunicado.js"></script>
+<script src="js/botondiscap.js"></script>

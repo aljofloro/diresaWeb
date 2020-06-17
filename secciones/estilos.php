@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/diresa_principal.css"/>
 <link rel="stylesheet" type="text/css" href="css/modal.css"/>
 <link rel="stylesheet" type="text/css" href="css/dataTable.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.tabSlideOut.css"/>
 <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 <link rel="stylesheet" type="text/css" href="datatable/DataTables-1.10.21/css/dataTables.bootstrap4.min.css"/>
 <link rel="stylesheet" type="text/css" href="datatable/Buttons-1.6.2/css/buttons.dataTables.min.css"/>
