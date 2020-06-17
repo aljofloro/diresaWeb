@@ -1,4 +1,5 @@
 <script src="vendor/components/jquery/jquery.min.js"></script>
+<script src="js/preloader.js"></script>
 <script src="js/menu.init.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="js/jquery.tabSlideOut.js"></script>
@@ -17,6 +18,7 @@
 <script src="node_modules/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js"></script>
 <script src="vendor/pagination/pagination.min.js"></script>
 <script src="js/pagination.init.js"></script>
+
 <script src="js/carousel.init.js"></script>
 <script src="js/collapse.init.js"></script>
 <script src="js/dataTable.init.js"></script>

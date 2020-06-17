@@ -1,8 +1,8 @@
+
 <div class="header_bar">
   <div class="header_container">
     <div class="d-flex  align-items-center">
       <nav class="navbar navbar-expand-md m-auto">
-
         <div class="align-items-stretch my-auto d-flex d-mn-none">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
