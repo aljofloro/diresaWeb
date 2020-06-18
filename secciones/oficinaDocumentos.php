@@ -42,7 +42,9 @@ $error = $jsonq->error;
         <?php echo $tipoSecciones->descripcion; ?>
       </div>
     </div>
-
+  <?php
+  if($tipoSeccion != $Configuracion->GET('EPIDEMIOLOGIA')){
+  ?>
     <div class="row">
       <div class="col-lg-12 mt-5">
         <table id="tablaOficinaDocumentos" class="table table-striped display" style="width:100%">
@@ -77,7 +79,6 @@ $error = $jsonq->error;
                 $numero++;
                 }
               }
-            }
                 ?>        
             <tfoot>
               <tr>
@@ -89,10 +90,44 @@ $error = $jsonq->error;
             </tfoot>
 
           </tbody>
-        </table>
-        
+        </table>        
       </div>
     </div>
-
+  <?php
+  }else{
+    $secciones = $tipoSecciones->secciones;
+    $show = 1;
+    foreach ($secciones as $seccion) {
+      $cabecera .= '<a class="btn-institucion btn" data-toggle="collapse" href="#'.str_replace(' ', '', $seccion->abreviatura).$seccion->id_seccion.'" role="button" aria-expanded="false" aria-controls="collapseExample">'.$seccion->nombre.'</a>';
+      $detalle .= '
+      <div class="collapse " id="'.str_replace(' ', '', $seccion->abreviatura).$seccion->id_seccion.'" data-parent="#accordion">
+        <div class="calendarboletin" data-params="'.$seccion->id_seccion.'" id="calendar'.$seccion->id_seccion.'">
+      </div>
+      </div>
+      ';
+      $show++;
+    }
+  }
+  ?>
+  <div class="container" id="accordion">
+    <div class="row" >
+      <div class="col-12">
+        <p>
+        <?php echo $cabecera; ?>
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-lg-12 ">
+        <?php echo $detalle; ?>
+      </div>
+    </div>
   </div>
+</div>
+  <?php
+  
+}
+  ?>
+  </div>
+</div>
 </div>

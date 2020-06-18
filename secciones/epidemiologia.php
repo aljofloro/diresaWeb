@@ -5,6 +5,8 @@
                 <h2 class="mb-md-4">DIRECCIÓN EJECUTIVA DE ADMINISTRACIÓN</h2>
             </div>
         </div>
+
+        
         <div class="row" >
             <div class="col-12">
             <p>
@@ -26,12 +28,12 @@
         <div class="row ">
             <div class="col-lg-12 ">
                 <div class="collapse show" id="boletinepidemiologico" data-parent="#accordion">
-                    <div class="calendarboletin" >
+                    <div class="calendarboletin docs" data-params="86" id="hola1">
 
                     </div>
                 </div>
                 <div class="collapse " id="salasituacional" data-parent="#accordion">
-                    <div class="calendarsala">
+                    <div class="calendarsala docs" data-params="88" id="hola2">
 
                     </div>
                 </div>

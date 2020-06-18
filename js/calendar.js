@@ -1,28 +1,63 @@
 $(document).ready(function() {
 
-    if ($(".calendarboletin").length > 0) {
-        new Calendar('.calendarboletin', {
-            language: 'es'
-        });
+    var elementos = document.getElementsByClassName('calendarboletin');
+    for(var i in elementos){
+        identificador = "#"+elementos[i].id;
 
-        if (typeof calendarboletin != 'null') {
-            document.querySelector('.calendarboletin').addEventListener('clickDay', function(e) {
-
-                var download = function(downloadURL) {
-                    location = downloadURL;
-                }
-                
-                download('http://example.com/archive.zip');
-
+        if ($(identificador).length > 0) {
+            var seccion = $(identificador).attr("data-params");
+            let tooltip = null;
+            new Calendar(identificador, {
+                language: 'es',
+                dataSource: function(year){
+                    return fetch('async/archivoBoletin.php?idSeccion='+seccion)
+                    .then(result => result.json())
+                    .then(result =>{
+                        if(result.data){
+                            return result.data.map(r=>({
+                                startDate : new Date(r.fecha),
+                                endDate : new Date(r.fecha),
+                                name : r.nombre,
+                                url : r.url
+                            }));
+                        }
+                        return [];
+                    });
+                },
+                clickDay: function(e){
+                    if(typeof e.events[0] != 'null'){
+                        window.open(e.events[0].url, '_blank')
+                    }
+                },
+                mouseOnDay: function(e) {
+                    if(e.events.length > 0) {
+                        var content = '';
+                        
+                        for(var i in e.events) {
+                            content += '<div class="event-tooltip-content">'
+                                            + '<div class="event-name">' + e.events[i].name + '</div>'                                      
+                                        + '</div>';
+                        }
+                    
+                        $(e.element).popover({ 
+                            trigger: 'manual',
+                            container: 'body',
+                            html:true,
+                            content: content
+                        });
+                        
+                        $(e.element).popover('show');
+                    }
+                },
+                mouseOutDay: function(e) {
+                    if(e.events.length > 0) {
+                        $(e.element).popover('hide');
+                    }
+                },
+                style:'background',
+                Overlap:'true',
+                autoHalfDay:'true'
             });
         }
     }
-
-
-    if ($(".calendarsala").length > 0) {
-        new Calendar('.calendarsala', {
-            language: 'es'
-        });
-    }
-
 });

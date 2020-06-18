@@ -41,7 +41,11 @@
           case 8:
             $encargoOficina = $Configuracion->get("ENCARGO_DEMID");
             break;
+          case 18:
+            $encargoOficina = $Configuracion->get("ENCARGO_EPIDEMIOLOGIA");
+            break;
           default:
+
             break;
         }
         include_once("secciones/oficinaDocumentos.php");
