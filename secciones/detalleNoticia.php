@@ -29,7 +29,7 @@
               <div class="noticias_descr_fecha mb-5">
               <?php echo $nombreTipoNoticia." // ".date_format($date,"D. d / M / Y");  ?>
               </div>
-              <div class="noticias_descr_image d-flex justify-content-center">
+              <div class="noticias_descr_imagedetalle d-flex justify-content-center">
                 <img src="<?php echo $urlImagen; ?>" class="img-fluid" />
               </div>
               <div class="noticias_descr_text mt-5 text-center">

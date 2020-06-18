@@ -347,6 +347,11 @@ nav.navbar ul li {
     height: 15em;
 }
 
+.noticias_descr_imagedetalle img {
+    max-width: 95%;
+    height: 15em;
+}
+
 .MultiCarousel {
     float: left;
     overflow: hidden;
