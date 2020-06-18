@@ -5,7 +5,7 @@ if($error){
 }else{
   $tipoSecciones = $jsonq->data;  
 ?>
-<div class="site-section-noticias ">
+<div class="site-section-noticias "> 
     <div class="container">
         <div class="row">
             <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">

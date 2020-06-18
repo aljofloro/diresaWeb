@@ -20,8 +20,9 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        $jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_OCI"),true));
-        include_once("secciones/documentosgestion.php");
+        //$jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_OCI"),true));
+        $tipoSeccion = $_GET["tipoSeccion"];
+        include_once("secciones/accesoDocumentos.php");
         include_once("secciones/accesos.php");
         ?>
         <?php

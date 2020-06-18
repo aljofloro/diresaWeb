@@ -18,7 +18,7 @@
 					if($muestra <= 4){
 					?>
 			<div class="col-md-3 col-6 col-lg-3 blogBox <?php if($muestra != 1){echo 'moreBox';}?>">
-				<a href="documentos-epidemiologia.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
+				<a href="documentos-direcciones.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
 					<div class="documento text-center">
 						<div class="documento_image">
 							<?php echo $tipoSeccion->imagen; ?>
@@ -35,7 +35,7 @@
 						$tag = 'collapsedoc'.$muestra;
 					?>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="<?php echo $tag; ?>">
-				<a href="documentos-promociondelasalud.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
+				<a href="documentos-direcciones.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>">
 					<div class="documento text-center trans_400">
 						<div class="documento_image">
 							<?php echo $tipoSeccion->imagen; ?>
