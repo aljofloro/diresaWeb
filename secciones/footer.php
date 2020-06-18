@@ -22,7 +22,7 @@
 			<a class="nav-link" href="encuentranos.php">ENCUÉNTRANOS</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
-			<a class="nav-link" href="contacto.php">CONTACTO</a>
+			<a class="nav-link" href="consultas-area.php">CONTACTO</a>
 		</div>
 		<div class="col-md-9ths col-lg-9ths col-sm-12ths">
 			<a class="nav-link" href="documentos-gestion.php">DOCUMENTOS DE GESTIÓN</a>
