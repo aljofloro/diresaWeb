@@ -9,7 +9,7 @@ if ($error) {
 }
 ?>
 <div class="site-section-seccion">
-  <div class="container">
+  <div class="container" id="accordion">
     <div class="row">
     <div class="col-12">
       <p>
@@ -24,7 +24,7 @@ if ($error) {
     </div>
     <div class="row">
       <div class="mx-auto">
-        <div class="collapse show" id="reseña">
+        <div class="collapse show" id="reseña" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">RESEÑA</h2>
@@ -36,7 +36,7 @@ if ($error) {
             </div>
           </div>
         </div>
-        <div class="collapse" id="funciones">
+        <div class="collapse" id="funciones" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">FUNCIONES</h2>
