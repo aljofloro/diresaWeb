@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-    if($(".calendarboletin").length > 0 ){
+    if ($(".calendarboletin").length > 0) {
         new Calendar('.calendarboletin', {
             language: 'es'
         });
 
-        if(typeof calendarBoletin != 'null'){
+        if (typeof calendarboletin != 'null') {
             document.querySelector('.calendarboletin').addEventListener('clickDay', function(e) {
                 var download = function(downloadURL) {
                     location = downloadURL;
@@ -15,10 +15,11 @@ $(document).ready(function() {
         }
     }
 
-    if($(".calendarsala").length > 0 ){
+
+    if ($(".calendarsala").length > 0) {
         new Calendar('.calendarsala', {
             language: 'es'
         });
     }
-    
+
 });
