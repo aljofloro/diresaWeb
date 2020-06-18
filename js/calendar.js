@@ -7,10 +7,13 @@ $(document).ready(function() {
 
         if (typeof calendarboletin != 'null') {
             document.querySelector('.calendarboletin').addEventListener('clickDay', function(e) {
+
                 var download = function(downloadURL) {
                     location = downloadURL;
                 }
+                
                 download('http://example.com/archive.zip');
+
             });
         }
     }
