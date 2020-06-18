@@ -1,79 +1,69 @@
-<div class="site-section-noticias ">
-    <div class="container">
-        <div class="row">
-            <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
-                <h2 class="mb-md-4"><?php echo $tipoSeccion->nombre ?></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9 mx-auto">
-                <!-- Accordion -->
-                <div id="accordionNombramiento" class="accordion">
-                    <!-- Accordion item 1 -->
-                    <div class="card">
-                        <div id="headingOne" class="card-header">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark collapsible-link py-2">NORMATIVIDAD</a></h6>
-                        </div>
-                        <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionNombramiento" class="collapse show">
-                            <div class="card-body p-5">
-                                <p class="pb-3"> Información de Indicadores Básicos, Mortalidad y Morbilidad por etapas de vida.</p>
-                                <table class="tabla_documentos table table-striped display " style="width:100%">
-                                    <tbody class="">
-                                        <tr>
-                                            <td class="texto align-middle">001</td>
-                                            <td class="texto align-middle">Ley N°30957</td>
-                                            <td class="download">
-                                                <button type="submit" class="btndescargar">DESCARGAR</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="texto align-middle">002</td>
-                                            <td class="texto align-middle">Reglamento de la Ley N° 30957
-                                            </td>
-                                            <td class="download">
-                                                <button type="submit" class="btndescargar">DESCARGAR</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div class="card">
-                        <div id="headingTwo" class="card-header">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark collapsible-link py-2">Cronograma</a></h6>
-                        </div>
-                        <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionNombramiento" class="collapse">
-                            <div class="card-body p-5">
-                                <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim
-                                    eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                                    aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                    squid single-origin coffee nulla assumenda shoreditch et.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div class="card">
-                        <div id="headingThree" class="card-header">
-                            <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark collapsible-link py-2">
-                                    Resultados</a></h6>
-                        </div>
-                        <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionNombramiento" class="collapse">
-                            <div class="card-body p-5">
-                                <p class="font-weight-light m-0">Anim pariatur cliche reprehenderit, enim
-                                    eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                                    aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
-                                    squid single-origin coffee nulla assumenda shoreditch et.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<?php
+$jsonq = json_decode(file_get_contents($Configuracion->get("SERVER_API_PORTAL").$Configuracion->get("GET_DOCUMENTOS").$tipoSeccion,true));
+$error = $jsonq->error;
+if($error){
+  print_r($jsonq->mensaje);
+}else{
+  $tipoSecciones = $jsonq->data;  
+?>
+<div class="site-section-seccion">
+  <div class="container">
+    <div class="row">
+      <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
+        <h2 class="mb-md-4"><?php echo $tipoSecciones->nombre; ?></h2>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="text-center col-md-8 mx-auto mb-5">
+        <?php echo $tipoSecciones->descripcion; ?>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <!-- Accordion -->
+        <div id="accordionDocumentos" class="accordion">
+        <?php
+          $secciones = $tipoSecciones->secciones; 
+          foreach ($secciones as $seccion) {
+            ?>
+          <div class="card">
+            <div id="headingOne" class="card-header ">
+              <h6 class="mb-0 font-weight-bold"><a  href="#" data-toggle="collapse" data-target="#<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-expanded="true" aria-controls="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" class="d-block position-relative text-dark text-uppercase collapsible-link py-2"><?php echo $seccion->abreviatura; ?></a></h6>
+            </div>
+            <div id="<?php echo str_replace(' ', '', $seccion->abreviatura) ; ?>" aria-labelledby="headingOne" data-parent="#accordionDocumentos" class="collapse">
+              <div class="card-body p-5">
+                <p class="pb-3"><?php echo $seccion->nombre; ?></p>
+                <table class="tabla_documentos table table-striped display " style="width:100%">
+                  <tbody class="">
+                  <?php                    
+                    $documentos = $seccion->documentos;
+                    $numero = 1;
+                    foreach ($documentos as $documento) {
+                    ?>
+                    <tr>
+                      <td class="texto align-middle"><?php echo str_pad($numero,3,'0',STR_PAD_LEFT); ?></td>
+                      <td class="texto align-middle" style="width:70%"><?php echo $documento->nombre; ?></td>
+                      <td class="download">
+                        <a href="<?php echo $Configuracion->get("SERVER").$documento->archivo; ?>" class="btndescargar" download="<?php echo $documento->nombre; ?>" target="_blank">DESCARGAR</a>
+                      </td>
+                    </tr>
+                    <?php
+                    $numero ++;
+                    }
+                  ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <?php
+          }
+        }
+        ?>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

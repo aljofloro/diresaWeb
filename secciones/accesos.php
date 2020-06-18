@@ -18,7 +18,7 @@
 					if($muestra <= 4){
 					?>
 			<div class="col-md-3 col-lg-3 col-6">
-				<div class="acceso"  onclick="location.href='accesos-nombramiento.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>';">
+				<div class="acceso"  onclick="location.href='accesos-documentos.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>';">
 					<div class="accesos_image">
 						<?php echo $tipoSeccion->imagen; ?>
 					</div>
@@ -33,7 +33,7 @@
 						$tag = 'collapse'.$muestra;
 						?>
 			<div class="collapse dont-collapse-sm multi-collapse col-md-3 col-lg-3 col-6 col-sm-none" id="<?php echo $tag; ?>">
-				<div class="acceso" onclick="location.href='accesos-serums.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>';">
+				<div class="acceso" onclick="location.href='accesos-documentos.php?tipoSeccion=<?php echo $tipoSeccion->id_tipo_seccion; ?>';">
 					<div class="accesos_image">
 						<?php echo $tipoSeccion->imagen; ?>
 					</div>
