@@ -9,7 +9,7 @@ if ($error) {
 }
 ?>
 <div class="site-section-seccion">
-  <div class="container">
+  <div class="container" id="accordion">
     <div class="row">
       <div class="col-12">
         <p>
@@ -33,11 +33,11 @@ if ($error) {
     </div>
     <div class="row">
       <div class="mx-auto0">
-        <div class="collapse show" id="misionvision">
+        <div class="collapse show" id="misionvision" data-parent="#accordion">
           <!-- Accordion -->
           <div class="institucion card-body d-flex mr-5  ml-md-5">
             <div class="col-md-10 mx-auto col-12">
-              <div id="visionmision" class="accordion">
+              <div id="visionmision" class="accordion" >
                 <!-- Accordion item 1 -->
                 <div class="card">
                   <div id="headingOne" class="card-header bg-lead shadow-sm border-0 ">
@@ -102,7 +102,7 @@ if ($error) {
             </div>
           </div>
         </div>
-        <div class="collapse" id="reseña">
+        <div class="collapse" id="reseña" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">RESEÑA HISTÓRICA</h2>
@@ -114,7 +114,7 @@ if ($error) {
             </div>
           </div>
         </div>
-        <div class="collapse" id="marco">
+        <div class="collapse" id="marco" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">MARCO LEGAL</h2>
@@ -126,7 +126,7 @@ if ($error) {
             </div>
           </div>
         </div>
-        <div class="collapse" id="estructura">
+        <div class="collapse" id="estructura" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">ESTRUCTURA ORGÁNICA</h2>
@@ -138,7 +138,7 @@ if ($error) {
             </div>
           </div>
         </div>
-        <div class="collapse" id="organigrama">
+        <div class="collapse" id="organigrama" data-parent="#accordion">
           <div class="col-md-10 mx-auto">
             <div class="site-section-heading text-center mb-4 col-md-6 mx-auto">
               <h2 class="mb-md-4">ORGANIGRAMA</h2>
