@@ -6,18 +6,18 @@
 		</div>
 		<div class="row m-auto">
 			<div class="col-6 mb-2">
-				<button id="botondetallediscap">
+				<button id="font-down" class="botondetallediscap">
 					A-
 				</button>
 			</div>
 			<div class="col-6 mb-2">
-				<button id="botondetallediscap">
+				<button id="font-up" class="botondetallediscap">
 					A+
 				</button>
 			</div>
 		</div>
 		<div class="col-12 mb-3">
-			<button id="botondetallediscap">
+			<button id="botondetallediscap" class="botondetallediscap">
 				TEXTO LEGIBLE
 			</button>
 		</div>
@@ -25,22 +25,22 @@
 			<p class="tituloopcion">CONTRASTE</p>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap">
+			<button id="botondetallediscap" class="botondetallediscap">
 				SUBRAYAR LINKS
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap">
+			<button id="botondetallediscap" class="botondetallediscap">
 				RESALTAR LINKS
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap">
+			<button id="botondetallediscap" class="botondetallediscap">
 				ELIMINAR COOKIES
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap">
+			<button id="botondetallediscap" class="botondetallediscap">
 				IMAGENES EN GRISES
 			</button>
 		</div>
