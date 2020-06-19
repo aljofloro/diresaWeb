@@ -16,21 +16,16 @@
 				</button>
 			</div>
 		</div>
-		<div class="col-12 mb-3">
-			<button id="textoLegible" class="botondetallediscap">
-				TEXTO LEGIBLE
-			</button>
-		</div>
 		<div class="col-12 m-auto">
 			<p class="tituloopcion">CONTRASTE</p>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap" class="botondetallediscap">
+			<button id="subrayarLinks" class="botondetallediscap">
 				SUBRAYAR LINKS
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap" class="botondetallediscap">
+			<button id="resaltarLinks" class="botondetallediscap">
 				RESALTAR LINKS
 			</button>
 		</div>

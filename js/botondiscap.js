@@ -17,13 +17,6 @@ $(document).ready(function() {
     });
 
     
-
-    const textoLegible = element => {
-        element.addEventListener('click',() =>{
-            
-        })
-    }
-
     const eliminarCookies = element => {
         document.cookie.split(";").forEach(function(c) {
             document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
@@ -32,7 +25,7 @@ $(document).ready(function() {
 
     const getFontSize = () =>
         parseFloat(getComputedStyle(document.documentElement)
-            .getPropertyValue('--font-size'));
+            .getPropertyValue('--font-size'))
 
     const fontUp = element => {
         // escuchamos los clicks del elemento
@@ -43,7 +36,7 @@ $(document).ready(function() {
             document.documentElement
                 .style.setProperty('--font-size', `${fontSize * 1.3}`)
         })
-    };
+    }
 
     const fontDown = element => {
         // escuchamos los clicks del elemento
@@ -54,12 +47,31 @@ $(document).ready(function() {
             document.documentElement
                 .style.setProperty('--font-size', `${fontSize * 0.7}`)
         })
-    };
+    }
+
+    const subLinks = element =>{
+        element.addEventListener('click',()=>{
+            var a = document.getElementsByTagName('a');
+            for(var i in a){
+                //a[i].style.setProperty('background-color','yellow')
+                a[i].style.setProperty('text-decoration','underline')
+            }
+        })
+    }
+    const resaltarLinks = element =>{
+        element.addEventListener('click',()=>{
+            var a = document.getElementsByTagName('a');
+            for(var i in a){
+                a[i].style.setProperty('background-color','yellow')
+            }
+        })
+    }
 
     
-    fontUp(document.getElementById('font-up'));
-    fontDown(document.getElementById('font-down'));
-    textoLegible(document.getElementById('textoLegible'));
-    eliminarCookies(document.getElementById('eliminarCookies'));
+    fontUp(document.getElementById('font-up'))
+    fontDown(document.getElementById('font-down'))
+    eliminarCookies(document.getElementById('eliminarCookies'))
+    subLinks(document.getElementById('subrayarLinks'))
+    resaltarLinks(document.getElementById('resaltarLinks'))
 
 });
