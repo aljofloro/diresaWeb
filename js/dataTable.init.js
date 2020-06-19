@@ -177,6 +177,35 @@ $(document).ready(function() {
     });
     /*TABLA CONSULTA TRÁMITE*/
 
+    $('.botonbusquedatramite').click(function(){
+        var idTramite = $('#idTramite').val();
+        if(idTramite == ''){
+            alert("Para realizar la búsqueda es necesario ingresar un Correlativo");
+            return false;
+        }
+        dataTableTramiteInit(idTramite);
+    });
+
+    function dataTableTramiteInit(idTramite){
+        var id = idTramite || '';
+        if(id != ''){
+            var ajax = "async/tablaTramite.php?idTramite="+id;
+            $('#tablaTramite').DataTable({
+                "destroy": true,
+                "ordering": false,
+                "scrollX": true,
+                "lengthMenu": [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, "Todas"]
+                ],
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                },
+                "ajax": ajax
+            });
+        }
+    }
+
 
     $('#tablaTramite').DataTable({
         "ordering": false,

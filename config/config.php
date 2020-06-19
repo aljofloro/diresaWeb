@@ -56,9 +56,7 @@ $Configuracion->set('GET_DOCUMENTOS','TipoSeccionObtener.php?id=');
 $Configuracion->set('GET_ACCESOS','TipoSeccionListar.php?grupo=2');
 $Configuracion->set('GET_DOCUMENTOS_DIRECCIONES','TipoSeccionListar.php?grupo=3');
 
-
-
-
+$Configuracion->set('GET_SEGUIMIENTO_TRAMITE','TramiteSeguimiento.php?id=');
 
 
 $Configuracion->set('PUT_CONSULTA','ConsultaGuardar.php');
