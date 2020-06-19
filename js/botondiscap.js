@@ -16,6 +16,20 @@ $(document).ready(function() {
         }
     });
 
+    
+
+    const textoLegible = element => {
+        element.addEventListener('click',() =>{
+            document.body.style.fontFamily="Verdana !important"
+        })
+    }
+
+    const eliminarCookies = element => {
+        document.cookie.split(";").forEach(function(c) {
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+    }
+
     const getFontSize = () =>
         parseFloat(getComputedStyle(document.documentElement)
             .getPropertyValue('--font-size'));
@@ -42,8 +56,10 @@ $(document).ready(function() {
         })
     };
 
+    
     fontUp(document.getElementById('font-up'));
     fontDown(document.getElementById('font-down'));
-
+    textoLegible(document.getElementById('textoLegible'));
+    eliminarCookies(document.getElementById('eliminarCookies'));
 
 });
