@@ -53,16 +53,24 @@ $(document).ready(function() {
         element.addEventListener('click',()=>{
             var a = document.getElementsByTagName('a');
             for(var i in a){
-                //a[i].style.setProperty('background-color','yellow')
                 a[i].style.setProperty('text-decoration','underline')
             }
         })
     }
     const resaltarLinks = element =>{
         element.addEventListener('click',()=>{
-            var a = document.getElementsByTagName('a');
+            var a = document.getElementsByTagName('A')
             for(var i in a){
                 a[i].style.setProperty('background-color','yellow')
+            }
+        })
+    }
+
+    const imagenesGris = element =>{
+        element.addEventListener('click',()=>{
+            var a = document.getElementsByTagName('img')
+            for(var i in a){
+                a[i].style.setProperty('filter','grayscale(100%)')
             }
         })
     }
@@ -73,5 +81,7 @@ $(document).ready(function() {
     eliminarCookies(document.getElementById('eliminarCookies'))
     subLinks(document.getElementById('subrayarLinks'))
     resaltarLinks(document.getElementById('resaltarLinks'))
+    imagenesGris(document.getElementById('imagenesGris'))
+
 
 });

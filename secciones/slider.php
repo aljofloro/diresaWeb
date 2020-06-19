@@ -35,7 +35,7 @@
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap" class="botondetallediscap">
+			<button id="imagenesGris" class="botondetallediscap">
 				IMAGENES EN GRISES
 			</button>
 		</div>
