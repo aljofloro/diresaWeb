@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     const textoLegible = element => {
         element.addEventListener('click',() =>{
-            document.body.style.fontFamily="Verdana !important"
+            
         })
     }
 
