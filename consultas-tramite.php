@@ -20,7 +20,7 @@
     <main role="main">
         <?php
         include_once("secciones/slider.php");
-        include_once("secciones/consultaArea.php");
+        include_once("secciones/consultaTramite.php");
         include_once("secciones/partners2.php");
         ?>
         <footer class="footer">
