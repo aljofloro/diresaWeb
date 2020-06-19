@@ -25,7 +25,7 @@
 					$nombreTipoNoticia = $tipoNoticia->nombre;
 					$date = date_create($fecha);
 					?>
-				<div class="noticia col-md-4 col-6 col-lg-4">
+				<div class="noticia col-md-4 col-sm-6 col-lg-4">
 					<div class="noticias_descr">
 						<div class="noticias_descr_image">
 							<img src="<?php echo $urlImagen; ?>" />

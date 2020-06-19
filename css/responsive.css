@@ -102,6 +102,25 @@
     #botondoc {
         visibility: hidden;
     }
+    /*partners*/
+    .owl-carousel .partner-contenedor {
+        width: 100%;
+        height: 70px;
+    }
+    .owl-carousel .partner-contenedor img {
+        height: 70%;
+        width: 50%!important;
+        margin-left: 20%;
+    }
+    .owl-carousel .enlaces-contenedor {
+        width: 100%;
+        height: 70px;
+    }
+    .owl-carousel .enlaces-contenedor img {
+        height: 65%;
+        width: 50%!important;
+        margin-left: 20%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -137,19 +156,19 @@
     /*partners*/
     .owl-carousel .partner-contenedor {
         width: 100%;
-        height: 80px;
+        height: 50px;
     }
     .owl-carousel .partner-contenedor img {
-        height: 65%;
+        height: 100%;
         width: 50%!important;
         margin-left: 20%;
     }
     .owl-carousel .enlaces-contenedor {
         width: 100%;
-        height: 80px;
+        height: 50px;
     }
     .owl-carousel .enlaces-contenedor img {
-        height: 50%;
+        height: 100%;
         width: 50%!important;
         margin-left: 20%;
     }
