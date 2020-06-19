@@ -32,7 +32,7 @@ if ($error) {
       </div>
     </div>
     <div class="row">
-      <div class="mx-auto0">
+      <div class="mx-auto">
         <div class="collapse show" id="misionvision" data-parent="#accordion">
           <!-- Accordion -->
           <div class="institucion card-body d-flex mr-5  ml-md-5">
