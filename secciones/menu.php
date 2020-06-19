@@ -73,7 +73,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="consultas-area.php">Consulta por Área</a>
                 <a class="dropdown-item" href="consultas-tramite.php">Consulta de Trámite</a>
-                <a class="dropdown-item" href="consultas-Inspección.php">Consulta de Inspección</a>
+                <a class="dropdown-item" href="consultas-inspeccion.php">Consulta de Inspección</a>
               </div>
             </li>
             <li class="nav-item menudocumentos">

@@ -175,6 +175,23 @@ $(document).ready(function() {
         dataTableAgendaInit(inicio, final);
 
     });
+    /*TABLA CONSULTA TRÁMITE*/
 
 
+    $('#tablaTramite').DataTable({
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+    });
+
+    /*TABLA CONSULTA INSPECCION*/
+
+
+    $('#tablaInspeccion').DataTable({
+        "ordering": false,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+    });
 });

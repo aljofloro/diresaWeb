@@ -1239,3 +1239,35 @@ tbody .downloadmedicamento {
     text-decoration: none;
     background-color: #ba2831;
 }
+
+
+/*CONSULTAS TRAMITE*/
+
+#botonbusqueda {
+    width: calc(5em + .75rem + 2px);
+    height: calc(2em + .75rem + 5px);
+    background: #caf9ca;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff !important;
+    cursor: pointer;
+    border: solid 1px #caf9ca;
+    border-radius: 5px;
+    font-family: "Nexa Light";
+    outline: none;
+    box-shadow: none!important;
+    text-decoration: none;
+}
+
+#botonbusqueda:hover {
+    background-color: #caf9d5!important;
+    box-shadow: none!important;
+    color: #ffffff!important;
+}
+
+#botonbusqueda:focus {
+    outline: none!important;
+    background-color: #caf9ca!important;
+    box-shadow: none!important;
+    color: #ffffff!important;
+}

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="site-section-heading text-center mb-4 col-md-6 w-border mx-auto">
-                <h2 class="mb-md-4">CONSULTA DE TRÁMITE</h2>
+                <h2 class="mb-md-4">CONSULTA DE INSPECCIÓN</h2>
             </div>
         </div>
         <div class="row mb-5">
@@ -10,10 +10,10 @@
                     <input type="text" placeholder="" class="form-control py-4 px-4" id="">
                 </div>
                 <div class="p-0 col-md-1 ">
-                    <button type="submit" class="botonbusquedatramite" id="botonbusqueda">BUSCAR</button>
+                    <button type="submit" class="botonbusquedainspeccion" id="botonbusqueda">BUSCAR</button>
                 </div>
         </div>
-        <table id="tablaTramite" class="table table-striped display " style="width:100%">
+        <table id="tablaInspeccion" class="table table-striped display " style="width:100%">
             <thead class="thead-blue">
                 <tr>
                     <th class="linea text-center">N°</th>
