@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="col-12 mb-3">
-			<button id="botondetallediscap" class="botondetallediscap">
+			<button id="textoLegible" class="botondetallediscap">
 				TEXTO LEGIBLE
 			</button>
 		</div>
@@ -35,7 +35,7 @@
 			</button>
 		</div>
 		<div class="col-12 mb-2">
-			<button id="botondetallediscap" class="botondetallediscap">
+			<button id="eliminarCookies" class="botondetallediscap">
 				ELIMINAR COOKIES
 			</button>
 		</div>
